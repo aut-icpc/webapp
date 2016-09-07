@@ -10,13 +10,23 @@
                 <h5 class="white-text">General Links</h5>
                 <ul>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::about') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.about') }}" target="_blank">
                             About
                         </a>
                     </li>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::rules') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.rules') }}" target="_blank">
                             Rules
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.faq') }}" target="_blank">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.contact') }}" target="_blank">
+                            Contact Us
                         </a>
                     </li>
                 </ul>
@@ -25,7 +35,11 @@
             <div class="col l3 m6 s12">
                 <h5 class="white-text">Educational Links</h5>
                 <ul>
-
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ route('app::educational:links') }}" target="_blank">
+                            Useful Links
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -65,10 +79,17 @@
 
         </div>
     </div>
-    <div class="footer-copyright">
-        <div class="container">
-            © 2015 Naveen Shaji
-            <a class="grey-text text-lighten-4 right" href="http://pixelblenders.com/" target="_blank">PixelBlenders</a>
+    <div class="footer-copyright" style="height: auto;">
+        <div class="container center">
+            forked from
+            <a class="grey-text text-lighten-3 text-center" href="https://github.com/naveenshaji/material" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i> naveenshaji/material
+            </a>
+            <br>
+            © {{ (new \Carbon\Carbon())->year }}
+            <a class="yellow-text" href="http://ceit-ssc.ir" target="_blank">Student Scientific Chapter</a>
+            of <a class="yellow-text" href="http://ceit.aut.ac.ir/" target="_blank">Computer Engineering and IT Department</a>
+            at <a class="yellow-text" href="http://aut.ac.ir/" target="_blank">Amirkabir University of Technology (Tehran Polytechnic)</a>
         </div>
     </div>
 </footer>

@@ -11,17 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-})->name('app::index');
-
-Route::get('/about', function () {
-    return view('pages.about');
-})->name('app::about');
-
-Route::get('/rules', function () {
-    return view('pages.rules');
-})->name('app::rules');
+Route::get('/', 'PagesController@index')->name('app::index');
+Route::get('/about', 'PagesController@about')->name('app::general.about');
+Route::get('/rules', 'PagesController@rules')->name('app::general.rules');
+Route::get('/faq', 'PagesController@faq')->name('app::general.faq');
+Route::get('/contact', 'PagesController@contact')->name('app::general.contact');
+Route::get('/links', 'PagesController@useful_links')->name('app::educational:links');
 
 Auth::routes();
 
