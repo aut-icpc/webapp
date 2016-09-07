@@ -1,5 +1,3 @@
----
----
 /* jquery.nicescroll.plus
 -- the addon for nicescroll
 -- version 1.0.0 BETA
@@ -75,7 +73,7 @@
     switch(styler) {
       case "fb":
         opt.autohidemode = false;
-        opt.cursorcolor = "{{ site.scroll-cursor }}";
+        opt.cursorcolor = "#00BCD4";
         opt.railcolor = "";
         opt.cursoropacitymax = 1.0;
         opt.cursorwidth = 10;
@@ -113,7 +111,7 @@
         obj.hover(function(){
           nc._stylerfbstate = true;
           nc.rail.css({
-            "backgroundColor":"{{ site.scroll-rail }}"
+            "backgroundColor":"#0097A7"
           });
           nc.cursor.stop().css({width:10});
         },

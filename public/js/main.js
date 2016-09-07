@@ -116,7 +116,7 @@ $(function () {
 
 $(function () {
         $(".button-collapse").sideNav();
-    });
+    })
 $(function () {
 
     if (Modernizr.history) {

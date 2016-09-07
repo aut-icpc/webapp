@@ -2,18 +2,10 @@
 
 @section('content')
     <div id="non-skrollr">
-        <div class="container-fluid card cyan z-depth-2 waves-effect waves-light">
-            <div class="cover z-depth-1">
-                <div class="filter cyan" style="opacity: 0.7;">
-                    <div class="cover-text cyan-text text-darken-4">
-                        <span style="font-size: 50px;">< rules /></span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-content white-text">
-                <div class="card-title">
-                    <h4>Regional Rules</h4>
-                </div>
+
+        <div class="row">
+            <h1><br>Regional Rules<br></h1>
+            <div class="container-fluid">
                 <h5 id="section-Regional+Rules-Mission">Mission</h5>
                 <p>
                     The ACM International Collegiate Programming Contest (ICPC) provides  college students with
@@ -186,7 +178,6 @@
                 <p>Qualifying teams requiring visas must initiate the process of  applying for visas within 10 business days of being issued an  invitation. Teams failing to comply with any of these requirements will  be ruled ineligible to compete in the World Finals. Upon completion of  these requirements, a qualifying team will be advanced to the World  Finals. </p>
                 <p>A team advancing to the World Finals will be comprised of the same  three members as when it qualified. In the event that a team member is  unwilling, unable or unfit to compete in the World Finals, the coach  must notify the <a href="mailto:manager@icpc.baylor.edu">ICPC Manager</a> in a timely manner. A team member who is unwilling or unfit to compete  in the World Finals will be disqualified from further ICPC  competitions. The team member may appeal disqualification to the  Appeals Committee. </p>
                 <p>At on-site registration, participants must provide picture ID  (passport, drivers license, etc). Contestants must show proof of  enrollment at the university during the term of the regional contest at  which they qualified. A letter on university stationary with the  signature of a university official accompanied by an English  translation is sufficient. </p>
-
             </div>
         </div>
     </div>

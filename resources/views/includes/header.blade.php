@@ -26,7 +26,7 @@
                     <a href="{{ route('app::index') }}" class="brand-logo"><i class="material-icons">code</i>ICPC at AUT</a>
                     <ul id="nav-mobile" class="right side-nav">
                         @if(Auth::check())
-                            <li><a class="dropdown-button" href="#!" data-activates="auth_dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a class="dropdown-button" href="#" data-activates="auth_dropdown">Login/Register<i class="material-icons right">arrow_drop_down</i></a></li>
                         @else
                             <li>
                                 <a href="{{ url('/login') }}">Login</a>
@@ -36,7 +36,7 @@
                             </li>
                         @endif
                     </ul>
-                    <a class="button-collapse" data-activates="#nav-mobile">
+                    <a class="button-collapse" href="#" data-activates="nav-mobile">
                         <i class="mdi-navigation-menu"></i>
                     </a>
                 </div>

@@ -1,5 +1,3 @@
----
----
 /*
 * Scrolline.js - Create an indication bar line of scroll position
 * Basic usage : $.scrolline();
@@ -75,7 +73,7 @@
                         bFront = rFront = 'auto';
                     }
 
-                    self.$front.addClass("{{ site.css }} lighten-1").css({
+                    self.$front.addClass("cyan lighten-1").css({
                         //background : self.params.frontColor,
                         bottom : bFront,
                         height : 0,
@@ -89,7 +87,7 @@
                         width : 0
                     }).appendTo(self.$back);
 
-                    self.$back.addClass("{{ site.css }} darken-2").css({
+                    self.$back.addClass("cyan darken-2").css({
                         //background : self.params.backColor,
                         bottom: bBack,
                         height : 0,
