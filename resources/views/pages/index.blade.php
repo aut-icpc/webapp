@@ -6,11 +6,13 @@
             <div class="mast">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                free &amp; <b>open-source</b> way to a one-click blog/website on <b>GitHub</b> with Jekyll and MaterializeCSS
+                16th <b>Amirkabir</b> Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br>
-                <h6>based on google&trade;'s <b>material design</b> specifications</h6>
-                <h4><b>work-in-progress</b></h4>
-                <a target="_blank" href="https://github.com/AUT-ICPC/ICPC-webApp" class="cyan darken-2 white-text text-darken-3 waves-effect waves-light btn"><i class="mdi-action-get-app"></i> View on github</a><br>
+                <h6>Registeration links will be available during  <b>September 15th - November 1st</b>. (following is just a preview)</h6>
+                <br>
+
+                <a target="_blank" href="{{ route('app::contest.register') }}" class="cyan darken-2 white-text text-darken-3 waves-effect waves-light btn">
+                    <i class="fa fa-users" aria-hidden="true"></i> Contest Registeration</a><br>
                 <i class="mdi-navigation-arrow-drop-down" style="font-size: 200px;"></i>
             </div>
         </div>
@@ -64,46 +66,6 @@
 
             </div>
         </div>
-
-        <div class="row">
-            <h1><br>News<br></h1>
-            <div class="container-fluid">
-                <div class="col s12 m6">
-                    <ul>
-                        <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
-                            <h4>completely-free</h4> Material is completely free for whatever use you may ever want to use it for under the terms of the MIT Licence.
-                        </li>
-                        <li class="card advantage cyan white-text waves-effect waves-light">
-                            <h4>fully-open-source</h4> Material's source code is fully open source and is hosted at GitHub (https://github.com/naveenshaji/material/). It is released under the terms of the MIT Licence.
-                        </li>
-                        <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
-                            <h4>material-design</h4> Material is based on google's material design specifications. duh! All you need to know is that it look solid and feels solid.
-                        </li>
-                        <li class="card advantage cyan white-text waves-effect waves-light">
-                            <h4>ease-of-access</h4> Your blog or website will be hosted on a GitHub repository and therefore, you will be able to just 'commit' new blog posts. Plus you get all the benefits of GitHub if you are making a collaborated blog.
-                        </li>
-                    </ul>
-                </div>
-                <div class="col s12 m6">
-                    <ul>
-                        <li class="card advantage cyan white-text waves-effect waves-light">
-                            <h4>hosted-on-github</h4> Your website/blog can be hosted for free on GitHub, which means you get to take advantage of GitHub's servers which have proven themselves to provide almost 100% uptime.
-                        </li>
-                        <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
-                            <h4>feel-like-hax0r</h4> Commiting new blogposts written in markdown is sure to give you the feels. Having your blog hosted alongside code will make you feel like a mini-hax0r even if you are not one.
-                        </li>
-                        <li class="card advantage cyan white-text waves-effect waves-light">
-                            <h4>write-in-markdown</h4> WSIWYG editors are for losers. Markdown ftw!!
-                        </li>
-                        <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
-                            <h4>mit-licence</h4> Material is released under the terms of the MIT Licence which give you a lot of freedom regarding editing the code involved.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
 
         <div class="row">
             <h1><br>-get-started-<br></h1>

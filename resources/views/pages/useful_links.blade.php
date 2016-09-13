@@ -6,7 +6,6 @@
         <div class="row">
             <h2><br>Useful Links<br></h2>
             <div class="container-fluid">
-                <div class="hliney"> </div>
                 <h5 dir="ltr"><strong>Online judges</strong></h5>
                 <p dir="ltr"><a href="http://cii-judge.baylor.edu/">ACM  Live Archive</a> (has many problems from past <a href="http://cm1prod.baylor.edu/login.jsf">ACM/ICPC</a> regional contests and  world finals.)<br />
                     <br />
@@ -35,8 +34,7 @@
                         HDU Online Judge</a> (has virtual  contest features and quite a lot of problems.)<br />
                     <a href="http://acm.sharif.edu/arbiter/home.jsf">Arbiter</a> (online  judge at Sharif University  in Iran.)</p>
                 <p dir="ltr"><strong>&nbsp;</strong></p>
-                <div class="hliney"> </div>
-                <h5 dir="ltr"><strong>Useful site               </strong></h5>
+                <h5 dir="ltr"><strong>Useful sites</strong></h5>
                 <p dir="ltr"><a href="http://www.algorithmist.com/">Algorithmist</a> (here you can  find explanations of many problems and also classifications. There are also  nice tutorials about different subjects. Also they have a calendar of different  programming contests. You should really check this page out!)</p>
                 <p dir="ltr"><a href="http://shygypsy.com/">Igor Naverniouk's site</a> (Igor has a  lot of experience in solving problems at the UVA judge. At his site you can see  how he has classified his solved problems, and in some cases you can also get  hints. His problem classification list is often very useful. His library of  algorithms (in C++) is very useful, and is definitely worth a look.)</p>
                 <p dir="ltr"><a href="http://plg.uwaterloo.ca/%7Eacm00/">Waterloo Programming  Contests</a> (this is the local page for contests held at the University of Waterloo  in Canada.  Here you will find a lot of great problems (most of them are also on the UVA  judge), including solutions, input and output. Most solutions are of a very  high quality. If you are stuck on one of their problems, it may be a good idea  to take a look here.) </p>
@@ -44,45 +42,44 @@
                 <p dir="ltr"><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">TopCoder  Algorithm Tutorials</a> (here you can find about 40 good tutorials about useful  algorithms)</p>
                 <p dir="ltr"><a href="http://wiki.pykello.net/doku.php">Hadi Moshayedi's site</a> (here you can  find some useful and ‌appropriate algorithms and solution‌)</p>
                 <p dir="ltr">&nbsp;</p>
-                <div class="hliney"> </div>
                 <h5 dir="ltr"><strong>ACM/ICPC Regionals</strong></h5>
                 <h5 dir="ltr">&nbsp;</h5>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
-                        <td width="33%" valign="top"><h6 dir="ltr">North America</h6>
+                        <td style="vertical-align: top;">
+                            <h6 dir="ltr">North America</h6>
                             <a href="http://www.acmicpc-pacnw.org/">Pacific  Northwest<br />
-                            </a> Southern California <br />
-                            <a href="http://www.mesastate.edu/acm/rmrc/2008/">Rocky Mountain</a> <br />
-                            <a href="http://cs.unomaha.edu/acmregn/index.html">North Central</a> <br />
-                            <a href="http://acm.ashland.edu/">East Central</a> <br />
-                            <a href="http://mcpc.cigas.net/">Mid-Central USA</a> <br />
-                            <a href="http://acm2008.cct.lsu.edu/">South Central USA</a> <br />
-                            <a href="http://www.cs.rit.edu/~icpc/">Northeast</a> <br />
-                            <a href="http://acmgnyr.org/">Greater NY</a> <br />
+                            <a href="http://www.mesastate.edu/acm/rmrc/2008/">Rocky Mountain</a><br />
+                            <a href="http://cs.unomaha.edu/acmregn/index.html">North Central</a><br />
+                            <a href="http://acm.ashland.edu/">East Central</a><br />
+                            <a href="http://mcpc.cigas.net/">Mid-Central USA</a><br />
+                            <a href="http://acm2008.cct.lsu.edu/">South Central USA</a><br />
+                            <a href="http://www.cs.rit.edu/~icpc/">Northeast</a><br />
+                            <a href="http://acmgnyr.org/">Greater NY</a><br />
                             <a href="http://www.radford.edu/~acm/midatl/">Mid-Atlantic USA</a> <br />
-                            <a href="http://ser.cs.fit.edu/ser2008/">Southeast USA</a>
-                            <br>
-                            <h6>Latin America</h6>
+                            <a href="http://ser.cs.fit.edu/ser2008/">Southeast USA</a><br>
                             <a href="http://cidi.uaq.mx/acm/">Mexico &amp; Central America</a> <br />
                             <a href="http://maratona.ime.usp.br/">South America/Brazil</a> <br />
-                            South America/North <br />
-                            <a href="http://www.dc.uba.ar/events/icpc">South America/South</a></td>
-                        <td width="34%" valign="top"><h6 dir="ltr">Europe</h6>
+                            <a href="http://www.dc.uba.ar/events/icpc">South America/South</a>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <h6 dir="ltr">Europe</h6>
                             <a href="http://swerc.eu/">Southwestern</a> <br />
                             <a href="http://cepc08.ii.uni.wroc.pl/">Central</a> <br />
                             <a href="http://neerc.ifmo.ru/information/index.html">Northeastern</a> <br />
                             <a href="http://2008.nwerc.eu/">Northwestern</a> <br />
                             <a href="http://www.acm.ro/">Southeastern</a>
-                            <p>&nbsp;</p>
+                        </td>
+                        <td style="vertical-align: top;">
                             <h6 dir="ltr">Africa and the Middle East</h6>
                             <a href="http://www.icpc-anarc.org/">North Africa and Arab</a><br />
-                            South Africa
-                            <h6></h6>
+                        </td>
+                        <td style="vertical-align: top;">
                             <h6 dir="ltr">South Pacific</h6>
                             <a href="http://www.sppcontest.org/2008/SP_Results_2008.html">South  Pacific</a>
-                            <p>&nbsp;</p></td>
-                        <td width="33%" valign="top"><h6 dir="ltr">Asia<br />
-                            </h6>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <h6 dir="ltr">Asia</h6>
                             <a href="http://sparth.u-aizu.ac.jp/icpc2008/">Aizu Site</a><br />
                             <a href="http://icpc.amrita.ac.in/">Amritapuri Site</a><br />
                             <a href="http://acm.bjtu.edu.cn/">Beijing Site</a> <br />
@@ -98,14 +95,9 @@
                             <a href="http://acm.kaist.ac.kr/forum/portal.php?article=1">Seoul  Site</a><br />
                             <a href="http://icpc2008.ntu.edu.tw/">Taipei Site</a><br />
                             <a href="http://sharif.edu/~acmicpc">Tehran Site</a>
-                            <h3 dir="ltr"></h3>
-                            <p dir="ltr">&nbsp;</p>
-                            <h3 dir="ltr">&nbsp;</h3></td>
+                        </td>
                     </tr>
                 </table>
-                <p dir="ltr"><br />
-                </p>
-
             </div>
         </div>
     </div>

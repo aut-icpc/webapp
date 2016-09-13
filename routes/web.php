@@ -16,7 +16,12 @@ Route::get('/about', 'PagesController@about')->name('app::general.about');
 Route::get('/rules', 'PagesController@rules')->name('app::general.rules');
 Route::get('/faq', 'PagesController@faq')->name('app::general.faq');
 Route::get('/contact', 'PagesController@contact')->name('app::general.contact');
-Route::get('/links', 'PagesController@useful_links')->name('app::educational:links');
+Route::get('/links', 'PagesController@useful_links')->name('app::educational.links');
+Route::get('/history', 'PagesController@showHistoryOfContests')->name('app::local.history');
+Route::get('/local/rules', 'PagesController@showLocalRules')->name('app::local.rules');
+
+Route::get('/2016/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
+
 
 Auth::routes();
 

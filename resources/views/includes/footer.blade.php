@@ -36,7 +36,7 @@
                 <h5 class="white-text">Educational Links</h5>
                 <ul>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::educational:links') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::educational.links') }}" target="_blank">
                             Useful Links
                         </a>
                     </li>
@@ -47,7 +47,16 @@
             <div class="col l3 m6 s12">
                 <h5 class="white-text">Local Contests</h5>
                 <ul>
-
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ route('app::local.history') }}" target="_blank">
+                            History
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ route('app::local.rules') }}" target="_blank">
+                            Contest Information
+                        </a>
+                    </li>
                 </ul>
             </div>
 

@@ -51,4 +51,15 @@ class PagesController extends Controller
     public function useful_links () {
         return view('pages.useful_links');
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showHistoryOfContests () {
+        return view('pages.history');
+    }
+
+    public function showLocalRules() {
+        return view('pages.local_rules');
+    }
 }

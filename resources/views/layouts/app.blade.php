@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         @stack('styles')
 
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
     </head>
     <body class="cyan lighten-5">
         @include('includes.preloader')
