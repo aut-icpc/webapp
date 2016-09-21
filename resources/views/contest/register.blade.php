@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <form class="col s12 m12 l12" action="{{ route('app::contest.register_post') }}">
+    <form class="col s12 m12 l12" action="{{ route('app::contest.register_post') }}" method="POST">
     <div id="non-skrollr">
         <div class="row">
             <h3><br>On-Site Contest Registration<br></h3>
@@ -27,10 +27,10 @@
                         <div class="input-field col s4 m4 l4">
                             <select name="site" class="icons">
                                 <option value="" disabled selected>Select your site</option>
-                                <option value="tehran" data-icon="{{ URL::asset('img/tehran.png') }}" class="left circle">Tehran</option>
-                                <option value="munich" data-icon="{{ URL::asset('img/munich.png') }}" class="left circle">München</option>
-                                <option value="paris" data-icon="{{ URL::asset('img/paris.jpg') }}" class="left circle">Paris</option>
-                                <option value="madrid" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle">Another city and so on ...</option>
+                                <option value="Tehran" data-icon="{{ URL::asset('img/tehran.png') }}" class="left circle">Tehran</option>
+                                <option value="Munich" data-icon="{{ URL::asset('img/munich.png') }}" class="left circle">München</option>
+                                <option value="Paris" data-icon="{{ URL::asset('img/paris.jpg') }}" class="left circle">Paris</option>
+                                <option value="Madrid" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle">Another city and so on ...</option>
                             </select>
                             <label>Where the team solves the problems</label>
                         </div>

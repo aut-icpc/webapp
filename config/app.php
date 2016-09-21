@@ -186,8 +186,10 @@ return [
         /*
          * Moloquent (MongoDB) Provider
          */
-        Jenssegers\Mongodb\MongodbServiceProvider::class,
-        Jenssegers\Mongodb\Auth\PasswordResetServiceProvider::class,
+        Moloquent\MongodbServiceProvider::class,
+        Moloquent\Auth\PasswordResetServiceProvider::class,
+//        Jenssegers\Mongodb\MongodbServiceProvider::class,
+//        Jenssegers\Mongodb\Auth\PasswordResetServiceProvider::class,
 
     ],
 

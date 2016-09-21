@@ -22,7 +22,7 @@ Route::get('/local/rules', 'PagesController@showLocalRules')->name('app::local.r
 
 
 Route::get('/2016/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
-Route::post('/2016/register', 'ContestController@saveTeam')->name('app::contest.register_post');
+Route::post('/2016/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
 
 Route::get('/2016/register/online', 'ContestController@showOnLineRegistrationForm')->name('app::contest.register.online');
 Route::post('/2016/register/online', 'ContestController@saveOnlineContestSubmission')->name('app::contest.register.online_post');
@@ -32,6 +32,7 @@ Route::get('/live', 'LiveController@showFeed')->name('app::live.feed');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('app::admin');
+Route::get('/home/registrations', 'HomeController@showRegistrations')->name('app::admin.registrations.show');
 Route::get('/home/live', 'HomeController@showLiveAdmin')->name('app::admin.live');
 Route::get('/home/live/new', 'HomeController@newLivePost')->name('app::admin.live.new');
 Route::post('/home/live/new', 'HomeController@saveLivePost')->name('app::admin.live.new.save');

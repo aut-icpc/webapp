@@ -1,9 +1,9 @@
 <?php
 
 namespace App;
-use Jenssegers\Mongodb\Eloquent\Model as Model;
+use Moloquent\Eloquent\Model as Eloquent;
 
-class OnlineRegistration extends Model
+class OnlineRegistration extends Eloquent
 {
     //
 }

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\LivePost;
+use App\OnlineRegistration;
+use App\OnsiteRegistration;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -61,5 +63,9 @@ class HomeController extends Controller
         $post->fill($request->all());
         $post->save();
         return redirect()->route('app::admin.live');
+    }
+
+    public function showRegistrations () {
+        return view('admin.registrations');
     }
 }

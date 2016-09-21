@@ -2,7 +2,7 @@
 
 namespace App;
 use Carbon\Carbon;
-use Jenssegers\Mongodb\Eloquent\Model as Model;
+use Moloquent\Eloquent\Model as Eloquent;
 
 
 /**
@@ -14,7 +14,7 @@ use Jenssegers\Mongodb\Eloquent\Model as Model;
  * @property Carbon published_at
  * @property User author
  */
-class LivePost extends Model
+class LivePost extends Eloquent
 {
 
     /**
