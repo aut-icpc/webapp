@@ -36,6 +36,10 @@ body {
     -webkit-box-orient: vertical;
 }
 
+a {
+    color: #f9f70b;
+}
+
 .post-title {
     overflow: hidden;
     max-height: 1.2em;

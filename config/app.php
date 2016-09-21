@@ -188,6 +188,7 @@ return [
          */
         Jenssegers\Mongodb\MongodbServiceProvider::class,
         Jenssegers\Mongodb\Auth\PasswordResetServiceProvider::class,
+
     ],
 
     /*

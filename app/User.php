@@ -20,6 +20,7 @@ use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
  * @property boolean admin
  * @property integer access_level
  * @property string img
+ * @property array posts
  */
 
 class User extends Eloquent implements
@@ -71,5 +72,9 @@ class User extends Eloquent implements
     public function isAdmin()
     {
         return $this->admin;
+    }
+
+    public function posts() {
+        return $this->hasMany('App\LivePost');
     }
 }

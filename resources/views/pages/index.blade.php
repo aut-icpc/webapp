@@ -11,15 +11,59 @@
                 <h6>Registeration links will be available during  <b>September 15th - November 1st</b>. (following is just a preview)</h6>
                 <br>
 
-                <a target="_blank" href="{{ route('app::contest.register') }}" class="cyan darken-2 white-text text-darken-3 waves-effect waves-light btn">
-                    <i class="fa fa-users" aria-hidden="true"></i> Contest Registeration</a><br>
-                <i class="mdi-navigation-arrow-drop-down" style="font-size: 200px;"></i>
+                <a target="_blank" href="{{ route('app::contest.register') }}">
+                    <button class="btn darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration
+                        <i class="material-icons right">supervisor_account</i>
+                    </button>
+                </a>
+                <br>
+                <i class="material-icons" style="font-size: 200px;">arrow_drop_down</i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m5">
+                <div class="card cyan white-text waves-effect">
+                    <div class="card-content">
+                        <span class="card-title">Timings</span>
+                        <p>Registration Dates</p>
+                        <p style="font-size: 33px;">October 22 - November 01, 2016</p>
+                        <hr>
+                        <p>Orientation Day</p>
+                        <p style="font-size: 33px;">November 02, 2016</p>
+                        <hr>
+                        <p>Contest</p>
+                        <p style="font-size: 33px;">November 04, 2016</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m7">
+                <div class="card cyan white-text waves-effect">
+                    <div class="card-content">
+                        <span class="card-title">Important Notes</span>
+                        <ol>
+                            <li>
+                                The contest will be held both online and on-site. However the online contest will be held
+                                at least two hours after the on-site contest. There is no limit in the online contest but
+                                for registring in the on-site contest, teams must be present at one of the specified sites.
+                            </li>
+                            <li>
+                                Participant teams in on-site contest must have exactly three members in order to be able
+                                to participate in a programming contest, but the online contest is individually.
+                            </li>
+                            <li>
+                                All team members in on-site contest, are required to be present on November 02, at the Orientation Day.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-
         <div class="container-fluid card cyan z-depth-2 waves-effect waves-light">
+            <a href="http://google.com" target="_blank">
             <div class="cover z-depth-1" style="background-image: url('img/icpc_re.png');">
                 <div class="filter cyan" style="opacity: 0.7;">
                     <div class="cover-text cyan-text text-darken-4">
@@ -65,13 +109,15 @@
                 This website tries to lead you in the way of becomming a good icpc contestant.
 
             </div>
+            </a>
         </div>
 
         <div class="row">
-            <h1><br>-get-started-<br></h1>
-            <div class="container-fluid">
-                There are 7 simple steps to get your website up and running using material. Keep scrolling to see em'. The steps mentioned here have been explained in order to cater to n00bs. If you think you are pro, then scroll faster. xP
-            </div>
+
+            {{--<h1><br>-get-started-<br></h1>--}}
+            {{--<div class="container-fluid">--}}
+                {{--There are 7 simple steps to get your website up and running using material. Keep scrolling to see em'. The steps mentioned here have been explained in order to cater to n00bs. If you think you are pro, then scroll faster. xP--}}
+            {{--</div>--}}
         </div>
     </div>
 

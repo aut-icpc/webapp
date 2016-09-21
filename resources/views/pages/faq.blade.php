@@ -3,14 +3,14 @@
 @section('content')
     <div id="non-skrollr">
         <div class="row">
-            <h1><br>Frequently Asked Questions<br></h1>
+            <h4><br>Frequently Asked Questions<br></h4>
             <div class="container-fluid">
                 <div class="col s12 m12 l12">
                     <ul>
                         @foreach($faqs as $faq)
                             <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
-                                <h4>{{ $faq->question() }}</h4>
-                                {{ $faq->answer() }}
+                                <h5>Q. {{ $faq['q'] }}</h5>
+                                <p><strong>A.</strong> {!! $faq['a']  !!}</p>
                             </li>
                         @endforeach
                     </ul>

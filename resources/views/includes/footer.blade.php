@@ -90,11 +90,6 @@
     </div>
     <div class="footer-copyright" style="height: auto;">
         <div class="container center">
-            forked from
-            <a class="grey-text text-lighten-3 text-center" href="https://github.com/naveenshaji/material" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i> naveenshaji/material
-            </a>
-            <br>
             © {{ (new \Carbon\Carbon())->year }}
             <a class="yellow-text" href="http://ceit-ssc.ir" target="_blank">Student Scientific Chapter</a>
             of <a class="yellow-text" href="http://ceit.aut.ac.ir/" target="_blank">Computer Engineering and IT Department</a>

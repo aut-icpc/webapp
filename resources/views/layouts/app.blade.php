@@ -22,9 +22,9 @@
         @include('includes.preloader')
         @include('includes.header')
         <a class="darken-2 scrollToTop btn-floating btn-large waves-effect waves-light cyan">
-            <i class="mdi-hardware-keyboard-arrow-up"></i>
+            <i class="material-icons">expand_less</i>
         </a>
-        <div id="page-wrap">
+        <div id="page-wrap" style="height: auto;">
             <div id="main-content">
                 <div id="guts">
                     <div class="container">

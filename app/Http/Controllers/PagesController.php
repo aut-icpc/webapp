@@ -34,7 +34,7 @@ class PagesController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function faq() {
-        $faqs = FAQ::all();
+        $faqs = FAQ::$data;
         return view('pages.faq', ['faqs' => $faqs]);
     }
 
