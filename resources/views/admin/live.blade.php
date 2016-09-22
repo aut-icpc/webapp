@@ -20,8 +20,8 @@
 
                         <span class="title">{{ $post->title }}</span>
                         <p>
-                            Published At: {{ $post->published_at }}<br>
-                            Published By: {{ $post->author()->name }}
+                            Published At: {{ \Carbon\Carbon::createFromTimestamp($post->published_at)->format("r") }}<br>
+                            Published By: {{ $post->author->name }}
                         </p>
                         <a href="#!" class="secondary-content">
                             <i class="material-icons">mode_edit</i>

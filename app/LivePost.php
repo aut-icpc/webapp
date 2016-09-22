@@ -5,6 +5,7 @@ use Carbon\Carbon;
 use Moloquent\Eloquent\Model as Eloquent;
 
 
+
 /**
  * Class LivePost
  * @package App
@@ -20,12 +21,12 @@ class LivePost extends Eloquent
     /**
      * @var array
      */
-    public $fillable = ['title', 'message', 'image', 'RTL'];
+    public $fillable = ['title', 'body', 'image', 'RTL'];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return \Moloquent\Relations\EmbedsOne
      */
     public function author() {
-        return $this->belongsTo('App\User');
+        return $this->embedsOne('App\User');
     }
 }

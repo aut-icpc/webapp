@@ -45,8 +45,11 @@ class HomeController extends Controller
         $post->fill($request->all());
         $now = new Carbon();
         $user = \Auth::user();
-        $post->author()->save($user);
+        $post->author()->associate($user);
         $post->published_at = $now->getTimestamp();
+
+        // TODO: upload the photo and save it somewhere!
+
         $post->save();
         return redirect()->route('app::admin.live');
     }
