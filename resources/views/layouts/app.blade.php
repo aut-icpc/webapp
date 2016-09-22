@@ -24,15 +24,12 @@
         <a class="darken-2 scrollToTop btn-floating btn-large waves-effect waves-light cyan">
             <i class="material-icons">expand_less</i>
         </a>
+        {{--@yield('parallax')--}}
         <div id="page-wrap" style="height: auto;">
-            <div id="main-content">
-                <div id="guts">
-                    <div class="container">
-                        <div class="wrapper cyan-text text-darken-3">
-                            <div id="skrollr-body">
-                                @yield('content')
-                            </div>
-                        </div>
+            <div class="container">
+                <div class="wrapper cyan-text text-darken-3">
+                    <div id="skrollr-body">
+                        @yield('content')
                     </div>
                 </div>
             </div>

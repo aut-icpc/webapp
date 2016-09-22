@@ -1,14 +1,22 @@
 @extends('layouts.app')
 
+@section('parallax')
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="{{ asset('img/icpc.png') }}">
+        </div>
+    </div>
+@endsection
+
 @section('content')
     <div id="non-skrollr">
-        <div class="container-fluid">
+        <div class="container-fluid section">
             <div class="mast">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
                 16th <b>Amirkabir</b> Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br>
-                <h6>Registeration links will be available during  <b>September 15th - November 1st</b>. (following is just a preview)</h6>
+                <h6>Registration links will be available during  <b>September 15th - November 1st</b>. (following is just a preview)</h6>
                 <br>
 
                 <a target="_blank" href="{{ route('app::contest.register') }}">
@@ -21,7 +29,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="details">
             <div class="col s12 m5">
                 <div class="card cyan white-text waves-effect">
                     <div class="card-content">
