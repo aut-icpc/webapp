@@ -63,7 +63,7 @@
 
 
         <div class="container-fluid card cyan z-depth-2 waves-effect waves-light">
-            <a href="http://google.com" target="_blank">
+            <a href="{{ route('app::general.about') }}" target="_blank">
             <div class="cover z-depth-1" style="background-image: url('img/icpc_re.png');">
                 <div class="filter cyan" style="opacity: 0.7;">
                     <div class="cover-text cyan-text text-darken-4">
