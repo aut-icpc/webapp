@@ -61,7 +61,7 @@
             </div>
 
             <div class="col l3 m6 s12">
-                <h5 class="white-text">Social Media</h5>
+                <h5 class="white-text">Social</h5>
                 <ul>
                     <li>
                         <a class="grey-text text-lighten-3" href="https://www.facebook.com/ceit.ssc.official" target="_blank">
