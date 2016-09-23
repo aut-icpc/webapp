@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <form class="col s12 m12 l12" action="{{ route('app::contest.register_post') }}" method="POST">
+    <form name="onsite_register" class="col s12 m12 l12" action="{{ route('app::contest.register_post') }}" method="POST">
     <div id="non-skrollr">
         <div class="row">
             <h3><br>On-Site Contest Registration<br></h3>
@@ -86,15 +86,15 @@
                         </div>
                         <div class="input-field col s3 m3 l3">
                             <input id="mem1-email" name="members[first][email]" type="email" class="validate">
-                            <label for="mem1-email" data-error="Wrong Mail Format" data-success="Correct Mail Format" >Email</label>
+                            <label for="mem1-email">Email</label>
                         </div>
                         <div class="input-field col s2 m2 l2">
                             <input id="mem1-phone" name="members[first][phone]" type="tel" class="validate">
                             <label for="mem1-phone">Phone Number</label>
                         </div>
                         <div class="input-field col s12 m12 l12 center">
-                            <input type="checkbox" value="I do have read and accept the Regional contest rules and AUT local contest rules." name="members[first][agreement]" id="mem1-agreement"/>
-                            <label for="mem1-agreement">I have read and accept <a style="color: #00b0ff;" href="{{ route('app::general.rules') }}">Regional Rules</a> and <a style="color: #00b0ff;" href="{{ route('app::local.rules') }}">Local Rules</a>.</label>
+                            <input type="checkbox" value="I do have read and accept the Regional contest rules and AUT local contest rules." name="members[first][agreement]" id="mem1-agreement" onchange="validateThis(this);"/>
+                            <label for="mem1-agreement" id="mem1-agreement-label">I have read and accept <a style="color: #00b0ff;" href="{{ route('app::general.rules') }}">Regional Rules</a> and <a style="color: #00b0ff;" href="{{ route('app::local.rules') }}">Local Rules</a>.</label>
                         </div>
                     </div>
                     <!-- /Member 1 Info -->
@@ -155,8 +155,8 @@
                             <label for="mem2-phone">Phone Number</label>
                         </div>
                         <div class="input-field col s12 m12 l12 center">
-                            <input type="checkbox" value="I do have read and accept the Regional contest rules and AUT local contest rules." name="members[second][agreement]" id="mem2-agreement"/>
-                            <label for="mem2-agreement">I have read and accept <a style="color: #00b0ff;" href="{{ route('app::general.rules') }}">Regional Rules</a> and <a style="color: #00b0ff;" href="{{ route('app::local.rules') }}">Local Rules</a>.</label>
+                            <input type="checkbox" value="I do have read and accept the Regional contest rules and AUT local contest rules." name="members[second][agreement]" id="mem2-agreement" onchange="validateThis(this);"/>
+                            <label for="mem2-agreement" id="mem2-agreement-label">I have read and accept <a style="color: #00b0ff;" href="{{ route('app::general.rules') }}">Regional Rules</a> and <a style="color: #00b0ff;" href="{{ route('app::local.rules') }}">Local Rules</a>.</label>
                         </div>
                     </div>
                     <!-- Member 2 Info -->
@@ -217,8 +217,8 @@
                             <label for="mem3-phone">Phone Number</label>
                         </div>
                         <div class="input-field col s12 m12 l12 center">
-                            <input type="checkbox" value="I do have read and accept the Regional contest rules and AUT local contest rules." name="members[third][agreement]" id="mem3-agreement"/>
-                            <label for="mem3-agreement">I have read and accept <a style="color: #00b0ff;" href="{{ route('app::general.rules') }}">Regional Rules</a> and <a style="color: #00b0ff;" href="{{ route('app::local.rules') }}">Local Rules</a>.</label>
+                            <input type="checkbox" value="I do have read and accept the Regional contest rules and AUT local contest rules." name="members[third][agreement]" id="mem3-agreement" onchange="validateThis(this);"/>
+                            <label for="mem3-agreement" id="mem3-agreement-label">I have read and accept <a style="color: #00b0ff;" href="{{ route('app::general.rules') }}">Regional Rules</a> and <a style="color: #00b0ff;" href="{{ route('app::local.rules') }}">Local Rules</a>.</label>
                         </div>
                     </div>
                     <!-- Member 3 Info -->
@@ -240,9 +240,167 @@
 @endsection
 
 @push('scripts')
+    <script type="text/javascript" src="{{ asset('js/validate.js') }}"></script>
     <script>
+        debugger;
         $(document).ready(function() {
             $('select').material_select();
         });
+
+        var constraints = [
+            // Team Information
+            {
+                name: 'team_name',
+                display: 'Team Name',
+                rules: 'required'
+            },
+            {
+                name: 'institute_name',
+                display: 'Institution Name',
+                rules: 'required'
+            },
+            {
+                name: 'site',
+                display: 'Site',
+                rules: 'required'
+            },
+            // Contestant #1
+            {
+                name: 'members[first][first_name]',
+                display: 'First Contestant\'s First Name',
+                rules: 'required'
+            },
+            {
+                name: 'members[first][last_name]',
+                display: 'First Contestant\'s Last Name',
+                rules: 'required'
+            },
+            {
+                name: 'members[first][gender]',
+                display: 'First Contestant\'s Gender',
+                rules: 'required'
+            },
+            {
+                name: 'members[first][student_number]',
+                display: 'First Contestant\'s Student Number',
+                rules: 'required'
+            },
+            {
+                name: 'members[first][degree]',
+                display: 'First Contestant\'s Degree',
+                rules: 'required'
+            },
+            {
+                name: 'members[first][email]',
+                display: 'First Contestant\'s Email Address',
+                rules: 'required|valid_email'
+            },
+            {
+                name: 'members[first][phone]',
+                display: 'First Contestant\'s Phone Number',
+                rules: 'required'
+            },
+            {
+                name: 'members[first][agreement]',
+                display: 'First Contestant\'s Agreement',
+                rules: 'required'
+            },
+            // Contestant #2
+            {
+                name: 'members[second][first_name]',
+                display: 'Second Contestant\'s First Name',
+                rules: 'required'
+            },
+            {
+                name: 'members[second][last_name]',
+                display: 'Second Contestant\'s Last Name',
+                rules: 'required'
+            },
+            {
+                name: 'members[second][gender]',
+                display: 'Second Contestant\'s Gender',
+                rules: 'required'
+            },
+            {
+                name: 'members[second][student_number]',
+                display: 'Second Contestant\'s Student Number',
+                rules: 'required'
+            },
+            {
+                name: 'members[second][degree]',
+                display: 'Second Contestant\'s Degree',
+                rules: 'required'
+            },
+            {
+                name: 'members[second][email]',
+                display: 'Second Contestant\'s Email Address',
+                rules: 'required|valid_email'
+            },
+            {
+                name: 'members[second][phone]',
+                display: 'Second Contestant\'s Phone Number',
+                rules: 'required'
+            },
+            {
+                name: 'members[second][agreement]',
+                display: 'Second Contestant\'s Agreement',
+                rules: 'required'
+            },
+            // Contestant #3
+            {
+                name: 'members[third][first_name]',
+                display: 'Third Contestant\'s First Name',
+                rules: 'required'
+            },
+            {
+                name: 'members[third][last_name]',
+                display: 'Third Contestant\'s Last Name',
+                rules: 'required'
+            },
+            {
+                name: 'members[third][gender]',
+                display: 'Third Contestant\'s Gender',
+                rules: 'required'
+            },
+            {
+                name: 'members[third][student_number]',
+                display: 'Third Contestant\'s Student Number',
+                rules: 'required'
+            },
+            {
+                name: 'members[third][degree]',
+                display: 'Third Contestant\'s Degree',
+                rules: 'required'
+            },
+            {
+                name: 'members[third][email]',
+                display: 'Third Contestant\'s Email Address',
+                rules: 'required|valid_email'
+            },
+            {
+                name: 'members[third][phone]',
+                display: 'Third Contestant\'s Phone Number',
+                rules: 'required'
+            },
+            {
+                name: 'members[third][agreement]',
+                display: 'Third Contestant\'s Agreement',
+                rules: 'required'
+            }
+        ];
+        var validator = new FormValidator('onsite_register', constraints, function (errors, event) {
+            errors.forEach(function (anError) {
+                if (anError.id.includes("agreement")){
+                    $('#'+anError.id+'-label').css('color', 'red');
+                }
+                else {
+                    $('#'+anError.id).addClass('invalid');
+                }
+            });
+        });
+
+        function validateThis(element) {
+            $('#'+element.id+'-label').css('color', '');
+        }
     </script>
 @endpush

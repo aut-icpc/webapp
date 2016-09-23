@@ -62,13 +62,63 @@ class HomeController extends Controller
 
     }
 
+    /** Edit LiveBlog Post item
+     *
+     * @param Request $request
+     * @param LivePost $post
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function editPost (Request $request, LivePost $post) {
         $post->fill($request->all());
         $post->save();
         return redirect()->route('app::admin.live');
     }
 
+    /** List all the registrations
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showRegistrations () {
-        return view('admin.registrations');
+        $data = OnsiteRegistration::all();
+        return view('admin.registrations', ['data' => $data]);
+    }
+
+    /** Show the Registration edit form
+     *
+     * @param OnsiteRegistration $team
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showEditRegistrationForm(OnsiteRegistration $team) {
+        return view('contest.edit', ['team' => $team]);
+    }
+
+    /** Edit and save the registration information and status
+     *
+     * @param Request $request
+     * @param OnsiteRegistration $team
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function saveRegistration(Request $request, OnsiteRegistration $team) {
+        $team->fill($request->all());
+        $status = $request->get('status');
+        switch ($status){
+            case (OnsiteRegistration::$PENDING['status']) :
+                $team->status = OnsiteRegistration::$PENDING;
+                break;
+
+            case (OnsiteRegistration::$PAID['status']) :
+                $team->status = OnsiteRegistration::$PAID;
+                break;
+
+            case (OnsiteRegistration::$APPROVED['status']) :
+                $team->status = OnsiteRegistration::$APPROVED;
+                break;
+
+            case (OnsiteRegistration::$REJECTED['status']) :
+                $team->status = OnsiteRegistration::$REJECTED;
+                break;
+        }
+        $team->save();
+        return redirect()->route('app::admin.registrations.show');
     }
 }

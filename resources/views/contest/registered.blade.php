@@ -3,31 +3,25 @@
 @section('content')
     <div class="non-skrollr">
         <div class="row">
-            <h4>Thanks for your registration :)</h4>
+            <br>
+            <h4>Registered Teams</h4>
             <p>
-                Here is the information you gave us.
+                Here is the list of registered teams.
             </p>
-            <div class="col s12 m12 l12">
-                <div class="card cyan darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Team Information</span>
-                        <p>
-                            Team Name: {{$data->team_name}} <br>
-                            Institution: {{$data->institute_name}} <br>
-                            Team Location During Contest: {{$data->site}} <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            @foreach($data->members as $member)
-                <div class="col s4 m4 l4">
-                    <div class="card cyan">
-                        <div class="card-content white-text">
-                            <span class="card-title">Amirkabir ACM ICPC 2016</span>
+            @foreach($data as $record)
+                <div class="col s6 m6 l6">
+                    <div class="card {{ $record->status['style'] }}">
+                        <div class="card-content">
+                            <span class="card-title">{{ $record->status['status'] }}</span>
                             <p>
-                                Full Name: {{$member['first_name'] . ' ' . $member['last_name']}} <br>
-                                Gender: {{$member['gender']}} <br>
-                                Email: {{$member['email']}} <br>
+                                Team Name: <b>{{$record->team_name}}</b> <br>
+                                Institution: <b>{{$record->institute_name}}</b><br>
+                                Team Location: <b>{{$record->site}}</b><br>
+                            </p>
+                            <p>
+                                Contestant #1: <b>{{$record->members['first']['first_name'] . ' ' . $record->members['first']['last_name']}}</b><br>
+                                Contestant #2: <b>{{$record->members['second']['first_name'] . ' ' . $record->members['second']['last_name']}}</b><br>
+                                Contestant #3: <b>{{$record->members['third']['first_name'] . ' ' . $record->members['third']['last_name']}}</b><br>
                             </p>
                         </div>
                     </div>

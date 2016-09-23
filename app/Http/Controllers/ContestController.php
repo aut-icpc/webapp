@@ -21,10 +21,18 @@ class ContestController extends Controller
 
     public function saveOnSiteRegistration(Request $request){
         $registration = new OnsiteRegistration($request->all());
+        $registration->status = OnsiteRegistration::$PENDING;
         $saved = $registration->save();
         // TODO : add additional variables like email activation and so...
         if ($saved)
-            return view('contest.registered', ['data' => $registration]);
+            return redirect()->route('app::contest.registered');
+        else
+            return redirect()->back();
+    }
+
+    public function showContestRegisteredTeams() {
+        $data = OnsiteRegistration::all();
+        return view('contest.registered', ['data' => $data]);
     }
 
     public function saveOnlineContestSubmission(Request $request) {
@@ -34,5 +42,7 @@ class ContestController extends Controller
         // TODO : add additional variables like email activation and so...
         if ($saved)
             return view();
+        else
+            redirect()->back();
     }
 }
