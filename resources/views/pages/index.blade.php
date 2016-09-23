@@ -12,6 +12,7 @@
     <div id="non-skrollr">
         <div class="container-fluid section">
             <div class="mast">
+                <img class="responsive-img" src="{{ asset('img/aut_icpc.png') }}">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
                 16th <b>Amirkabir</b> Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology

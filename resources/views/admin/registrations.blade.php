@@ -18,7 +18,7 @@
                                 Institution: <b>{{$team->institute_name}}</b><br>
                                 Team Location: <b>{{$team->site}}</b><br>
                             </p>
-                            <h6><b>Contestant #1</b></h6>
+                            <h6 class="teal-text darken-4"><b>Contestant #1</b></h6>
                             <p>
                                 Full Name: <b>{{$team->members['first']['first_name'] . ' ' . $team->members['first']['last_name']}}</b><br>
                                 Gender: <b>{{$team->members['first']['gender']}}</b><br>
@@ -27,7 +27,7 @@
                                 Phone: <b>{{$team->members['first']['phone']}}</b><br>
                                 T-Shirt Size: <b>{{$team->members['first']['t-shirt_size']}}</b>
                             </p>
-                            <h6><b>Contestant #2</b></h6>
+                            <h6 class="teal-text darken-4"><b>Contestant #2</b></h6>
                             <p>
                                 Full Name: <b>{{$team->members['second']['first_name'] . ' ' . $team->members['second']['last_name']}}</b><br>
                                 Gender: <b>{{$team->members['second']['gender']}}</b><br>
@@ -36,7 +36,7 @@
                                 Phone: <b>{{$team->members['second']['phone']}}</b><br>
                                 T-Shirt Size: <b>{{$team->members['second']['t-shirt_size']}}</b>
                             </p>
-                            <h6><b>Contestant #3</b></h6>
+                            <h6 class="teal-text darken-4"><b>Contestant #3</b></h6>
                             <p>
                                 Full Name: <b>{{$team->members['third']['first_name'] . ' ' . $team->members['third']['last_name']}}</b><br>
                                 Gender: <b>{{$team->members['third']['gender']}}</b><br>

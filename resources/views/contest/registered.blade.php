@@ -18,11 +18,11 @@
                                 Institution: <b>{{$record->institute_name}}</b><br>
                                 Team Location: <b>{{$record->site}}</b><br>
                             </p>
-                            <p>
-                                Contestant #1: <b>{{$record->members['first']['first_name'] . ' ' . $record->members['first']['last_name']}}</b><br>
-                                Contestant #2: <b>{{$record->members['second']['first_name'] . ' ' . $record->members['second']['last_name']}}</b><br>
-                                Contestant #3: <b>{{$record->members['third']['first_name'] . ' ' . $record->members['third']['last_name']}}</b><br>
-                            </p>
+                            {{--<p>--}}
+                                {{--Contestant #1: <b>{{$record->members['first']['first_name'] . ' ' . $record->members['first']['last_name']}}</b><br>--}}
+                                {{--Contestant #2: <b>{{$record->members['second']['first_name'] . ' ' . $record->members['second']['last_name']}}</b><br>--}}
+                                {{--Contestant #3: <b>{{$record->members['third']['first_name'] . ' ' . $record->members['third']['last_name']}}</b><br>--}}
+                            {{--</p>--}}
                         </div>
                     </div>
                 </div>
