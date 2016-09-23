@@ -20,8 +20,8 @@
                 <h6>Registration links will be available during  <b>September 15th - November 1st</b>. (following is just a preview)</h6>
                 <br>
 
-                <a target="_blank" href="{{ route('app::contest.register') }}">
-                    <button class="btn darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration
+                <a href="{{ route('app::contest.register') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration
                         <i class="material-icons right">supervisor_account</i>
                     </button>
                 </a>
