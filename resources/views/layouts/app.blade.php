@@ -11,7 +11,7 @@
 
         <!-- Global Styles -->
         <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/materialize.min.css') }}" media="screen,projection" />
-        <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         @stack('styles')
 
