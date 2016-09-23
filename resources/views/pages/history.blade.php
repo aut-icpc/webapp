@@ -10,7 +10,7 @@
                     <div class="hliner"></div>
                     <h5>Introduction  </h5>
                     <p>Association for Computing  Machinery (ACM) has begun to work since 1947. The Association started to hold  International Collegiate Programming Contest (ICPC) at 1977. This Competition  gradually became more important and universities all over the world began to  participate at it. See growth of the competition below.</p>
-                    <p></p><center><img src="{{ asset('img/history/chart.jpg') }}" alt="Growth of Competetion" width="628" height="320"></center><br>
+                    <p></p><center><img class="responsive-img" src="{{ asset('img/history/chart.jpg') }}" alt="Growth of Competetion" width="628" height="320"></center><br>
                     <span dir="rtl"> </span><p></p>
                     <div class="hliner"></div>
                     <h5>ICPC in Iran</h5>
@@ -87,8 +87,8 @@
                         </tbody></table>
                     <p>Dreamers United composed  of Hadi Moshayedi, Hossein Azizpour, and Mohammad Reza Khani coached by Babak  Behsaz achieving 3rd<span dir="rtl"> </span><span dir="rtl"><span dir="rtl"> </span></span>rank qualified for the world final.  Moreover, some teams from Sharif UT, and Nanyang University (achieving  respectively 2nd and 3rd rank) also qualified for the world  final from Tehran Site.<br>
                         From 6,099 teams selected  from 1,756 universities in 82 countries competing at 205 sites and hundreds  more competing at preliminary contests worldwide, eighty-eight teams of  students competed for bragging rights and prizes at The 31st Annual ACM  International Collegiate Programming Contest World Finals sponsored by IBM on  March 15, 2007, and hosted by ACM Japan Chapter and IBM Tokyo Research Lab.  Sharif UT by solving 5 problems and Amirkabir UT by solving 4 problems  accomplished to win 14th and 26th place respectively.</p>
-                    <center><img src="{{ asset('img/history/06-07.jpg') }}" alt="" width="628" height="420"></center>
-                    <p></p><center><img src="{{ asset('img/history/06-07-2.jpg') }}" alt="" width="628" height="420"></center><br>
+                    <center><img class="responsive-img" src="{{ asset('img/history/06-07.jpg') }}" alt="" width="628" height="420"></center>
+                    <p></p><center><img class="responsive-img" src="{{ asset('img/history/06-07-2.jpg') }}" alt="" width="628" height="420"></center><br>
                     <br>
                     <br>
                     Warsaw University by  solving 8 problems was champion.<br>
@@ -165,9 +165,9 @@
                     </p>
                     <p>
                     </p><center>
-                        <img src="{{ asset('img/history/04-05.jpg') }}" alt="" width="628" height="420"></center>
+                        <img class="responsive-img" src="{{ asset('img/history/04-05.jpg') }}" alt="" width="628" height="420"></center>
                     <p></p>
-                    <p></p><center><img src="{{ asset('img/history/04-05-2.jpg') }}" alt="" width="628" height="420"></center><br>
+                    <p></p><center><img class="responsive-img" src="{{ asset('img/history/04-05-2.jpg') }}" alt="" width="628" height="420"></center><br>
                     <span dir="rtl"> </span><br>
                     Here is final <a href="http://icpc.baylor.edu/past/icpc2005/Finals/Standings.html">rank list</a>.<p></p>
                     <p>&nbsp;</p>
@@ -249,7 +249,7 @@
                     <h5>1999 – 2000</h5>
                     <p>There were 78 teams in  West Asian Regional Contest which was the first time in Iran. Amirkabir UT team  number one by solving 4 problems with better penalty comparing with Iran  University of Science and Technology advanced to the world final. Moreover, one  of the Sharif UT teams by solving 8 problems became the champion and advanced  to the world final. Sara Ramezani, Vahid Ghaffarpour, and Vahid Hashemi were  team members of our University.<br>
                         Sixty teams of students  from 2,400 teams representing universities and colleges in six continents  competed for bragging rights, prizes, and the opportunity to advance to the  World Finals of The 24th Annual ACM International Collegiate Programming  Contest sponsored by IBM. The 2000 ACM World Finals was held on March 18, 2000,  at Orlando, Florida.</p>
-                    <center><img src="{{ asset('img/history/99-00.jpg') }}" alt="" width="628" height="503"></center><br>
+                    <center><img class="responsive-img" src="{{ asset('img/history/99-00.jpg') }}" alt="" width="628" height="503"></center><br>
                     <br>
                     Both Amirkabir UT and Sharif UT became Honorable Mention and St.  Petersburg State University was Champion.
                     <!-- InstanceEndEditable -->
