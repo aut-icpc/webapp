@@ -1,23 +1,18 @@
-{{--@if(Auth::check())--}}
-    {{--<ul id="auth_dropdown" class="dropdown-content">--}}
-        {{--<li>--}}
-            {{--<a href="{{ route('app::admin') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">--}}
-                {{--{{ Auth::user()->name }} <span class="caret"></span>--}}
-            {{--</a>--}}
-        {{--</li>--}}
-        {{--<li>--}}
-            {{--<a href="{{ url('/logout') }}"--}}
-               {{--onclick="event.preventDefault();--}}
-                                                 {{--document.getElementById('logout-form').submit();">--}}
-                {{--Logout--}}
-            {{--</a>--}}
-
-            {{--<form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">--}}
-                {{--{{ csrf_field() }}--}}
-            {{--</form>--}}
-        {{--</li>--}}
-    {{--</ul>--}}
-{{--@endif--}}
+@if(Auth::check())
+    <ul id="admin_dropdown" class="dropdown-content">
+        <li><a href="{{ route('app::admin') }}">Home</a></li>
+        <li>
+            <a href="{{ url('/logout') }}"
+               onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                Logout
+            </a>
+            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
+        </li>
+    </ul>
+@endif
 <header class="site-header">
     <div class="navbar-fixed">
         <nav class="cyan darken-2 waves-effect waves-light">
@@ -38,9 +33,7 @@
                             <a href="{{ route('app::live.feed') }}">Live Blog!</a>
                         </li>
                         @if(Auth::check())
-                            <li>
-                                <a href="{{ route('app::admin') }}">Administration</a>
-                            </li>
+                            <li><a class="dropdown-button" href="#!" data-activates="admin_dropdown">Adminstration<i class="material-icons right">arrow_drop_down</i></a></li>
                         @endif
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
