@@ -36,7 +36,7 @@
                     <div class="card-content">
                         <span class="card-title">Timings</span>
                         <p>Registration Dates</p>
-                        <p style="font-size: 33px;">October 22 - November 01, 2016</p>
+                        <p style="font-size: 33px;">October 15 - October 28, 2016</p>
                         <hr>
                         <p>Orientation Day</p>
                         <p style="font-size: 33px;">November 02, 2016</p>
