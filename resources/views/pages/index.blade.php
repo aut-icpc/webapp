@@ -17,7 +17,7 @@
                 <h4>Amirkabir University of Technology</h4>
                 16th <b>Amirkabir</b> Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br>
-                <h6>Registration links will be available during  <b>September 15th - November 1st</b></h6>
+                <h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>
                 <br>
 
                 {{--<a href="{{ route('app::contest.register') }}">--}}
