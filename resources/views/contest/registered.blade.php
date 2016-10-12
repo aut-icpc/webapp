@@ -7,6 +7,8 @@
             <h4>Registered Teams</h4>
             <p>
                 Here is the list of registered teams.
+                <br>
+                If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.
             </p>
             @foreach($data as $record)
                 <div class="col s6 m6 l6">

@@ -25,12 +25,12 @@
                             <label for="institute-name">Institution</label>
                         </div>
                         <div class="input-field col s4 m4 l4">
-                            <select name="site" class="icons">
-                                <option value="" disabled selected>Select your site</option>
-                                <option value="Tehran" data-icon="{{ URL::asset('img/tehran.png') }}" class="left circle">Tehran</option>
-                                <option value="Munich" data-icon="{{ URL::asset('img/munich.png') }}" class="left circle">München</option>
-                                <option value="Paris" data-icon="{{ URL::asset('img/paris.jpg') }}" class="left circle">Paris</option>
-                                <option value="Madrid" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle">Another city and so on ...</option>
+                            <select name="site" class="icons" onchange="changeCountry(this);">
+                                <option value="" disabled>Select your country</option>
+                                <option value="Iran" data-icon="{{ URL::asset('img/iran.png') }}" class="left circle" selected>Iran</option>
+                                <option value="Sweden" data-icon="{{ URL::asset('img/sweden.png') }}" class="left circle">Sweden</option>
+                                <option value="Poland" data-icon="{{ URL::asset('img/poland.png') }}" class="left circle">Poland</option>
+                                <option value="Other" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle">Other</option>
                             </select>
                             <label>Where the team solves the problems</label>
                         </div>
@@ -52,32 +52,32 @@
                         </div>
                         <div class="input-field col s4 m4 l4">
                             <select name="members[first][gender]" id="mem1-gender">
-                                <option value="" disabled selected>Gender</option>
-                                <option value="male">Male</option>
+                                <option value="" disabled>Gender</option>
+                                <option value="male" selected>Male</option>
                                 <option value="female">Female</option>
                             </select>
                             <label>Gender</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s2 m2 l2" id="mem1-student-number-wrapper">
                             <input type="text" name="members[first][student_number]" id="mem1-student-number" class="validate">
                             <label for="mem1-student-number">Student Number</label>
                         </div>
                         <div class="input-field col s3 m3 l3">
                             <select name="members[first][degree]" id="mem1-degree">
-                                <option value="" disabled selected>Current educational level</option>
-                                <option value="BSc.">BSc.</option>
+                                <option value="" disabled>Current educational level</option>
+                                <option value="BSc." selected>BSc.</option>
                                 <option value="MSc.">MSc.</option>
                             </select>
                             <label>Current Educational Level</label>
                         </div>
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s2 m2 l2" id="mem1-size-wrapper">
                             <select name="members[first][t-shirt_size]" id="mem1-size">
-                                <option value="" disabled selected>Select Size</option>
+                                <option value="" disabled>Select Size</option>
                                 <option value="3X Large">3X Large</option>
                                 <option value="2X Large">2X Large</option>
-                                <option value="X Large">X Large</option>
+                                <option value="X Large" selected>X Large</option>
                                 <option value="Large">Large</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Small">Small</option>
@@ -114,32 +114,32 @@
                         </div>
                         <div class="input-field col s4 m4 l4">
                             <select name="members[second][gender]" id="mem2-gender">
-                                <option value="" disabled selected>Gender</option>
-                                <option value="male">Male</option>
+                                <option value="" disabled>Gender</option>
+                                <option value="male" selected>Male</option>
                                 <option value="female">Female</option>
                             </select>
                             <label>Gender</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s2 m2 l2" id="mem2-student-number-wrapper">
                             <input type="text" name="members[second][student_number]" id="mem2-student-number" class="validate">
                             <label for="mem2-second-name">Student Number</label>
                         </div>
                         <div class="input-field col s3 m3 l3">
                             <select name="members[second][degree]" id="mem2-degree">
-                                <option value="" disabled selected>Current educational level</option>
-                                <option value="BSc.">BSc.</option>
+                                <option value="" disabled>Current educational level</option>
+                                <option value="BSc." selected>BSc.</option>
                                 <option value="MSc.">MSc.</option>
                             </select>
                             <label>Current Educational Level</label>
                         </div>
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s2 m2 l2" id="mem2-size-wrapper">
                             <select name="members[second][t-shirt_size]" id="mem2-size">
-                                <option value="" disabled selected>Select Size</option>
+                                <option value="" disabled>Select Size</option>
                                 <option value="3X Large">3X Large</option>
                                 <option value="2X Large">2X Large</option>
-                                <option value="X Large">X Large</option>
+                                <option value="X Large" selected>X Large</option>
                                 <option value="Large">Large</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Small">Small</option>
@@ -176,32 +176,32 @@
                         </div>
                         <div class="input-field col s4 m4 l4">
                             <select name="members[third][gender]" id="mem3-gender">
-                                <option value="" disabled selected>Gender</option>
-                                <option value="male">Male</option>
+                                <option value="" disabled>Gender</option>
+                                <option value="male" selected>Male</option>
                                 <option value="female">Female</option>
                             </select>
                             <label>Gender</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s2 m2 l2" id="mem3-student-number-wrapper">
                             <input type="text" name="members[third][student_number]" id="mem3-student-number" class="validate">
                             <label for="mem3-third-name">Student Number</label>
                         </div>
                         <div class="input-field col s3 m3 l3">
                             <select name="members[third][degree]" id="mem3-degree">
-                                <option value="" disabled selected>Current educational level</option>
-                                <option value="BSc.">BSc.</option>
+                                <option value="" disabled>Current educational level</option>
+                                <option value="BSc." selected>BSc.</option>
                                 <option value="MSc.">MSc.</option>
                             </select>
                             <label>Current Educational Level</label>
                         </div>
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s2 m2 l2" id="mem3-size-wrapper">
                             <select name="members[third][t-shirt_size]" id="mem3-size">
-                                <option value="" disabled selected>Select Size</option>
+                                <option value="" disabled>Select Size</option>
                                 <option value="3X Large">3X Large</option>
                                 <option value="2X Large">2X Large</option>
-                                <option value="X Large">X Large</option>
+                                <option value="X Large" selected>X Large</option>
                                 <option value="Large">Large</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Small">Small</option>
@@ -280,11 +280,11 @@
                 display: 'First Contestant\'s Gender',
                 rules: 'required'
             },
-            {
-                name: 'members[first][student_number]',
-                display: 'First Contestant\'s Student Number',
-                rules: 'required'
-            },
+//            {
+//                name: 'members[first][student_number]',
+//                display: 'First Contestant\'s Student Number',
+//                rules: 'required'
+//            },
             {
                 name: 'members[first][degree]',
                 display: 'First Contestant\'s Degree',
@@ -298,7 +298,7 @@
             {
                 name: 'members[first][phone]',
                 display: 'First Contestant\'s Phone Number',
-                rules: 'required'
+                rules: 'required|numeric'
             },
             {
                 name: 'members[first][agreement]',
@@ -321,11 +321,11 @@
                 display: 'Second Contestant\'s Gender',
                 rules: 'required'
             },
-            {
-                name: 'members[second][student_number]',
-                display: 'Second Contestant\'s Student Number',
-                rules: 'required'
-            },
+//            {
+//                name: 'members[second][student_number]',
+//                display: 'Second Contestant\'s Student Number',
+//                rules: 'required'
+//            },
             {
                 name: 'members[second][degree]',
                 display: 'Second Contestant\'s Degree',
@@ -339,7 +339,7 @@
             {
                 name: 'members[second][phone]',
                 display: 'Second Contestant\'s Phone Number',
-                rules: 'required'
+                rules: 'required|numeric'
             },
             {
                 name: 'members[second][agreement]',
@@ -362,11 +362,11 @@
                 display: 'Third Contestant\'s Gender',
                 rules: 'required'
             },
-            {
-                name: 'members[third][student_number]',
-                display: 'Third Contestant\'s Student Number',
-                rules: 'required'
-            },
+//            {
+//                name: 'members[third][student_number]',
+//                display: 'Third Contestant\'s Student Number',
+//                rules: 'required'
+//            },
             {
                 name: 'members[third][degree]',
                 display: 'Third Contestant\'s Degree',
@@ -380,7 +380,7 @@
             {
                 name: 'members[third][phone]',
                 display: 'Third Contestant\'s Phone Number',
-                rules: 'required'
+                rules: 'required|numeric'
             },
             {
                 name: 'members[third][agreement]',
@@ -401,6 +401,26 @@
 
         function validateThis(element) {
             $('#'+element.id+'-label').css('color', '');
+        }
+
+        function changeCountry(element) {
+            debugger;
+            var country = $(element).val();
+            if (country != 'Iran'){
+                $('#mem1-student-number-wrapper').hide();
+                $('#mem2-student-number-wrapper').hide();
+                $('#mem3-student-number-wrapper').hide();
+                $('#mem1-size-wrapper').hide();
+                $('#mem2-size-wrapper').hide();
+                $('#mem3-size-wrapper').hide();
+            } else {
+                $('#mem1-student-number-wrapper').show();
+                $('#mem2-student-number-wrapper').show();
+                $('#mem3-student-number-wrapper').show();
+                $('#mem1-size-wrapper').show();
+                $('#mem2-size-wrapper').show();
+                $('#mem3-size-wrapper').show();
+            }
         }
     </script>
 @endpush

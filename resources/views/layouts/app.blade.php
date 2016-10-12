@@ -14,9 +14,7 @@
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         @stack('styles')
-
         <script src='https://www.google.com/recaptcha/api.js'></script>
-
     </head>
     <body class="cyan lighten-5">
         @include('includes.preloader')
@@ -46,6 +44,11 @@
         <script type="text/javascript" src="{{ URL::asset('js/modernizr.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/materialize.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.parallax').parallax();
+            });
+        </script>
         @stack('scripts')
     </body>
 </html>

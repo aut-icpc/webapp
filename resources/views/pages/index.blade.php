@@ -16,27 +16,31 @@
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
                 16th <b>Amirkabir</b> Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
-                <br>
-                <h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>
+                <br> <br>
+                In Association With: <br>
+                <img class="responsive-img" style="width: 10%; margin: 30px;" src="{{ asset('img/kth.png') }}">
+                <img class="responsive-img" style="width: 10%; margin: 30px;" src="{{ asset('img/jg.png') }}">
+                {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 <br>
 
-                {{--<a href="{{ route('app::contest.register') }}">--}}
-                    {{--<button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration--}}
-                        {{--<i class="material-icons right">supervisor_account</i>--}}
-                    {{--</button>--}}
-                {{--</a>--}}
+                <a href="{{ route('app::contest.register') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration
+                        <i class="material-icons right">supervisor_account</i>
+                    </button>
+                </a>
                 <br>
-                <i class="material-icons" style="font-size: 200px;">arrow_drop_down</i>
+                <br>
+                <br>
             </div>
         </div>
 
         <div class="row" id="details">
             <div class="col s12 m5">
-                <div class="card cyan white-text waves-effect">
+                <div class="card cyan darken-2 white-text waves-effect">
                     <div class="card-content">
                         <span class="card-title">Timings</span>
                         <p>Registration Dates</p>
-                        <p style="font-size: 33px;">October 15 - October 28, 2016</p>
+                        <p style="font-size: 33px;">October 13 - October 28, 2016</p>
                         <hr>
                         <p>Orientation Day</p>
                         <p style="font-size: 33px;">November 02, 2016</p>
@@ -48,7 +52,7 @@
                 </div>
             </div>
             <div class="col s12 m7">
-                <div class="card cyan white-text waves-effect">
+                <div class="card cyan darken-2 white-text waves-effect">
                     <div class="card-content">
                         <span class="card-title">Important Notes</span>
                         <ol>
@@ -68,61 +72,59 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="container-fluid card cyan z-depth-2 waves-effect waves-light">
-            <a href="{{ route('app::general.about') }}" target="_blank">
-            <div class="cover z-depth-1" style="background-image: url('img/icpc_re.png');">
-                <div class="filter cyan" style="opacity: 0.7;">
-                    <div class="cover-text cyan-text text-darken-4">
-                        <span style="font-size: 50px;">< think, solve, balloon /></span>
-                    </div>
-                </div>
+            <div class="col s12 m7 center">
+                <a href="{{ route('app::contest.registered') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">View Registered Teams' List
+                        <i class="material-icons right">supervisor_account</i>
+                    </button>
+                </a>
             </div>
-            <div class="card-content white-text">
-                <div class="card-title">
-                    <h4>About ACM ICPC</h4>
-                </div>
-                Every year since 1977, the ACM has organized the ACM International Collegiate Programming Contest.
-                This contest, which consists of a regional qualifying contest and the Finals, provides college students
-                with the opportunity to demonstrate and sharpen their programming skills. During this contest, teams
-                consisting of three students and one computer are to solve as many of the given problems as possible
-                within 5 hours. The team with the most problems solved wins, where ``solved'' means producing the right
-                outputs for a set of (secret) test inputs. Though the individual skills of the team members are important,
-                in order to be a top team it is necessary to make use of synergy within the team. there are three factors
-                crucial for being a good programming team:
-                <br>
-                <br>
-                <li>Knowledge of standard algorithms and the ability to find an appropriate algorithm for every problem
-                    in the set</li> <br>
-                <li>Ability to code an algorithm into a working program</li> <br>
-                <li>Having a strategy of cooperation with your teammates</li> <br> <br>
-
-                For the first three categories, standard algorithms are well documented in the literature, and you should
-                program these algorithms beforehand and take the listings with you to the contest. In this way, you can
-                avoid making the same (small) mistakes repeatedly and you can concentrate on the difficult aspects of
-                the problem.
-                <br> <br>
-
-                Another angle of practice is efficient programming. This does not mean type as fast as you can and
-                subsequently spend a lot of time debugging. Instead, think carefully about the problem and all the cases
-                which might occur. Then program your algorithm, and take the time to ensure that you get it right the
-                first time with a minimum amount of debugging, since debugging usually takes a lot of valuable time.
-                <br> <br>
-
-                To become a team, it is important that you play a lot of training contests under circumstances which are
-                as close to the real contest as possible: Five hours, one computer, a new set of problems each time, and
-                a jury to judge your programs.
-                <br> <br>
-                This website tries to lead you in the way of becomming a good icpc contestant.
-
-            </div>
-            </a>
         </div>
 
         <div class="row">
+            <div class="col s12 m12 l12">
+                <a href="{{ route('app::general.about') }}">
+                    <div class="card cyan white-text waves-effect">
+                    <div class="card-content">
+                        <span class="card-title">About ACM ICPC</span>
+                        <p>
+                            Every year since 1977, the ACM has organized the ACM International Collegiate Programming Contest.
+                            This contest, which consists of a regional qualifying contest and the Finals, provides college students
+                            with the opportunity to demonstrate and sharpen their programming skills. During this contest, teams
+                            consisting of three students and one computer are to solve as many of the given problems as possible
+                            within 5 hours. The team with the most problems solved wins, where ``solved'' means producing the right
+                            outputs for a set of (secret) test inputs. Though the individual skills of the team members are important,
+                            in order to be a top team it is necessary to make use of synergy within the team. there are three factors
+                            crucial for being a good programming team:
+                            <br>
+                            <br>
+                        <li>Knowledge of standard algorithms and the ability to find an appropriate algorithm for every problem
+                            in the set</li> <br>
+                        <li>Ability to code an algorithm into a working program</li> <br>
+                        <li>Having a strategy of cooperation with your teammates</li> <br> <br>
 
+                        For the first three categories, standard algorithms are well documented in the literature, and you should
+                        program these algorithms beforehand and take the listings with you to the contest. In this way, you can
+                        avoid making the same (small) mistakes repeatedly and you can concentrate on the difficult aspects of
+                        the problem.
+                        <br> <br>
+
+                        Another angle of practice is efficient programming. This does not mean type as fast as you can and
+                        subsequently spend a lot of time debugging. Instead, think carefully about the problem and all the cases
+                        which might occur. Then program your algorithm, and take the time to ensure that you get it right the
+                        first time with a minimum amount of debugging, since debugging usually takes a lot of valuable time.
+                        <br> <br>
+
+                        To become a team, it is important that you play a lot of training contests under circumstances which are
+                        as close to the real contest as possible: Five hours, one computer, a new set of problems each time, and
+                        a jury to judge your programs.
+                        <br> <br>
+                        This website tries to lead you in the way of becomming a good icpc contestant.
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
             {{--<h1><br>-get-started-<br></h1>--}}
             {{--<div class="container-fluid">--}}
                 {{--There are 7 simple steps to get your website up and running using material. Keep scrolling to see em'. The steps mentioned here have been explained in order to cater to n00bs. If you think you are pro, then scroll faster. xP--}}
@@ -375,3 +377,11 @@
         {{--</div>--}}
     {{--</div>--}}
 @endsection
+
+@push('scripts')
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('ul.tabs').tabs();
+    });
+</script>
+@endpush
