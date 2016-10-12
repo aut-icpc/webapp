@@ -15,7 +15,7 @@
                 <img class="responsive-img" style="width: 60%;" src="{{ asset('img/aut_icpc.png') }}">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                16th <b>Amirkabir</b> Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
+                16th <b>Amirkabir</b> International Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br> <br>
                 In Association With: <br>
                 <img class="responsive-img" style="width: 10%; margin: 30px;" src="{{ asset('img/kth.png') }}">
@@ -93,33 +93,7 @@
                             with the opportunity to demonstrate and sharpen their programming skills. During this contest, teams
                             consisting of three students and one computer are to solve as many of the given problems as possible
                             within 5 hours. The team with the most problems solved wins, where ``solved'' means producing the right
-                            outputs for a set of (secret) test inputs. Though the individual skills of the team members are important,
-                            in order to be a top team it is necessary to make use of synergy within the team. there are three factors
-                            crucial for being a good programming team:
-                            <br>
-                            <br>
-                        <li>Knowledge of standard algorithms and the ability to find an appropriate algorithm for every problem
-                            in the set</li> <br>
-                        <li>Ability to code an algorithm into a working program</li> <br>
-                        <li>Having a strategy of cooperation with your teammates</li> <br> <br>
-
-                        For the first three categories, standard algorithms are well documented in the literature, and you should
-                        program these algorithms beforehand and take the listings with you to the contest. In this way, you can
-                        avoid making the same (small) mistakes repeatedly and you can concentrate on the difficult aspects of
-                        the problem.
-                        <br> <br>
-
-                        Another angle of practice is efficient programming. This does not mean type as fast as you can and
-                        subsequently spend a lot of time debugging. Instead, think carefully about the problem and all the cases
-                        which might occur. Then program your algorithm, and take the time to ensure that you get it right the
-                        first time with a minimum amount of debugging, since debugging usually takes a lot of valuable time.
-                        <br> <br>
-
-                        To become a team, it is important that you play a lot of training contests under circumstances which are
-                        as close to the real contest as possible: Five hours, one computer, a new set of problems each time, and
-                        a jury to judge your programs.
-                        <br> <br>
-                        This website tries to lead you in the way of becomming a good icpc contestant.
+                            outputs for a set of (secret) test inputs. click this card to see more.
                         </p>
                     </div>
                 </div>
