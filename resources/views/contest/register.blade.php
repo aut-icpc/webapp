@@ -2,6 +2,7 @@
 
 @section('content')
     <form name="onsite_register" class="col s12 m12 l12" action="{{ route('app::contest.register_post') }}" method="POST">
+        {{ csrf_field() }}
     <div id="non-skrollr">
         <div class="row">
             <h3><br>On-Site Contest Registration<br></h3>
@@ -227,6 +228,11 @@
 
                     <div class="row center">
                         {{--<div class="g-recaptcha col s12 m12 l12 center" data-sitekey="6LeP_ikTAAAAAPu_EgFICSpE6FCKrPkhiYtkVZX-"></div>--}}
+                        <center>
+                            <div class="input-field col s12 m12 l12 ">
+                                <div class="g-recaptcha" data-sitekey="6LfEJgkUAAAAAOVMfzDA_6E2Mw4jMtjYadVy5upA"></div>
+                            </div>
+                        </center>
                         <div class="input-field col s12 m12 l12">
                             <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Submit
                                 <i class="material-icons right">send</i>
