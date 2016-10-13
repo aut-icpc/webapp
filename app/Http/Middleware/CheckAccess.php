@@ -19,6 +19,9 @@ class CheckAccess
 //        if (\Auth::user()->access_level != User::$SUPER_ADMIN) {
 //            return redirect('/home');
 //        }
-        return $next($request);
+        if (\Auth::check())
+            return $next($request);
+        else
+            return redirect('/home');
     }
 }
