@@ -16,7 +16,7 @@
             @if(count($newsGroup) == 0)
                 <div class="card waves-effect col s12 m12 l12">
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Just wait a little!<i class="material-icons right">more_vert</i></span>
+                        <ccenter><span class="card-title activator grey-text text-darken-4 center">Just wait a little!</span></ccenter>
                         <p class="center">
                             The On-Site contest starts at 10:00 AM (UTC Time) November 04, 2016. <br>
                             So be patient and check back soon! <br>
