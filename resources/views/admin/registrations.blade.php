@@ -8,76 +8,35 @@
             <p>
                 AUT ACM ICPC 2016 Registered Teams.
             </p>
-            <table>
+            <table class="highlight bordered centered">
                 <thead>
                 <tr>
-                    <th data-field="id">Name</th>
-                    <th data-field="name">Item Name</th>
-                    <th data-field="price">Item Price</th>
+                    <th data-field="name">Team Name</th>
+                    <th data-field="institute">Institution</th>
+                    <th data-field="country">Country</th>
+                    <th data-field="status">Status</th>
+                    <th data-field="status">Action</th>
                 </tr>
                 </thead>
-
                 <tbody>
                     @foreach($data as $team)
                         <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
-                        </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
-                        </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
+                            <td>{{$team->team_name}}</td>
+                            <td>{{$team->institute_name}}</td>
+                            <td>{{$team->site}}</td>
+                            <td>{{$team->status['status']}}</td>
+                            <td>
+                                <center>
+                                <a href="{{ route('app::admin.registration.edit', $team) }}"
+                                   class="secondary-content">
+                                    <i class="material-icons">mode_edit</i>
+                                </a>
+                                </center>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
-                <div class="col s6 m6 l6">
-                    <div class="card {{ $team->status['style'] }}">
-                        <div class="card-content">
-                            <span class="card-title">{{ $team->status['status'] }}</span> <a href="{{ route('app::admin.registration.edit', $team) }}" class="secondary-content"><i class="material-icons">mode_edit</i></a>
-                            <p>
-                                Team Name: <b>{{$team->team_name}}</b><br>
-                                Institution: <b>{{$team->institute_name}}</b><br>
-                                Team Location: <b>{{$team->site}}</b><br>
-                            </p>
-                            <h6 class="teal-text darken-4"><b>Contestant #1</b></h6>
-                            <p>
-                                Full Name: <b>{{$team->members['first']['first_name'] . ' ' . $team->members['first']['last_name']}}</b><br>
-                                Gender: <b>{{$team->members['first']['gender']}}</b><br>
-                                Education: <b>{{$team->members['first']['degree'] . ' Student No. ' . $team->members['first']['student_number']}}</b><br>
-                                Email: <b>{{$team->members['first']['email']}}</b><br>
-                                Phone: <b>{{$team->members['first']['phone']}}</b><br>
-                                T-Shirt Size: <b>{{$team->members['first']['t-shirt_size']}}</b>
-                            </p>
-                            <h6 class="teal-text darken-4"><b>Contestant #2</b></h6>
-                            <p>
-                                Full Name: <b>{{$team->members['second']['first_name'] . ' ' . $team->members['second']['last_name']}}</b><br>
-                                Gender: <b>{{$team->members['second']['gender']}}</b><br>
-                                Education: <b>{{$team->members['second']['degree'] . ' Student No. ' . $team->members['second']['student_number']}}</b><br>
-                                Email: <b>{{$team->members['second']['email']}}</b><br>
-                                Phone: <b>{{$team->members['second']['phone']}}</b><br>
-                                T-Shirt Size: <b>{{$team->members['second']['t-shirt_size']}}</b>
-                            </p>
-                            <h6 class="teal-text darken-4"><b>Contestant #3</b></h6>
-                            <p>
-                                Full Name: <b>{{$team->members['third']['first_name'] . ' ' . $team->members['third']['last_name']}}</b><br>
-                                Gender: <b>{{$team->members['third']['gender']}}</b><br>
-                                Education: <b>{{$team->members['third']['degree'] . ' Student No. ' . $team->members['third']['student_number']}}</b><br>
-                                Email: <b>{{$team->members['third']['email']}}</b><br>
-                                Phone: <b>{{$team->members['third']['phone']}}</b><br>
-                                T-Shirt Size: <b>{{$team->members['third']['t-shirt_size']}}</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
         </div>
     </div>
 @endsection

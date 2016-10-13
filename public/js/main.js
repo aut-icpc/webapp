@@ -75,10 +75,10 @@ function calcScrollr() {
             dataval = dataval + cardht;
             temp = temp - cardht;
         }
-        
+
         totalht += cardht;
         i += cardht;
-        
+
         if (_hideatend) {
             var endpos = _startscrollat + (totalcount * $_e.eq(0).height());
             $_e.eq(count).attr("data-" + (endpos - 129), "display: block");
@@ -86,9 +86,9 @@ function calcScrollr() {
             $_e.eq(count).attr("data-" + (endpos - 11), "display: none");
             $_e.eq(count).attr("data-" + (endpos - 22), "opacity: 0");
         }
-        
+
         count++;
-        
+
     });
 
 }
@@ -99,19 +99,19 @@ function calcScrollr() {
 var s;
 $(function () {
 
-        $("html").niceScroll({
-			styler: "fb",
-			scrollspeed: 100,
-			mousescrollstep: 72
-        });
-
-    $.scrolline({
-        reverse: false,
-        position: 'top',
-        backColor: '#2980b9',
-        frontColor: '#f1c40f',
-        weight: 5
-    });
+    //     $("html").niceScroll({
+		// 	styler: "fb",
+		// 	scrollspeed: 100,
+		// 	mousescrollstep: 72
+    //     });
+    //
+    // $.scrolline({
+    //     reverse: false,
+    //     position: 'top',
+    //     backColor: '#2980b9',
+    //     frontColor: '#f1c40f',
+    //     weight: 5
+    // });
 });
 
 $(function () {
@@ -119,62 +119,62 @@ $(function () {
     })
 $(function () {
 
-    if (Modernizr.history) {
-        $("nav").delegate("a[internal]", "click", function () {
-            event.preventDefault();
-            _href = $(this).attr("href");
-            history.pushState(null, null, _href);
-            loadContent(_href);
-        });
-        $("body").delegate("button[href]", "click", function () {
-            event.preventDefault();
-            _href = $(this).attr("href");
-            history.pushState(null, null, _href);
-            loadContent(_href);
-        });
-
-        // set up some variables
-        var $mainContent = $("#main-content"),
-            $pageWrap = $("#page-wrap"),
-            baseHeight = 0,
-            $el;
-
-        // calculate wrapper heights to prevent jumping when loading new content
-        $pageWrap.height($pageWrap.height());
-        baseHeight = $pageWrap.height() - $mainContent.height();
-
-        function loadContent(href) {
-            $mainContent.find("#guts").stop(true, true).fadeOut(600, function () { // fade out the content of the current page
-                $(".preloader").fadeIn();
-                $mainContent.hide().load(href + " #guts", function () { // load the contents of whatever href is
-                    $('html, body').animate({
-                        scrollTop: 0
-                    }, 800);
-
-                    $('ul.tabs').tabs();
-                    $mainContent.fadeIn(1000);
-
-
-                    calcScrollr();
-                    s = skrollr.init();
-                    s.refresh();
-
-                    $('html, body').animate({
-                        scrollTop: 10
-                    }, 50, function(){
-                        $(".preloader").fadeOut();
-                    });
-
-                });
-            });
-        }
-        $(window).bind("popstate", function () {
-            link = location.pathname.replace(/^.*[\\/]/, ""); // get filename only
-            loadContent(link);
-        });
-    } else {
-        console.log("No support for in-page loading. Try using chrome.");
-    }
+    // if (Modernizr.history) {
+    //     $("nav").delegate("a[internal]", "click", function () {
+    //         event.preventDefault();
+    //         _href = $(this).attr("href");
+    //         history.pushState(null, null, _href);
+    //         loadContent(_href);
+    //     });
+    //     $("body").delegate("button[href]", "click", function () {
+    //         event.preventDefault();
+    //         _href = $(this).attr("href");
+    //         history.pushState(null, null, _href);
+    //         loadContent(_href);
+    //     });
+    //
+    //     // set up some variables
+    //     var $mainContent = $("#main-content"),
+    //         $pageWrap = $("#page-wrap"),
+    //         baseHeight = 0,
+    //         $el;
+    //
+    //     // calculate wrapper heights to prevent jumping when loading new content
+    //     $pageWrap.height($pageWrap.height());
+    //     baseHeight = $pageWrap.height() - $mainContent.height();
+    //
+    //     function loadContent(href) {
+    //         $mainContent.find("#guts").stop(true, true).fadeOut(600, function () { // fade out the content of the current page
+    //             $(".preloader").fadeIn();
+    //             $mainContent.hide().load(href + " #guts", function () { // load the contents of whatever href is
+    //                 $('html, body').animate({
+    //                     scrollTop: 0
+    //                 }, 800);
+    //
+    //                 $('ul.tabs').tabs();
+    //                 $mainContent.fadeIn(1000);
+    //
+    //
+    //                 calcScrollr();
+    //                 s = skrollr.init();
+    //                 s.refresh();
+    //
+    //                 $('html, body').animate({
+    //                     scrollTop: 10
+    //                 }, 50, function(){
+    //                     $(".preloader").fadeOut();
+    //                 });
+    //
+    //             });
+    //         });
+    //     }
+    //     $(window).bind("popstate", function () {
+    //         link = location.pathname.replace(/^.*[\\/]/, ""); // get filename only
+    //         loadContent(link);
+    //     });
+    // } else {
+    //     console.log("No support for in-page loading. Try using chrome.");
+    // }
 
 });
 
@@ -212,7 +212,7 @@ $(window).load(function () {
     }, 50);
 
     calcScrollr();
-    s = skrollr.init();
+    // s = skrollr.init();
 
 
 });

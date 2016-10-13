@@ -178,6 +178,8 @@
                 <p>Qualifying teams requiring visas must initiate the process of  applying for visas within 10 business days of being issued an  invitation. Teams failing to comply with any of these requirements will  be ruled ineligible to compete in the World Finals. Upon completion of  these requirements, a qualifying team will be advanced to the World  Finals. </p>
                 <p>A team advancing to the World Finals will be comprised of the same  three members as when it qualified. In the event that a team member is  unwilling, unable or unfit to compete in the World Finals, the coach  must notify the <a href="mailto:manager@icpc.baylor.edu">ICPC Manager</a> in a timely manner. A team member who is unwilling or unfit to compete  in the World Finals will be disqualified from further ICPC  competitions. The team member may appeal disqualification to the  Appeals Committee. </p>
                 <p>At on-site registration, participants must provide picture ID  (passport, drivers license, etc). Contestants must show proof of  enrollment at the university during the term of the regional contest at  which they qualified. A letter on university stationary with the  signature of a university official accompanied by an English  translation is sufficient. </p>
+                <br>
+                <br>
             </div>
         </div>
     </div>

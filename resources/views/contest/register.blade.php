@@ -32,7 +32,7 @@
                                 <option value="Poland" data-icon="{{ URL::asset('img/poland.png') }}" class="left circle">Poland</option>
                                 <option value="Other" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle">Other</option>
                             </select>
-                            <label>Where the team solves the problems</label>
+                            <label>Country</label>
                         </div>
                     </div>
                     <!-- /Team Info -->
@@ -60,19 +60,19 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s2 m2 l2" id="mem1-student-number-wrapper">
+                        <div class="input-field col s4 m3 l3" id="mem1-student-number-wrapper">
                             <input type="text" name="members[first][student_number]" id="mem1-student-number" class="validate">
                             <label for="mem1-student-number">Student Number</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s4 m3 l3">
                             <select name="members[first][degree]" id="mem1-degree">
                                 <option value="" disabled>Current educational level</option>
-                                <option value="BSc." selected>BSc.</option>
-                                <option value="MSc.">MSc.</option>
+                                <option value="BSc." selected>Undergraduate (BSc.)</option>
+                                <option value="MSc.">Graduate (MSc.)</option>
                             </select>
                             <label>Current Educational Level</label>
                         </div>
-                        <div class="input-field col s2 m2 l2" id="mem1-size-wrapper">
+                        <div class="input-field col s4 m1 l1" id="mem1-size-wrapper">
                             <select name="members[first][t-shirt_size]" id="mem1-size">
                                 <option value="" disabled>Select Size</option>
                                 <option value="3X Large">3X Large</option>
@@ -84,11 +84,11 @@
                             </select>
                             <label>T-Shirt Size</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s6 m3 l3">
                             <input id="mem1-email" name="members[first][email]" type="email" class="validate">
                             <label for="mem1-email">Email</label>
                         </div>
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s6 m2 l2">
                             <input id="mem1-phone" name="members[first][phone]" type="tel" class="validate">
                             <label for="mem1-phone">Phone Number</label>
                         </div>
@@ -122,11 +122,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s2 m2 l2" id="mem2-student-number-wrapper">
+                        <div class="input-field col s4 m2 l2" id="mem2-student-number-wrapper">
                             <input type="text" name="members[second][student_number]" id="mem2-student-number" class="validate">
                             <label for="mem2-second-name">Student Number</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s4 m3 l3">
                             <select name="members[second][degree]" id="mem2-degree">
                                 <option value="" disabled>Current educational level</option>
                                 <option value="BSc." selected>BSc.</option>
@@ -134,7 +134,7 @@
                             </select>
                             <label>Current Educational Level</label>
                         </div>
-                        <div class="input-field col s2 m2 l2" id="mem2-size-wrapper">
+                        <div class="input-field col s4 m2 l2" id="mem2-size-wrapper">
                             <select name="members[second][t-shirt_size]" id="mem2-size">
                                 <option value="" disabled>Select Size</option>
                                 <option value="3X Large">3X Large</option>
@@ -146,11 +146,11 @@
                             </select>
                             <label>T-Shirt Size</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s6 m3 l3">
                             <input id="mem2-email" name="members[second][email]" data-error="Wrong Mail Format" data-success="Correct Mail Format" type="email" class="validate">
                             <label for="mem2-email">Email</label>
                         </div>
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s6 m2 l2">
                             <input id="mem2-phone" name="members[second][phone]" type="tel" class="validate">
                             <label for="mem2-phone">Phone Number</label>
                         </div>
@@ -184,11 +184,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s2 m2 l2" id="mem3-student-number-wrapper">
+                        <div class="input-field col s4 m2 l2" id="mem3-student-number-wrapper">
                             <input type="text" name="members[third][student_number]" id="mem3-student-number" class="validate">
                             <label for="mem3-third-name">Student Number</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s4 m3 l3">
                             <select name="members[third][degree]" id="mem3-degree">
                                 <option value="" disabled>Current educational level</option>
                                 <option value="BSc." selected>BSc.</option>
@@ -196,7 +196,7 @@
                             </select>
                             <label>Current Educational Level</label>
                         </div>
-                        <div class="input-field col s2 m2 l2" id="mem3-size-wrapper">
+                        <div class="input-field col s4 m2 l2" id="mem3-size-wrapper">
                             <select name="members[third][t-shirt_size]" id="mem3-size">
                                 <option value="" disabled>Select Size</option>
                                 <option value="3X Large">3X Large</option>
@@ -208,11 +208,11 @@
                             </select>
                             <label>T-Shirt Size</label>
                         </div>
-                        <div class="input-field col s3 m3 l3">
+                        <div class="input-field col s6 m3 l3">
                             <input id="mem3-email" name="members[third][email]" data-error="Wrong Mail Format" data-success="Correct Mail Format" type="email" class="validate">
                             <label for="mem3-email">Email</label>
                         </div>
-                        <div class="input-field col s2 m2 l2">
+                        <div class="input-field col s6 m2 l2">
                             <input id="mem3-phone" name="members[third][phone]" type="tel" class="validate">
                             <label for="mem3-phone">Phone Number</label>
                         </div>
@@ -242,7 +242,6 @@
 @push('scripts')
     <script type="text/javascript" src="{{ asset('js/validate.js') }}"></script>
     <script>
-        debugger;
         $(document).ready(function() {
             $('select').material_select();
         });
@@ -404,7 +403,6 @@
         }
 
         function changeCountry(element) {
-            debugger;
             var country = $(element).val();
             if (country != 'Iran'){
                 $('#mem1-student-number-wrapper').hide();

@@ -28,6 +28,10 @@ body {
     text-align: justify;
 }
 
+.container-fluid a{
+        color: #00b0ff;
+}
+
 .clamp-module {
     height: 120px;
     overflow: hidden;

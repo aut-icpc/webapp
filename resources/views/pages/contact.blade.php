@@ -9,16 +9,17 @@
                     <ul>
 {{--                        @foreach($faqs as $faq)--}}
                         <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
-                            <h5>ACM-ICPC Group at Computer Engineering Department of AUT</h5>
+                            <h5>Student Scientific Association of Computer Engineering and IT Department:</h5>
                             <p>
-                                Email: <a style="color: #ffeb3b;" href="mailto:ceit.ssc@aut.ac.ir">ceit.ssc@aut.ac.ir</a>
+                                Email: <a style="color: #ffeb3b;" href="mailto:ceit.ssc@aut.ac.ir">ceit.ssc@aut.ac.ir</a> <br>
+                                Website: <a style="color: #ffeb3b;" href="http://ceit-ssc.ir">http://ceit-ssc.ir</a>
                             </p>
                         </li>
                         <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
                             <h5>Computer Engineering Department of AUT</h5>
                             <p>
                                 Address: #424 Hafez Avenue, P. O. Box 15875-4413, Tehran, IRAN <br>
-                                Website: <a style="color: #ffeb3b;" href="http://ceit.aut.ac.ir">ceit.aut.ac.ir</a><br>
+                                Website: <a style="color: #ffeb3b;" href="http://ceit.aut.ac.ir">http://ceit.aut.ac.ir</a><br>
                             </p>
                         </li>
                         <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
@@ -27,7 +28,7 @@
                                 Address: #424 Hafez Avenue, P. O. Box 15914, Tehran, IRAN<br>
                                 Phone: +98(21)64540<br>
                                 Fax: +98(21)66413969<br>
-                                Web: <a style="color: #ffeb3b;" href="http://www.aut.ac.ir">aut.ac.ir</a><br>
+                                Web: <a style="color: #ffeb3b;" href="http://www.aut.ac.ir">http://aut.ac.ir</a><br>
                             </p>
                         </li>
                         <li class="card advantage cyan white-text darken-1 waves-effect waves-light">

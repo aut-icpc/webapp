@@ -70,7 +70,8 @@
                 <div class="card-title">
                     <h4>About ACM</h4>
                 </div>
-                ACM, <a href="http://www.acm.org/">the Association for Computing Machinery</a>,is an educational and
+                ACM, <a style="color: #f9f70b;" href="http://www.acm.org/" target="_blank">the Association for Computing Machinery</a>
+                ,is an educational and
                 scientific society uniting the world's computing educators, researchers and professionals to inspire
                 dialogue, share resources and address the field's challenges. ACM strengthens the profession's
                 collective voice through strong leadership, promotion of the highest standards, and recognition of
@@ -96,7 +97,7 @@
                 of driving global innovation and economic growth.
                 <br><br>
                 For more information about other IBM college initiatives, please visit the IBM/ACM at
-                <a href="http://www.developer.ibm.com/university/students/">here</a>.
+                <a style="color: #f9f70b" href="http://www.developer.ibm.com/university/students/" target="_blank">here</a>.
             </div>
         </div>
 

@@ -1,5 +1,9 @@
 @if(Auth::check())
     <ul id="admin_dropdown" class="dropdown-content">
+        <li class="disabled">
+            <a class="disabled" href="#">{{ Auth::user()->name }}</a>
+        </li>
+        <li class="divider"></li>
         <li><a href="{{ route('app::admin') }}">Home</a></li>
         <li>
             <a href="{{ url('/logout') }}"
@@ -33,7 +37,10 @@
                             <a href="{{ route('app::live.feed') }}">Live Blog!</a>
                         </li>
                         @if(Auth::check())
-                            <li><a class="dropdown-button" href="#!" data-activates="admin_dropdown">Adminstration<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li>
+                                <a class="dropdown-button" href="#!" data-activates="admin_dropdown">Adminstration<i class="material-icons right">arrow_drop_down</i>
+                                </a>
+                            </li>
                         @endif
                     </ul>
                     <ul class="side-nav" id="mobile-demo">

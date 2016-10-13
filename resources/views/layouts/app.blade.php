@@ -23,7 +23,7 @@
             <i class="material-icons">expand_less</i>
         </a>
         {{--@yield('parallax')--}}
-        <div id="page-wrap" style="height: auto;">
+        <div id="page-wrap" style="height: auto !important;">
             <div class="container">
                 <div class="wrapper cyan-text text-darken-3">
                     <div id="skrollr-body">
@@ -32,6 +32,7 @@
                 </div>
             </div>
         </div>
+        @yield('parallex')
         @include('includes.footer')
 
         <!-- Global Scripts -->
@@ -44,11 +45,6 @@
         <script type="text/javascript" src="{{ URL::asset('js/modernizr.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/materialize.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.parallax').parallax();
-            });
-        </script>
         @stack('scripts')
     </body>
 </html>

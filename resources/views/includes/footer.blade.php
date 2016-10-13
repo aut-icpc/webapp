@@ -10,22 +10,22 @@
                 <h5 class="white-text">General Links</h5>
                 <ul>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::general.about') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.about') }}">
                             About
                         </a>
                     </li>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::general.rules') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.rules') }}">
                             Rules
                         </a>
                     </li>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::general.faq') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.faq') }}">
                             FAQ
                         </a>
                     </li>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::general.contact') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::general.contact') }}">
                             Contact Us
                         </a>
                     </li>
@@ -36,7 +36,7 @@
                 <h5 class="white-text">Educational Links</h5>
                 <ul>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::educational.links') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::educational.links') }}">
                             Useful Links
                         </a>
                     </li>
@@ -48,12 +48,12 @@
                 <h5 class="white-text">Local Contests</h5>
                 <ul>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::local.history') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::local.history') }}">
                             History
                         </a>
                     </li>
                     <li>
-                        <a class="grey-text text-lighten-3" href="{{ route('app::local.rules') }}" target="_blank">
+                        <a class="grey-text text-lighten-3" href="{{ route('app::local.rules') }}">
                             Contest Information
                         </a>
                     </li>

@@ -6,7 +6,7 @@
             <div class="mast">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                Adminstration Panel
+                Adminstration Panel <br> <br>
                 <div class="divider"></div>
                 <br>
             </div>

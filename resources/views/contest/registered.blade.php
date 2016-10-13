@@ -11,7 +11,7 @@
                 If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.
             </p>
             @foreach($data as $record)
-                <div class="col s6 m6 l6">
+                <div class="col s12 m6 l6">
                     <div class="card {{ $record->status['style'] }}">
                         <div class="card-content">
                             <span class="card-title">{{ $record->status['status'] }}</span>

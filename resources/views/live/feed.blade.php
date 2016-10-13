@@ -6,7 +6,7 @@
             <div class="mast">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                Follow news from AUT ACM On-Site contest live from <b>4 sites</b> at the same time!
+                Follow news of AUT ACM ICPC On-Site contest live from <b>Tehran</b>, <b>Stockholm</b> and <b>Kraków</b> at the same time!
                 <div class="divider"></div>
                 <br>
             </div>
