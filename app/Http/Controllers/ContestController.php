@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\OnSiteRegistered;
 use App\OnlineRegistration;
 use App\OnsiteRegistration;
 use App\TeamRegistration;
@@ -33,8 +34,10 @@ class ContestController extends Controller
             $registration->status = OnsiteRegistration::$PENDING;
             $saved = $registration->save();
             // TODO : add additional variables like email activation and so...
-            if ($saved)
+            if ($saved) {
+                event(new OnSiteRegistered($registration));
                 return redirect()->route('app::contest.registered');
+            }
             else
                 return redirect()->back();
         }
