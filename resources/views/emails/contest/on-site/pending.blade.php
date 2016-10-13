@@ -5,12 +5,15 @@
 @endsection
 
 @section('message-top')
-    <center>
-        <img src="{{ asset('img/aut_icpc.png') }}">
-    </center>
     <p>Hi there,</p>
     <p>
-        This is the information you gave us:<br>
+        <strong>
+            Your registration is complete now, and we are checking some credentials.<br>
+            You will be notified as soon as we approve your registration.
+        </strong>
+    </p>
+    <p>
+        Here is the information you gave us:<br>
         Team Name: <b>{{$registration->team_name}}</b><br>
         Institution: <b>{{$registration->institute_name}}</b><br>
         Country: <b>{{$registration->site}}</b><br><br>
@@ -32,10 +35,12 @@
 @endsection
 
 @section('call-to-action')
-    <a href="http://htmlemail.io" target="_blank">Call To Action</a>
+    <a href="http://icpc.aut.ac.ir/2016/registered" target="_blank">View Registration Status</a>
 @endsection
 
 @section('message-bottom')
-    <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-    <p>Good luck! Hope it works.</p>
+    <p>
+        All the best, <br>
+        <b>AUT ACM-ICPC Group.</b>
+    </p>
 @endsection

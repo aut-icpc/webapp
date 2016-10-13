@@ -257,6 +257,9 @@
                             <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td>
+                                        <center>
+                                            <img src="{{ asset('img/aut_icpc.png') }}">
+                                        </center>
                                         @yield('message-top')
                                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                                             <tbody>

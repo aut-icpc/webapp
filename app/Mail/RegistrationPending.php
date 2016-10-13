@@ -24,9 +24,9 @@ class RegistrationPending extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(OnsiteRegistration $registration)
     {
-        //
+        $this->registration = $registration;
     }
 
     /**
