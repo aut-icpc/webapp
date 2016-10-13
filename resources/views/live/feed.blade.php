@@ -13,29 +13,43 @@
         </div>
 
         <div class="row">
-            @foreach($newsGroup as $news)
-                {{--<div class="col s12 m4 l3">--}}
-                    <div class="card waves-effect col s12 m4 l3">
-                        @if(isset($news->image))
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="{{ asset($news->image) }}">
-                            </div>
-                        @endif
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">{{$news->title}}<i class="material-icons right">more_vert</i></span>
-                            <p>
-                                {{ $news->body }}
-                            </p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">{{ $news->title }}<i class="material-icons right">close</i></span>
-                            <p>
-                                {{$news->body }}
-                            </p>
-                        </div>
+            @if(count($newsGroup) == 0)
+                <div class="card waves-effect col s12 m12 l12">
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Just wait a little!<i class="material-icons right">more_vert</i></span>
+                        <p class="center">
+                            The On-Site contest starts at 10:00 AM (UTC Time) November 04, 2016. <br>
+                            So be patient and check back soon! <br>
+                            By the way you can see the behind the scenes stuff with
+                            #AUTICPC on social media.
+                        </p>
                     </div>
-                {{--</div>--}}
-            @endforeach
+                </div>
+            @else
+                @foreach($newsGroup as $news)
+                    {{--<div class="col s12 m4 l3">--}}
+                        <div class="card waves-effect col s12 m4 l3">
+                            @if(isset($news->image))
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="{{ asset($news->image) }}">
+                                </div>
+                            @endif
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">{{$news->title}}<i class="material-icons right">more_vert</i></span>
+                                <p>
+                                    {{ $news->body }}
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">{{ $news->title }}<i class="material-icons right">close</i></span>
+                                <p>
+                                    {{$news->body }}
+                                </p>
+                            </div>
+                        </div>
+                    {{--</div>--}}
+                @endforeach
+            @endif
         </div>
 
         <div class="row">
