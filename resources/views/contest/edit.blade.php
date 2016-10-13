@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+<div id="remove-modal" class="modal">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        {{--<a href="{{ route('app::admin.registration.delete', ['team' => $team]) }}" class=" modal-action modal-close waves-effect waves-green btn-flat">YES</a>--}}
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">NO</a>
+    </div>
+</div>
+
 @section('content')
     <form name="onsite_register" class="col s12 m12 l12" action="{{ route('app::admin.registration.save', $team) }}" method="POST">
         <div id="non-skrollr">
@@ -9,6 +20,47 @@
                 <div class="divider"></div>
                 <br>
                 <div class="container-fluid">
+                    <!-- Quick Actions -->
+                    <div class="row">
+                        <h5><i class="material-icons">perm_data_setting</i>Quick Actions</h5>
+                        <div class="row center">
+                            <div class="input-field col s12 m12 l12">
+                                <select name="status">
+                                    <option value="" disabled>Registration Status</option>
+                                    <option value="{{\App\OnsiteRegistration::$PENDING['status']}}" class="grey lighten-4" {{$team->status['status'] == 'Pending' ? 'selected' : ''}}>Pending</option>
+                                    <option value="{{\App\OnsiteRegistration::$PAID['status']}}" class="blue lighten-4" {{$team->status['status'] == 'Paid' ? 'selected' : ''}}>Paid</option>
+                                    <option value="{{\App\OnsiteRegistration::$APPROVED['status']}}" class="green lighten-4" {{$team->status['status'] == 'Approved' ? 'selected' : ''}}>Approved</option>
+                                    <option value="{{\App\OnsiteRegistration::$REJECTED['status']}}" class="red lighten-4" {{$team->status['status'] == 'Rejected' ? 'selected' : ''}}>Rejected</option>
+                                </select>
+                                <label>Registration Status</label>
+                            </div>
+                            <div class="input-field col s4 m4 l4">
+                                <a href="{{ route('app::admin.registrations.show')}}">
+                                    <button class="btn waves-effect waves-light btn-large cyan"
+                                            type="button">Back
+                                        <i class="material-icons right">fast_rewind</i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="input-field col s4 m4 l4">
+                                <a href="{{ route('app::admin.registration.delete', ['team' => $team]) }}">
+                                    <button class="btn waves-effect waves-light btn-large cyan"
+                                            type="button">Delete This Registration
+                                        <i class="material-icons right">delete</i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="input-field col s4 m4 l4">
+                                <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Done
+                                    <i class="material-icons right">done_all</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Quick Actions -->
+
+                    <div class="divider"></div>
+
                     <!-- Team Info -->
                     <div class="row">
                         <h5><i class="material-icons">group</i>Team Information</h5>
@@ -23,24 +75,12 @@
                         <div class="input-field col s4 m4 l4">
                             <select name="site" class="icons">
                                 <option value="" disabled>Select your site</option>
-                                <option value="Tehran" data-icon="{{ URL::asset('img/tehran.png') }}" class="left circle" {{$team->site == 'Tehran' ? 'selected' : ''}}>Tehran</option>
-                                <option value="Munich" data-icon="{{ URL::asset('img/munich.png') }}" class="left circle" {{$team->site == 'Munich' ? 'selected' : ''}}>München</option>
-                                <option value="Paris" data-icon="{{ URL::asset('img/paris.jpg') }}" class="left circle" {{$team->site == 'Paris' ? 'selected' : ''}}>Paris</option>
-                                <option value="Madrid" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle" {{$team->site == 'Madrid' ? 'selected' : ''}}>Another city and so on ...</option>
+                                <option value="Iran" data-icon="{{ URL::asset('img/iran.png') }}" class="left circle" {{$team->site == 'Iran' ? 'selected' : ''}}>Iran</option>
+                                <option value="Sweden" data-icon="{{ URL::asset('img/sweden.png') }}" class="left circle" {{$team->site == 'Sweden' ? 'selected' : ''}}>Sweden</option>
+                                <option value="Poland" data-icon="{{ URL::asset('img/poland.png') }}" class="left circle" {{$team->site == 'Poland' ? 'selected' : ''}}>Poland</option>
+                                <option value="Other" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle" {{$team->site == 'Other' ? 'selected' : ''}}>Other</option>
                             </select>
-                            <label>Where the team solves the problems</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m12 l12">
-                            <select name="status">
-                                <option value="" disabled>Registration Status</option>
-                                <option value="{{\App\OnsiteRegistration::$PENDING['status']}}" class="grey lighten-4" {{$team->status['status'] == 'Pending' ? 'selected' : ''}}>Pending</option>
-                                <option value="{{\App\OnsiteRegistration::$PAID['status']}}" class="blue lighten-4" {{$team->status['status'] == 'Paid' ? 'selected' : ''}}>Paid</option>
-                                <option value="{{\App\OnsiteRegistration::$APPROVED['status']}}" class="green lighten-4" {{$team->status['status'] == 'Approved' ? 'selected' : ''}}>Approved</option>
-                                <option value="{{\App\OnsiteRegistration::$REJECTED['status']}}" class="red lighten-4" {{$team->status['status'] == 'Rejected' ? 'selected' : ''}}>Rejected</option>
-                            </select>
-                            <label>Registration Status</label>
+                            <label>Country</label>
                         </div>
                     </div>
                     <!-- /Team Info -->
@@ -253,162 +293,164 @@
     debugger;
     $(document).ready(function() {
         $('select').material_select();
+        $('.modal-trigger').leanModal();
     });
 
-    var constraints = [
-        // Team Information
-        {
-            name: 'team_name',
-            display: 'Team Name',
-            rules: 'required'
-        },
-        {
-            name: 'institute_name',
-            display: 'Institution Name',
-            rules: 'required'
-        },
-        {
-            name: 'site',
-            display: 'Site',
-            rules: 'required'
-        },
-        // Contestant #1
-        {
-            name: 'members[first][first_name]',
-            display: 'First Contestant\'s First Name',
-            rules: 'required'
-        },
-        {
-            name: 'members[first][last_name]',
-            display: 'First Contestant\'s Last Name',
-            rules: 'required'
-        },
-        {
-            name: 'members[first][gender]',
-            display: 'First Contestant\'s Gender',
-            rules: 'required'
-        },
-        {
-            name: 'members[first][student_number]',
-            display: 'First Contestant\'s Student Number',
-            rules: 'required'
-        },
-        {
-            name: 'members[first][degree]',
-            display: 'First Contestant\'s Degree',
-            rules: 'required'
-        },
-        {
-            name: 'members[first][email]',
-            display: 'First Contestant\'s Email Address',
-            rules: 'required|valid_email'
-        },
-        {
-            name: 'members[first][phone]',
-            display: 'First Contestant\'s Phone Number',
-            rules: 'required'
-        },
-        {
-            name: 'members[first][agreement]',
-            display: 'First Contestant\'s Agreement',
-            rules: 'required'
-        },
-        // Contestant #2
-        {
-            name: 'members[second][first_name]',
-            display: 'Second Contestant\'s First Name',
-            rules: 'required'
-        },
-        {
-            name: 'members[second][last_name]',
-            display: 'Second Contestant\'s Last Name',
-            rules: 'required'
-        },
-        {
-            name: 'members[second][gender]',
-            display: 'Second Contestant\'s Gender',
-            rules: 'required'
-        },
-        {
-            name: 'members[second][student_number]',
-            display: 'Second Contestant\'s Student Number',
-            rules: 'required'
-        },
-        {
-            name: 'members[second][degree]',
-            display: 'Second Contestant\'s Degree',
-            rules: 'required'
-        },
-        {
-            name: 'members[second][email]',
-            display: 'Second Contestant\'s Email Address',
-            rules: 'required|valid_email'
-        },
-        {
-            name: 'members[second][phone]',
-            display: 'Second Contestant\'s Phone Number',
-            rules: 'required'
-        },
-        {
-            name: 'members[second][agreement]',
-            display: 'Second Contestant\'s Agreement',
-            rules: 'required'
-        },
-        // Contestant #3
-        {
-            name: 'members[third][first_name]',
-            display: 'Third Contestant\'s First Name',
-            rules: 'required'
-        },
-        {
-            name: 'members[third][last_name]',
-            display: 'Third Contestant\'s Last Name',
-            rules: 'required'
-        },
-        {
-            name: 'members[third][gender]',
-            display: 'Third Contestant\'s Gender',
-            rules: 'required'
-        },
-        {
-            name: 'members[third][student_number]',
-            display: 'Third Contestant\'s Student Number',
-            rules: 'required'
-        },
-        {
-            name: 'members[third][degree]',
-            display: 'Third Contestant\'s Degree',
-            rules: 'required'
-        },
-        {
-            name: 'members[third][email]',
-            display: 'Third Contestant\'s Email Address',
-            rules: 'required|valid_email'
-        },
-        {
-            name: 'members[third][phone]',
-            display: 'Third Contestant\'s Phone Number',
-            rules: 'required'
-        },
-        {
-            name: 'members[third][agreement]',
-            display: 'Third Contestant\'s Agreement',
-            rules: 'required'
-        }
-    ];
-    var validator = new FormValidator('onsite_register', constraints, function (errors, event) {
-        errors.forEach(function (anError) {
-            if (anError.id.includes("agreement")){
-                $('#'+anError.id+'-label').css('color', 'red');
-            }
-            else {
-                $('#'+anError.id).addClass('invalid');
-            }
-        });
-    });
 
-    function validateThis(element) {
-        $('#'+element.id+'-label').css('color', '');
-    }
+//    var constraints = [
+//        // Team Information
+//        {
+//            name: 'team_name',
+//            display: 'Team Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'institute_name',
+//            display: 'Institution Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'site',
+//            display: 'Site',
+//            rules: 'required'
+//        },
+//        // Contestant #1
+//        {
+//            name: 'members[first][first_name]',
+//            display: 'First Contestant\'s First Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[first][last_name]',
+//            display: 'First Contestant\'s Last Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[first][gender]',
+//            display: 'First Contestant\'s Gender',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[first][student_number]',
+//            display: 'First Contestant\'s Student Number',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[first][degree]',
+//            display: 'First Contestant\'s Degree',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[first][email]',
+//            display: 'First Contestant\'s Email Address',
+//            rules: 'required|valid_email'
+//        },
+//        {
+//            name: 'members[first][phone]',
+//            display: 'First Contestant\'s Phone Number',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[first][agreement]',
+//            display: 'First Contestant\'s Agreement',
+//            rules: 'required'
+//        },
+//        // Contestant #2
+//        {
+//            name: 'members[second][first_name]',
+//            display: 'Second Contestant\'s First Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[second][last_name]',
+//            display: 'Second Contestant\'s Last Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[second][gender]',
+//            display: 'Second Contestant\'s Gender',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[second][student_number]',
+//            display: 'Second Contestant\'s Student Number',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[second][degree]',
+//            display: 'Second Contestant\'s Degree',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[second][email]',
+//            display: 'Second Contestant\'s Email Address',
+//            rules: 'required|valid_email'
+//        },
+//        {
+//            name: 'members[second][phone]',
+//            display: 'Second Contestant\'s Phone Number',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[second][agreement]',
+//            display: 'Second Contestant\'s Agreement',
+//            rules: 'required'
+//        },
+//        // Contestant #3
+//        {
+//            name: 'members[third][first_name]',
+//            display: 'Third Contestant\'s First Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[third][last_name]',
+//            display: 'Third Contestant\'s Last Name',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[third][gender]',
+//            display: 'Third Contestant\'s Gender',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[third][student_number]',
+//            display: 'Third Contestant\'s Student Number',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[third][degree]',
+//            display: 'Third Contestant\'s Degree',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[third][email]',
+//            display: 'Third Contestant\'s Email Address',
+//            rules: 'required|valid_email'
+//        },
+//        {
+//            name: 'members[third][phone]',
+//            display: 'Third Contestant\'s Phone Number',
+//            rules: 'required'
+//        },
+//        {
+//            name: 'members[third][agreement]',
+//            display: 'Third Contestant\'s Agreement',
+//            rules: 'required'
+//        }
+//    ];
+//    var validator = new FormValidator('onsite_register', constraints, function (errors, event) {
+//        errors.forEach(function (anError) {
+//            if (anError.id.includes("agreement")){
+//                $('#'+anError.id+'-label').css('color', 'red');
+//            }
+//            else {
+//                $('#'+anError.id).addClass('invalid');
+//            }
+//        });
+//    });
+//
+//    function validateThis(element) {
+//        $('#'+element.id+'-label').css('color', '');
+//    }
 </script>
 @endpush

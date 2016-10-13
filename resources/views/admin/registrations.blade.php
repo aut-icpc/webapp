@@ -20,15 +20,15 @@
                 </thead>
                 <tbody>
                     @foreach($data as $team)
-                        <tr>
+                        <tr class="{{$team->status['style']}}">
                             <td>{{$team->team_name}}</td>
                             <td>{{$team->institute_name}}</td>
                             <td>{{$team->site}}</td>
                             <td>{{$team->status['status']}}</td>
                             <td>
                                 <center>
-                                <a href="{{ route('app::admin.registration.edit', $team) }}"
-                                   class="secondary-content">
+                                <a class="cyan-text text-darken-2" href="{{ route('app::admin.registration.edit', $team) }}"
+                                   target="_blank">
                                     <i class="material-icons">mode_edit</i>
                                 </a>
                                 </center>

@@ -104,6 +104,26 @@
                     <img class="responsive-img" style="width: 150px;" src="{{ asset('img/tcs.png') }}">
                 </a>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            {{--<h4>Sponsors: </h4><br>--}}
+            {{--<div class="col s4 m4 l4">--}}
+                {{--<a href="https://www.kth.se" target="_blank">--}}
+                    {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/kth.png') }}">--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            {{--<div class="col s4 m4 l4">--}}
+                {{--<a href="http://aut.ac.ir" target="_blank">--}}
+                    {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/aut.png') }}">--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            {{--<div class="col s4 m4 l4">--}}
+                {{--<a href="http://tcs.uj.edu.pl/" target="_blank">--}}
+                    {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/tcs.png') }}">--}}
+                {{--</a>--}}
+            {{--</div>--}}
         </div>
         {{--<div class="row container center cyan-text text-darken-2">--}}
             {{--<h4>Contest Sponsors: </h4><br>--}}

@@ -31,7 +31,7 @@ class ContestController extends Controller
     }
 
     public function showContestRegisteredTeams() {
-        $data = OnsiteRegistration::all();
+        $data = OnsiteRegistration::all()->sortBy('status.status');
         return view('contest.registered', ['data' => $data]);
     }
 

@@ -79,7 +79,7 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showRegistrations () {
-        $data = OnsiteRegistration::all();
+        $data = OnsiteRegistration::all()->sortBy('status.status');
         return view('admin.registrations', ['data' => $data]);
     }
 
@@ -119,6 +119,16 @@ class HomeController extends Controller
                 break;
         }
         $team->save();
+        return redirect()->route('app::admin.registrations.show');
+    }
+
+
+    /**
+     * @param OnsiteRegistration $team
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function removeRegistration(OnsiteRegistration $team) {
+        $team->delete();
         return redirect()->route('app::admin.registrations.show');
     }
 }
