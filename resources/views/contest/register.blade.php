@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s4 m3 l3" id="mem1-student-number-wrapper">
+                        <div class="input-field col s4 m2 l2" id="mem1-student-number-wrapper">
                             <input type="text" name="members[first][student_number]" id="mem1-student-number" class="validate">
                             <label for="mem1-student-number">Student Number</label>
                         </div>
@@ -72,7 +72,7 @@
                             </select>
                             <label>Current Educational Level</label>
                         </div>
-                        <div class="input-field col s4 m1 l1" id="mem1-size-wrapper">
+                        <div class="input-field col s4 m2 l2" id="mem1-size-wrapper">
                             <select name="members[first][t-shirt_size]" id="mem1-size">
                                 <option value="" disabled>Select Size</option>
                                 <option value="3X Large">3X Large</option>
@@ -129,8 +129,8 @@
                         <div class="input-field col s4 m3 l3">
                             <select name="members[second][degree]" id="mem2-degree">
                                 <option value="" disabled>Current educational level</option>
-                                <option value="BSc." selected>BSc.</option>
-                                <option value="MSc.">MSc.</option>
+                                <option value="BSc." selected>Undergraduate (BSc.)</option>
+                                <option value="MSc.">Graduate (MSc.)</option>
                             </select>
                             <label>Current Educational Level</label>
                         </div>
@@ -191,8 +191,8 @@
                         <div class="input-field col s4 m3 l3">
                             <select name="members[third][degree]" id="mem3-degree">
                                 <option value="" disabled>Current educational level</option>
-                                <option value="BSc." selected>BSc.</option>
-                                <option value="MSc.">MSc.</option>
+                                <option value="BSc." selected>Undergraduate (BSc.)</option>
+                                <option value="MSc.">Graduate (MSc.)</option>
                             </select>
                             <label>Current Educational Level</label>
                         </div>
