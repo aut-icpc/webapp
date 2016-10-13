@@ -23,7 +23,7 @@
                             Published At: {{ \Carbon\Carbon::createFromTimestamp($post->published_at)->format("r") }}<br>
                             Published By: {{ $post->author->name }}
                         </p>
-                        <a href="#!" class="secondary-content">
+                        <a href="{{ route('app::admin.live.edit', ['LivePost' => $post]) }}" class="secondary-content">
                             <i class="material-icons">mode_edit</i>
                         </a>
                     </li>

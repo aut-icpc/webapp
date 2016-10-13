@@ -59,7 +59,7 @@ class HomeController extends Controller
     }
 
     public function showPostEditForm(LivePost $post) {
-
+        return view('live.edit', ['post' => $post]);
     }
 
     /** Edit LiveBlog Post item
