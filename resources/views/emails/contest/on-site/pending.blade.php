@@ -35,7 +35,7 @@
 @endsection
 
 @section('call-to-action')
-    <a href="http://icpc.aut.ac.ir/2016/registered" target="_blank">View Registration Status</a>
+    <center><a href="http://icpc.aut.ac.ir/2016/registered" target="_blank">View Registration Status</a></center>
 @endsection
 
 @section('message-bottom')
