@@ -20,7 +20,7 @@
                 {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 <br>
 
-                <a href="{{ route('app::contest.register') }}">
+                <a href="{{ route('app::contest.pre-register') }}">
                     <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration
                         <i class="material-icons right">supervisor_account</i>
                     </button>

@@ -19,6 +19,10 @@ class ContestController extends Controller
         return view('contest.online_register');
     }
 
+    public function showPreRegistrationPage() {
+        return view('contest.pre-register');
+    }
+
     public function saveOnSiteRegistration(Request $request){
         $registration = new OnsiteRegistration($request->all());
         $registration->status = OnsiteRegistration::$PENDING;

@@ -21,6 +21,7 @@ Route::get('/history', 'PagesController@showHistoryOfContests')->name('app::loca
 Route::get('/local/rules', 'PagesController@showLocalRules')->name('app::local.rules');
 
 
+Route::get('2016/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
 Route::get('/2016/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
 Route::get('/2016/registered', 'ContestController@showContestRegisteredTeams')->name('app::contest.registered');
 Route::post('/2016/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
