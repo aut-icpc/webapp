@@ -29,7 +29,7 @@ class ContestController extends Controller
         $gRecaptchaResponse = $request->get('g-recaptcha-response');
         $recaptcha = new \ReCaptcha\ReCaptcha(ContestController::$G_SECRET);
         $resp = $recaptcha->verify($gRecaptchaResponse);
-//        if ($resp->isSuccess()){
+        if ($resp->isSuccess()){
             $registration = new OnsiteRegistration($request->all());
             $registration->status = OnsiteRegistration::$PENDING;
             $saved = $registration->save();
@@ -40,10 +40,10 @@ class ContestController extends Controller
             }
             else
                 return redirect()->back();
-//        }
-//        else {
-//            return redirect()->back();
-//        }
+        }
+        else {
+            return redirect()->back();
+        }
     }
 
     public function showContestRegisteredTeams() {
