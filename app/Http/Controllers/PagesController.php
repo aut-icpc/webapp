@@ -59,7 +59,14 @@ class PagesController extends Controller
         return view('pages.history');
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showLocalRules() {
         return view('pages.local_rules');
+    }
+
+    public function showPastContests() {
+        return view('pages.past_contests');
     }
 }

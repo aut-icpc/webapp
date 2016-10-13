@@ -19,6 +19,7 @@ Route::get('/contact', 'PagesController@contact')->name('app::general.contact');
 Route::get('/links', 'PagesController@useful_links')->name('app::educational.links');
 Route::get('/history', 'PagesController@showHistoryOfContests')->name('app::local.history');
 Route::get('/local/rules', 'PagesController@showLocalRules')->name('app::local.rules');
+Route::get('/past', 'PagesController@showPastContests')->name('app::past');
 
 
 Route::get('2016/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');

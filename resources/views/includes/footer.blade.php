@@ -57,6 +57,11 @@
                             Contest Information
                         </a>
                     </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{ route('app::past') }}">
+                            Past Contests Archive
+                        </a>
+                    </li>
                 </ul>
             </div>
 
