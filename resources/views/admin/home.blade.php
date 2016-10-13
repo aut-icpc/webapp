@@ -22,7 +22,7 @@
                     </div>
                 </a>
             </div>
-            {{--@if(Auth::user()->access_level == \App\User::$SUPER_ADMIN)--}}
+            @if(Auth::user()->access_level == \App\User::$SUPER_ADMIN)
                 <div class="col s2 m2 l2">
                     <a href="{{ route('app::admin.registrations.show') }}">
                         <div class="card cyan white-text waves-effect">
@@ -32,7 +32,7 @@
                         </div>
                     </a>
                 </div>
-            {{--@endif--}}
+            @endif
         </div>
     </div>
 @endsection
