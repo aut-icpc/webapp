@@ -25,8 +25,8 @@
                 accepted to take part.
                 <br>
 
-                Participation fees for AUT teams would be 750,000 Rials, and for non-AUT teams 1,050,000 Rials. These
-                fees are going to be paid by contestants at the coordination session. <br>
+                Participation fees for AUT teams would be 900,000 Rials, and for non-AUT teams 12,000,000 Rials. These
+                fees only apply to Iranian contestants and payment information will be sent to teams via their email.<br>
             </p>
             <br>
 
