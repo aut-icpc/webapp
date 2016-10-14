@@ -39,10 +39,10 @@
         <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
         <script src="{{ URL::asset('js/jquery.nicescroll.min.js') }}"></script>
         <script src="{{ URL::asset('js/jquery.nicescroll.plus.js') }}"></script>
-        <script src="{{ URL::asset('js/velocity.min.js') }}"></script>
-        <script src="{{ URL::asset('js/skrollr.min.js') }}"></script>
+        {{-- <script src="{{ URL::asset('js/velocity.min.js') }}"></script> --}}
+        {{-- <script src="{{ URL::asset('js/skrollr.min.js') }}"></script> --}
         <script src="{{ URL::asset('js/jquery.scrolline.js') }}"></script>
-        <script type="text/javascript" src="{{ URL::asset('js/modernizr.js') }}"></script>
+        {{-- <script type="text/javascript" src="{{ URL::asset('js/modernizr.js') }}"></script> --}}
         <script type="text/javascript" src="{{ URL::asset('js/materialize.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
         <!-- Google Analytics -->
