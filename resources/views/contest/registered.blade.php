@@ -8,7 +8,7 @@
             <p>
                 Here is the list of registered teams.
                 <br>
-                If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.
+                <b>If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.</b>
             </p>
             @if(count($data) == 0)
                 <div class="card waves-effect col s12 m12 l12">
