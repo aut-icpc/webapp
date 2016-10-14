@@ -6,7 +6,7 @@
             <br>
             <h4>Registered Teams</h4>
             <p>
-                <b>Here is the list of registered teams.</b>
+                Here is the list of registered teams.
                 <br>
                 If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.
             </p>
