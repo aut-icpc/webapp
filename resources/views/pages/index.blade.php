@@ -15,7 +15,7 @@
                 <img class="responsive-img" style="width: 60%;" src="{{ asset('img/aut_icpc.png') }}">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                16th <b>Amirkabir</b> International Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
+                16th <b>Amirkabir</b> International Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of <b>Amirkabir University of Technology</b>
                 <br> <br>
                 {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 <br>
