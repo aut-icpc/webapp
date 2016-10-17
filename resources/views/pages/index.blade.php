@@ -36,7 +36,7 @@
                     <div class="card-content">
                         <span class="card-title">Timings</span>
                         <p>Registration Dates</p>
-                        <p style="font-size: 33px;">October 13 - 28, 2016</p>
+                        <p style="font-size: 33px;">October 17 - 28, 2016</p>
                         <hr>
                         <p>Orientation Day (Iranian Teams Only)</p>
                         <p style="font-size: 33px;">November 02, 2016</p>
