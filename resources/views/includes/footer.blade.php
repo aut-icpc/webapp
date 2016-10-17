@@ -96,7 +96,8 @@
     <div class="footer-copyright" style="height: auto;">
         <div class="container center">
             © {{ (new \Carbon\Carbon())->year }}
-            <a class="yellow-text" href="http://ceit-ssc.ir" target="_blank">Student Scientific Chapter</a>
+            {{--<a class="yellow-text" href="http://ceit-ssc.ir" target="_blank">Student Scientific Chapter</a>--}}
+            Student Scientific Chapter
             of <a class="yellow-text" href="http://ceit.aut.ac.ir/" target="_blank">Computer Engineering and IT Department</a>
             at <a class="yellow-text" href="http://aut.ac.ir/" target="_blank">Amirkabir University of Technology (Tehran Polytechnic)</a>
         </div>
