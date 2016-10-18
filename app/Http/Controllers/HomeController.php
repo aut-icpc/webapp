@@ -53,36 +53,48 @@ class HomeController extends Controller
         $user = \Auth::user();
         $post->author()->associate($user);
         $post->published_at = $now->getTimestamp();
-        $files = $request->allFiles();
-//        dd($files);
-        if ($request->hasFile('picture')){
-            $pic = $request->file('picture');
-            $pic->storeAs('storage/', 'AUT-ACM-ICPC' . $now->getTimestamp() . $pic->getClientOriginalExtension());
-            $post->picture = 'storage/AUT-ACM-ICPC' . $now->getTimestamp() . $pic->getClientOriginalExtension();
-        }
-        // TODO: upload the photo and save it somewhere!
 
+        if ($request->has('RTL'))
+            $post->RTL = true;
+        else
+            $post->RTL = false;
+        $this->storeMedia($request, $post);
         $post->save();
         return redirect()->route('app::admin.live');
+    }
+
+    public function storeMedia(Request $request, LivePost $post) {
+        $now = $now = new Carbon();
+        if ($request->hasFile('picture')){
+            $fileName = 'AUT-ACM-ICPC' . $now->getTimestamp() . '.' . $request->picture->getClientOriginalExtension();
+            $request->picture->move('storage/live', $fileName);
+            $post->picture = 'storage/live/' . $fileName;
+            $post->save();
+        }
     }
 
     public function newLivePost () {
         return view('live.new');
     }
 
-    public function showPostEditForm(LivePost $post) {
-        return view('live.edit', ['post' => $post]);
+    public function showPostEditForm(LivePost $LivePost) {
+        return view('live.edit', ['post' => $LivePost]);
     }
 
     /** Edit LiveBlog Post item
      *
      * @param Request $request
-     * @param LivePost $post
+     * @param LivePost $LivePost
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function editPost (Request $request, LivePost $post) {
-        $post->fill($request->all());
-        $post->save();
+    public function editPost (Request $request, LivePost $LivePost) {
+        $LivePost->fill($request->all());
+        if ($request->has('RTL'))
+            $LivePost->RTL = true;
+        else
+            $LivePost->RTL = false;
+
+        $LivePost->save();
         return redirect()->route('app::admin.live');
     }
 
@@ -143,5 +155,14 @@ class HomeController extends Controller
     public function removeRegistration(OnsiteRegistration $team) {
         $team->delete();
         return redirect()->route('app::admin.registrations.show');
+    }
+
+    /**
+     * @param LivePost $LivePost
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function removeLivePost(LivePost $LivePost) {
+        $LivePost->delete();
+        return redirect()->route('app::admin.live');
     }
 }

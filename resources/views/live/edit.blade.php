@@ -8,7 +8,7 @@
             <div class="divider"></div>
             <br>
             <div class="container-fluid">
-                <form action="{{ route('app::admin.live.edit.save', ['LivePost' => $post]) }}" method="POST">
+                <form method="POST" action="{{ route('app::admin.live.edit.save', ['LivePost' => $post]) }}" accept-charset="UTF-8" name="newProduct" class="form-horizontal" enctype="multipart/form-data">
                     <!-- Post -->
                     <div class="row">
 
@@ -25,7 +25,7 @@
                             <div class="switch">
                                 <label>
                                     LTR
-                                    <input type="checkbox" name="RTL" {{$post->RTL == 'on' ? 'checked' : ''}}>
+                                    <input type="checkbox" name="RTL" {{$post->RTL ? 'checked' : ''}}>
                                     <span class="lever"></span>
                                     RTL
                                 </label>
@@ -35,7 +35,7 @@
 
                         <!-- Post Body -->
                         <div class="input-field col s12 m12 l12">
-                            <textarea name="body" id="textarea1" value="{{ $post->body or '' }}" class="materialize-textarea" length="1000"></textarea>
+                            <textarea dir="{{$post->RTL ? 'RTL' : 'LTR'}}" name="body" id="textarea1" class="materialize-textarea" length="1000">{{ $post->body or '' }}</textarea>
                             <label for="textarea1">Post Message</label>
                         </div>
                         <!-- /Post Body -->

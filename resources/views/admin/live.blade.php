@@ -14,8 +14,8 @@
             <ul class="collection">
                 @foreach($posts as $post)
                     <li class="collection-item avatar">
-                        @if($post->image != null)
-                            <img src="{{ $post->image }}" alt="" class="circle">
+                        @if(isset($post->picture))
+                            <img src="{{ $post->picture }}" alt="" class="circle">
                         @else
                             <i class="material-icons circle">textsms</i>
                         @endif
@@ -25,9 +25,14 @@
                             Published At: {{ \Carbon\Carbon::createFromTimestamp($post->published_at)->format("r") }}<br>
                             Published By: {{ $post->author->name }}
                         </p>
-                        <a href="{{ route('app::admin.live.edit', ['LivePost' => $post]) }}" class="secondary-content">
-                            <i class="material-icons">mode_edit</i>
-                        </a>
+                        <div class="col s1 m1 l1 secondary-content">
+                            <a href="{{ route('app::admin.live.edit', ['LivePost' => $post]) }}">
+                                <i class="material-icons cyan-text text-darken-2">mode_edit</i>
+                            </a>
+                            <a href="{{ route('app::admin.live.delete', ['LivePost' => $post]) }}" onclick="return confirm('Dude, Really?');">
+                                <i class="material-icons cyan-text text-darken-2">delete</i>
+                            </a>
+                        </div>
                     </li>
                 @endforeach
             </ul>

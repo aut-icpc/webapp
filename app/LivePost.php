@@ -14,6 +14,7 @@ use Moloquent\Eloquent\Model as Eloquent;
  * @property mixed message
  * @property Carbon published_at
  * @property User author
+ * @property boolean RTL
  */
 class LivePost extends Eloquent
 {

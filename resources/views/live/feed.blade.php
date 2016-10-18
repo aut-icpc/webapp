@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="non-skrollr">
         <div class="container-fluid">
             <div class="mast">
                 <h1>ACM ICPC</h1>
@@ -27,16 +26,17 @@
                 </div>
             @else
                 @foreach($newsGroup as $news)
-                    {{--<div class="col s12 m4 l3">--}}
-                        <div class="card waves-effect col s12 m6 l4">
+                        <div class="card waves-effect col s6 m6 l4" style="padding-left: 0px; padding-right: 0px;">
                             @if(isset($news->picture))
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="{{ asset($news->picture) }}">
+                                    <a href="{{ asset($news->picture) }}" target="_blank"><img src="{{ asset($news->picture) }}"></a>
+                                    {{--<img class="activator" src="{{ asset('img/iran.png') }}">--}}
                                 </div>
                             @endif
                             <div class="card-content">
+                                <b>{{ \Carbon\Carbon::createFromTimestamp($news->published_at)->format("j M Y - H:i:s (T)") }}</b><br>
                                 <span class="card-title activator grey-text text-darken-4">{{$news->title}}<i class="material-icons right">more_vert</i></span>
-                                <p>
+                                <p dir="{{ $news->RTL ? 'RTL' : 'LTR' }}">
                                     {{ $news->body }}
                                 </p>
                             </div>
@@ -47,14 +47,12 @@
                                 </p>
                             </div>
                         </div>
-                    {{--</div>--}}
                 @endforeach
             @endif
         </div>
 
         <div class="row">
         </div>
-    </div>
 
     {{--<div class="row height-container">--}}
     {{--<div class="scroll-1">--}}
