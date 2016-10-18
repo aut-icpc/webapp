@@ -9,7 +9,7 @@
                 <h5>Rules</h5>
                 <ol>
                     <li>Every team should consist of 3 members.</li>
-                    <li>Number of problems whould be between 8 to 12.</li>
+                    <li>Number of problems would be between 8 to 12.</li>
                     <li>Problems are in English.</li>
                     <li>Contest duration is 5 hours.</li>
                     <li>Bringing every electronical device to the contest location is forbidden.</li>
@@ -19,7 +19,7 @@
                     <li>Ranking system: The team with more solved problems is ranked higher. Tied teams are ranked related to their times.(A team with less time is considered to be better)
                         The time for each team is the sumation of the times of problems solved (time elapsed from the beginning of contest) plus 20 minutes penalty for each not accepted submission of solved problems.</li>
                     <li>Participation of at least one of the members of each team in the coordinations session the day before the contest day is mandatory.</li>
-                    <li>At least 3 teams will be qualified for the Asia region - Tehran site. for more details please read  <a href="files/aut_acmicpc_local_rules_2015_persian.pdf">Farsi rules</a>.</li>
+                    <li>At least 3 teams will be qualified for the Asia region - Tehran site. for more details please read  <a href="{{ asset('files/aut_acmicpc_local_rules_2016_persian.pdf') }}">Farsi rules</a>.</li>
                     <li>Further explanations in coordination session.</li>
                 </ol>
                 <p>&nbsp;</p>

@@ -14,6 +14,7 @@ use Moloquent\Eloquent\Model as Eloquent;
  * @property string site
  * @property array members
  * @property array status
+ * @property boolean register_is_ok
  */
 class OnsiteRegistration extends Eloquent
 {

@@ -21,23 +21,25 @@
                 </div>
             @else
                 @foreach($data as $record)
-                    <div class="col s12 m6 l6">
-                        <div class="card {{ $record->status['style'] }}">
-                            <div class="card-content">
-                                <span class="card-title">{{ $record->status['status'] }}</span>
-                                <p>
-                                    Team Name: <b>{{$record->team_name}}</b> <br>
-                                    Institution: <b>{{$record->institute_name}}</b><br>
-                                    Team Location: <b>{{$record->site}}</b><br>
-                                </p>
-                                {{--<p>--}}
-                                {{--Contestant #1: <b>{{$record->members['first']['first_name'] . ' ' . $record->members['first']['last_name']}}</b><br>--}}
-                                {{--Contestant #2: <b>{{$record->members['second']['first_name'] . ' ' . $record->members['second']['last_name']}}</b><br>--}}
-                                {{--Contestant #3: <b>{{$record->members['third']['first_name'] . ' ' . $record->members['third']['last_name']}}</b><br>--}}
-                                {{--</p>--}}
+                    @if ($data->register_approved)
+                        <div class="col s12 m6 l6">
+                            <div class="card {{ $record->status['style'] }}">
+                                <div class="card-content">
+                                    <span class="card-title">{{ $record->status['status'] }}</span>
+                                    <p>
+                                        Team Name: <b>{{$record->team_name}}</b> <br>
+                                        Institution: <b>{{$record->institute_name}}</b><br>
+                                        Team Location: <b>{{$record->site}}</b><br>
+                                    </p>
+                                    {{--<p>--}}
+                                    {{--Contestant #1: <b>{{$record->members['first']['first_name'] . ' ' . $record->members['first']['last_name']}}</b><br>--}}
+                                    {{--Contestant #2: <b>{{$record->members['second']['first_name'] . ' ' . $record->members['second']['last_name']}}</b><br>--}}
+                                    {{--Contestant #3: <b>{{$record->members['third']['first_name'] . ' ' . $record->members['third']['last_name']}}</b><br>--}}
+                                    {{--</p>--}}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endif
                 @endforeach
             @endif
         </div>

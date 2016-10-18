@@ -32,6 +32,7 @@ class ContestController extends Controller
         if ($resp->isSuccess()){
             $registration = new OnsiteRegistration($request->all());
             $registration->status = OnsiteRegistration::$PENDING;
+            $registration->register_is_ok = false;
             $saved = $registration->save();
             // TODO : add additional variables like email activation and so...
             if ($saved) {
