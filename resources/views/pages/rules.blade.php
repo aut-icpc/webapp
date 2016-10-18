@@ -71,7 +71,7 @@
                 </p>
                 <p>Each team consists of three contestants who are eligible to compete in the ICPC World Finals as described under <a href="http://cm2prod.baylor.edu/ICPCWiki/Wiki.jsp?page=Regional%20Rules#section-Regional+Rules-AdvancingToTheWorldFinals">Advancing to the World Finals</a>. The team's contestants must satisfy the following eligibility rules. </p>
                 <h5> <strong>Contestant Eligibility Rules</strong> </h5>
-                <p>Please refer to the <a href="http://icpc.baylor.edu/regionals/rules/EligibilityDecisionTree-2014.pdf">Eligibility Decision Tree</a> to more easily determine eligibility </p>
+                <p>Please refer to the <a href="https://icpc.baylor.edu/download/regionals/rules/EligibilityDecisionTree-2016.pdf">Eligibility Decision Tree</a> to more easily determine eligibility </p>
                 <h5><strong>Basic Requirements</strong> </h5>
                 <ul>
                     <li>A student must be willing and able to compete in the World Finals. </li>

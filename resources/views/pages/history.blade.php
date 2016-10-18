@@ -77,8 +77,8 @@
                                 <b>Coach:</b> Ali Sharifrazavian<br>
                                 <b>Team Members:</b> <br>
                                 <center>
-                                    Mohammad Javad Rezayee Seraji<br>
                                     Pooya Zafar Asadollahpoor<br>
+                                    Mohammad Javad Rezayee Seraji<br>
                                     Pouria Alimirzaee<br>
                                 </center>
                             </span>

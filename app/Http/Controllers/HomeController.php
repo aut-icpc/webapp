@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\LivePost;
 use App\OnlineRegistration;
 use App\OnsiteRegistration;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -27,7 +28,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.home');
+        if (\Auth::user()->access_level == User::$SUPER_ADMIN)
+            return view('admin.home');
+        else {
+            \Auth::logout();
+            return view('errors.404');
+        }
     }
 
     /**
@@ -47,7 +53,13 @@ class HomeController extends Controller
         $user = \Auth::user();
         $post->author()->associate($user);
         $post->published_at = $now->getTimestamp();
-
+        $files = $request->allFiles();
+//        dd($files);
+        if ($request->hasFile('picture')){
+            $pic = $request->file('picture');
+            $pic->storeAs('storage/', 'AUT-ACM-ICPC' . $now->getTimestamp() . $pic->getClientOriginalExtension());
+            $post->picture = 'storage/AUT-ACM-ICPC' . $now->getTimestamp() . $pic->getClientOriginalExtension();
+        }
         // TODO: upload the photo and save it somewhere!
 
         $post->save();

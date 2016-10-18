@@ -39,8 +39,8 @@ Route::get('/home/registrations', 'HomeController@showRegistrations')->name('app
 Route::get('home/registrations/{team}', 'HomeController@showEditRegistrationForm')->name('app::admin.registration.edit')->middleware('admin');
 Route::post('home/registrations/{team}', 'HomeController@saveRegistration')->name('app::admin.registration.save')->middleware('admin');
 Route::get('home/registrations/{team}/delete', 'HomeController@removeRegistration')->name('app::admin.registration.delete')->middleware('admin');
-Route::get('/home/live', 'HomeController@showLiveAdmin')->name('app::admin.live');
-Route::get('/home/live/new', 'HomeController@newLivePost')->name('app::admin.live.new');
-Route::post('/home/live/new', 'HomeController@saveLivePost')->name('app::admin.live.new.save');
-Route::get('/home/live/edit/{LivePost}', 'HomeController@showPostEditForm')->name('app::admin.live.edit');
-Route::post('/home/live/edit/{LivePost}', 'HomeController@editPost')->name('app::admin.live.edit.save');
+Route::get('/home/live', 'HomeController@showLiveAdmin')->name('app::admin.live')->middleware('admin');
+Route::get('/home/live/new', 'HomeController@newLivePost')->name('app::admin.live.new')->middleware('admin');
+Route::post('/home/live/new', 'HomeController@saveLivePost')->name('app::admin.live.new.save')->middleware('admin');
+Route::get('/home/live/edit/{LivePost}', 'HomeController@showPostEditForm')->name('app::admin.live.edit')->middleware('admin');
+Route::post('/home/live/edit/{LivePost}', 'HomeController@editPost')->name('app::admin.live.edit.save')->middleware('admin');

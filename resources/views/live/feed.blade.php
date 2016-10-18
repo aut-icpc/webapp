@@ -28,10 +28,10 @@
             @else
                 @foreach($newsGroup as $news)
                     {{--<div class="col s12 m4 l3">--}}
-                        <div class="card waves-effect col s12 m4 l3">
-                            @if(isset($news->image))
+                        <div class="card waves-effect col s12 m6 l4">
+                            @if(isset($news->picture))
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="{{ asset($news->image) }}">
+                                    <img class="activator" src="{{ asset($news->picture) }}">
                                 </div>
                             @endif
                             <div class="card-content">

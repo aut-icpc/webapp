@@ -24,7 +24,7 @@ annual activity of the Association for Computing  Machinery (ACM) that provides 
         [
             'q' => 'Who can participate in the ACM/ICPC?',
             'a' => 'Everybody who can pass the
-<a href="http://icpc.baylor.edu/download/regionals/rules/EligibilityDecisionTree-2014.pdf">Eligibility  Decision Tree</a>.'
+<a href="https://icpc.baylor.edu/download/regionals/rules/EligibilityDecisionTree-2016.pdf">Eligibility  Decision Tree</a>.'
         ],
         [
             'q' => 'Which  materials are allowed in contest day?',

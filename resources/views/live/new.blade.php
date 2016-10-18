@@ -8,7 +8,7 @@
             <div class="divider"></div>
             <br>
             <div class="container-fluid">
-                <form action="{{ route('app::admin.live.new.save') }}" method="POST">
+                <form action="{{ route('app::admin.live.new.save') }}" method="POST" >
                     <!-- Post -->
                     <div class="row">
 
@@ -44,19 +44,17 @@
                         <div class="file-field input-field col s4 m4 l4">
                             <div class="btn">
                                 <span>Picture</span>
-                                <input name="picture" type="file" id="image">
+                                <input type="file" name="foto" accept="image/*">
                             </div>
                             <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
+                                <input name="picture-name" class="file-path validate" type="text">
                             </div>
                         </div>
                         <!-- /Picture -->
 
                         <!-- Submit -->
                         <div class="input-field col s12 m12 l12 center">
-                            <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Go Live!
-                                <i class="material-icons right">done_all</i>
-                            </button>
+                            <input type="submit" name="action">
                         </div>
                         <!-- /Submit -->
 

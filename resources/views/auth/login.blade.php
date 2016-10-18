@@ -41,20 +41,19 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember"> Remember Me
-                                    </label>
+                                    <input type="checkbox" name="remember" id="remember">
+                                    <label for="remember"> Remember Me</label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary cyan darken-2">
                                     Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">
+                                <a class="btn btn-link cyan darken-2" href="{{ url('/password/reset') }}">
                                     Forgot Your Password?
                                 </a>
                             </div>

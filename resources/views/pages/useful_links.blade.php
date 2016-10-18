@@ -7,9 +7,9 @@
             <h2><br>Useful Links<br></h2>
             <div class="container-fluid">
                 <h5 dir="ltr"><strong>Online judges</strong></h5>
-                <p dir="ltr"><a href="http://cii-judge.baylor.edu/">ACM  Live Archive</a> (has many problems from past <a href="http://cm1prod.baylor.edu/login.jsf">ACM/ICPC</a> regional contests and  world finals.)<br />
+                <p dir="ltr"><a href="https://icpcarchive.ecs.baylor.edu">ACM  Live Archive</a> (has many problems from past <a href="http://icpc.baylor.edu">ACM/ICPC</a> regional contests and  world finals.)<br />
                     <br />
-                    <a href="http://icpcres.ecs.baylor.edu/onlinejudge/">UVA Online Judge</a> (more than 2400 problems available. All problems on this site are from this  judge.)<br />
+                    <a href="http://uva.onlinejudge.org">UVA Online Judge</a> (more than 2400 problems available. All problems on this site are from this  judge.)<br />
                     <a href="http://acm.sgu.ru/"><br />
                         Saratov Online Judge</a> (over 300  problems, most problems are also rather challenging.)<br />
                     <a href="http://acm.tju.edu.cn/toj/"><br />

@@ -2,13 +2,15 @@
 
 @section('content')
     <div id="non-skrollr">
-        <div class="row">
+        <div class="row section">
             <h4>Live Blog Posts</h4>
             <div class="col s12 m12 l12 center">
                 <a href="{{ route('app::admin.live.new') }}" class="btn waves-effect waves-light btn-large cyan">
                     <i class="material-icons right">note_add</i> Add a new Post
                 </a>
             </div>
+        </div>
+        <div class="row section">
             <ul class="collection">
                 @foreach($posts as $post)
                     <li class="collection-item avatar">
