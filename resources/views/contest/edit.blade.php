@@ -51,7 +51,7 @@
                                 </a>
                             </div>
                             <div class="input-field col s4 m4 l4">
-                                <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Done
+                                <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Verify Registration
                                     <i class="material-icons right">done_all</i>
                                 </button>
                             </div>

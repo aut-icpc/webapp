@@ -8,7 +8,8 @@
             <p>
                 Here is the list of registered teams.
                 <br>
-                <b>If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.</b>
+                <b>If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.</b> <br>
+                <b>If you don't see your team Information below, we are probably reviewing your information.</b>
             </p>
             @if(count($data) == 0)
                 <div class="card waves-effect col s12 m12 l12">
@@ -21,7 +22,7 @@
                 </div>
             @else
                 @foreach($data as $record)
-                    @if ($data->register_approved)
+                    @if ($record->register_is_ok)
                         <div class="col s12 m6 l6">
                             <div class="card {{ $record->status['style'] }}">
                                 <div class="card-content">

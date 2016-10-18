@@ -112,6 +112,7 @@ class HomeController extends Controller
      */
     public function saveRegistration(Request $request, OnsiteRegistration $team) {
         $team->fill($request->all());
+        $team->register_is_ok = true;
         $status = $request->get('status');
         switch ($status){
             case (OnsiteRegistration::$PENDING['status']) :
