@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\OnlineRegistered;
 use App\Events\OnSiteRegistered;
 use App\OnlineRegistration;
 use App\OnsiteRegistration;
@@ -57,8 +58,10 @@ class ContestController extends Controller
         $registration->fill($request->all());
         $saved = $registration->save();
         // TODO : add additional variables like email activation and so...
-        if ($saved)
-            return view();
+        if ($saved) {
+            event(new OnlineRegistered($registration));
+            return view('contest.online_done');
+        }
         else
             redirect()->back();
     }

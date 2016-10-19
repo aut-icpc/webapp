@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <form class="col s12 m12 l12" action="{{ route('app::contest.register.online_post') }}">
+    <form class="col s12 m12 l12" action="{{ route('app::contest.register.online_post') }}" method="POST">
     <div id="non-skrollr">
 
         <div class="row">
             <h3><br>Online Contest Registration<br></h3>
-            <h5>16th Amirkabir Collegiate Programming Contest - 04 Nov 2016</h5>
+            <h5>16th Amirkabir Collegiate Programming Contest</h5>
             <p>
                 If you are willing to register in On-Site contest, follow <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">this link</a>.
             </p>
@@ -17,15 +17,15 @@
                     <div class="row">
                         <h5><i class="material-icons">perm_identity</i> Contestant Information</h5>
                         <div class="input-field col s4 m4 l4">
-                            <input type="text" name="first_name" id="mem1-first-name" class="validate">
+                            <input type="text" name="members[first][first_name]" id="mem1-first-name" class="validate">
                             <label for="mem1-first-name">First Name</label>
                         </div>
                         <div class="input-field col s4 m4 l4">
-                            <input type="text" name="last_name" id="mem1-last-name" class="validate">
+                            <input type="text" name="members[first][last_name]" id="mem1-last-name" class="validate">
                             <label for="mem1-last-name">Last Name</label>
                         </div>
                         <div class="input-field col s4 m4 l4">
-                            <select name="gender" id="mem1-gender">
+                            <select name="members[first][gender]" id="mem1-gender">
                                 <option value="" disabled selected>Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
@@ -39,11 +39,11 @@
                             <label for="institute-name">Institution</label>
                         </div>
                         <div class="input-field col s2 m2 l2">
-                            <input type="text" name="student_number" id="mem1-student-number" class="validate">
+                            <input type="text" name="members[first][student_number]" id="mem1-student-number" class="validate">
                             <label for="mem1-student-number">Student Number</label>
                         </div>
                         <div class="input-field col s3 m3 l3">
-                            <select name="degree" id="mem1-degree">
+                            <select name="members[first][degree]" id="mem1-degree">
                                 <option value="" disabled selected>Current educational level</option>
                                 <option value="BSc.">BSc.</option>
                                 <option value="MSc.">MSc.</option>
@@ -51,11 +51,11 @@
                             <label>Current Educational Level</label>
                         </div>
                         <div class="input-field col s3 m3 l3">
-                            <input id="mem1-email" name="email" type="email" class="validate">
+                            <input id="mem1-email" name="members[first][email]" type="email" class="validate">
                             <label for="mem1-email" data-error="Wrong Mail Format" data-success="Correct Mail Format" >Email</label>
                         </div>
                         <div class="input-field col s2 m2 l2">
-                            <input id="mem1-phone" name="phone" type="tel" class="validate">
+                            <input id="mem1-phone" name="members[first][phone]" type="tel" class="validate">
                             <label for="mem1-phone">Phone Number</label>
                         </div>
                         <div class="input-field col s12 m12 l12 center">

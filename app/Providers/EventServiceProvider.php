@@ -16,6 +16,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\OnSiteRegistered' => [
             'App\Listeners\OnSiteRegistrationListener',
         ],
+        'App\Events\OnlineRegistered' => [
+            'App\Listeners\OnlineRegistrationListener',
+        ],
         'Illuminate\Mail\Events\MessageSending' => [
             'App\Listeners\LogSentMessage',
         ],
