@@ -34,7 +34,11 @@ class OnlineRegistrationListener
                 'name' => $member['first_name'] . ' ' . $member['last_name']
             ]);
         }
-        $resp = \Mail::to($emails)->send(new \App\Mail\OnlineRegistered($data));
+        try {
+            $resp = \Mail::to($emails)->send(new \App\Mail\OnlineRegistered($data));
+        } catch (\Exception $e){
+            \Log::info($e->getMessage());
+        }
 //        \Log::info('RESP IS : ' . $resp);
     }
 }

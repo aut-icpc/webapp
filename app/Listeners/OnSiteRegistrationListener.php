@@ -34,8 +34,12 @@ class OnSiteRegistrationListener
                 'email' => $member['email'],
                 'name' => $member['first_name'] . ' ' . $member['last_name']
             ]);
+        try{
+            $resp = \Mail::to($emails)->send(new RegistrationPending($data));
+        } catch (\Exception $e){
+            Log::info($e->getMessage());
         }
-        $resp = \Mail::to($emails)->send(new RegistrationPending($data));
+    }
 //        \Log::info('RESP IS : ' . $resp);
     }
 }
