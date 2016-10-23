@@ -36,6 +36,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('app::admin');
 Route::get('/home/registrations', 'HomeController@showRegistrations')->name('app::admin.registrations.show')->middleware('admin');
+Route::get('/home/registrations/live', 'HomeController@showOnlineRegistrations')->name('app::admin.registrations.online.show')->middleware('admin');
 Route::get('home/registrations/{team}', 'HomeController@showEditRegistrationForm')->name('app::admin.registration.edit')->middleware('admin');
 Route::post('home/registrations/{team}', 'HomeController@saveRegistration')->name('app::admin.registration.save')->middleware('admin');
 Route::get('home/registrations/{team}/delete', 'HomeController@removeRegistration')->name('app::admin.registration.delete')->middleware('admin');

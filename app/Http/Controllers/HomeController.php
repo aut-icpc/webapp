@@ -108,6 +108,12 @@ class HomeController extends Controller
         return view('admin.registrations', ['data' => $data]);
     }
 
+    public function showOnlineRegistrations()
+    {
+        $data = OnlineRegistration::all()->sortBy('created_at');
+        return view('admin.online_registrations', ['data' => $data]);
+    }
+
     /** Show the Registration edit form
      *
      * @param OnsiteRegistration $team

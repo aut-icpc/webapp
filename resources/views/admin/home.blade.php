@@ -27,7 +27,7 @@
                     <a href="{{ route('app::admin.registrations.show') }}">
                         <div class="card cyan white-text waves-effect">
                             <div class="card-content text-center">
-                                <span class="card-title">Registrations</span>
+                                <span class="card-title">OnSite Registrations</span>
                             </div>
                         </div>
                     </a>
@@ -37,6 +37,15 @@
                         <div class="card cyan white-text waves-effect">
                             <div class="card-content text-center">
                                 <span class="card-title">Email</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s4 m4 l4">
+                    <a href="{{ route('app::admin.registrations.online.show') }}">
+                        <div class="card cyan white-text waves-effect">
+                            <div class="card-content text-center">
+                                <span class="card-title">Online Registrations</span>
                             </div>
                         </div>
                     </a>
