@@ -36,6 +36,7 @@
             <table class="highlight bordered centered">
                 <thead>
                 <tr>
+                    <th data-field="number">#</th>
                     <th data-field="name">Team Name</th>
                     <th data-field="institute">Institution</th>
                     <th data-field="country">Country</th>
@@ -48,6 +49,7 @@
                 <tbody>
                     @foreach($data as $team)
                         <tr class="{{$team->status['style']}}">
+                            <td>{{$loop->iteration}}</td>
                             <td>{{$team->team_name}}</td>
                             <td>{{$team->institute_name}}</td>
                             <td>{{$team->site}}</td>

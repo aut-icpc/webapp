@@ -11,6 +11,7 @@
             <table class="highlight bordered centered">
                 <thead>
                 <tr>
+                    <th data-field="number">#</th>
                     <th data-field="name">Name</th>
                     <th data-field="institute">Institution</th>
                     <th data-field="country">Email</th>
@@ -20,6 +21,7 @@
                 <tbody>
                 @foreach($data as $team)
                     <tr class="{{$team->status['style']}}">
+                        <td>{{$loop->iteration}}</td>
                         <td>{{$team->members['first']['first_name'] . ' ' . $team->members['first']['last_name']}}</td>
                         <td>{{$team->institute_name}}</td>
                         <td>{{$team->members['first']['email']}}</td>
