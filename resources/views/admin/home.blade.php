@@ -13,7 +13,7 @@
         </div>
 
         <div class="row">
-            <div class="col s2 m2 l2">
+            <div class="col s4 m4 l4">
                 <a href="{{ route('app::admin.live') }}">
                     <div class="card cyan white-text waves-effect">
                         <div class="card-content text-center">
@@ -23,11 +23,20 @@
                 </a>
             </div>
             @if(Auth::user()->access_level == \App\User::$SUPER_ADMIN)
-                <div class="col s2 m2 l2">
+                <div class="col s4 m4 l4">
                     <a href="{{ route('app::admin.registrations.show') }}">
                         <div class="card cyan white-text waves-effect">
                             <div class="card-content text-center">
                                 <span class="card-title">Registrations</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s4 m4 l4">
+                    <a href="{{ route('app::admin.mail.form') }}">
+                        <div class="card cyan white-text waves-effect">
+                            <div class="card-content text-center">
+                                <span class="card-title">Email</span>
                             </div>
                         </div>
                     </a>

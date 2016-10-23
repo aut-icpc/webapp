@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\CustomEmailSubmission;
 use App\LivePost;
 use App\OnlineRegistration;
 use App\OnsiteRegistration;
@@ -103,7 +104,7 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showRegistrations () {
-        $data = OnsiteRegistration::all()->sortBy('status.status');
+        $data = OnsiteRegistration::all()->sortBy('created_at');
         return view('admin.registrations', ['data' => $data]);
     }
 
@@ -164,5 +165,62 @@ class HomeController extends Controller
     public function removeLivePost(LivePost $LivePost) {
         $LivePost->delete();
         return redirect()->route('app::admin.live');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showCustomMailForm()
+    {
+        return view('admin.custom_email', ['to' => '', 'cc' => '', 'bcc' => '']);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function sendCustomEmail(Request $request){
+        $raw_to = $request->get('to','');
+        $raw_to = explode(';', $raw_to);
+        $to = [['email' => 'ceit.ssc@aut.ac.ir']];
+        foreach ($raw_to as $email){
+            if ($email != '')
+                array_push($to, ['email' => $email]);
+        }
+        $raw_cc = $request->get('cc','');
+        $raw_cc = explode(';', $raw_cc);
+        $cc = [['email' => 'ceit.ssc@aut.ac.ir']];
+        foreach ($raw_cc as $email){
+            if ($email != '')
+                array_push($cc, ['email' => $email]);
+        }
+        $raw_bcc = $request->get('bcc','');
+        $raw_bcc = explode(';', $raw_bcc);
+        $bcc = [['email' => 'haghighati.amir@gmail.com']];
+        foreach ($raw_bcc as $email){
+            if ($email != '')
+                array_push($bcc, ['email' => $email]);
+        }
+        $title = $request->get('title', '');
+        $message = $request->get('body', '');
+
+        $onSite_bcc = $request->has('bcc_onsite');
+        if ($onSite_bcc) {
+            foreach (OnsiteRegistration::where('status.status', '<>', OnsiteRegistration::$REJECTED['status'])->get() as $team){
+                foreach ($team->members as $member){
+                    array_push($bcc, ['email' => $member['email']]);
+                }
+            }
+        }
+        $onLine_bcc = $request->has('bcc_online');
+        if ($onLine_bcc) {
+            foreach (OnlineRegistration::all() as $team){
+                foreach ($team->members as $member){
+                    array_push($bcc, ['email' => $member['email']]);
+                }
+            }
+        }
+        event(new CustomEmailSubmission($to, $cc, $bcc, $title, $message));
+        return redirect()->route('app::admin');
     }
 }

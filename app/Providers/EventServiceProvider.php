@@ -13,6 +13,9 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
+        'App\Events\CustomEmailSubmission' => [
+            'App\Listeners\CustomEmailSubmissionListener',
+        ],
         'App\Events\OnSiteRegistered' => [
             'App\Listeners\OnSiteRegistrationListener',
         ],

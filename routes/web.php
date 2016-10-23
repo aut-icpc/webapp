@@ -45,3 +45,5 @@ Route::post('/home/live/new/upload', 'HomeController@saveLivePost')->name('app::
 Route::get('/home/live/edit/{LivePost}', 'HomeController@showPostEditForm')->name('app::admin.live.edit')->middleware('admin');
 Route::get('/home/live/edit/{LivePost}/delete', 'HomeController@removeLivePost')->name('app::admin.live.delete')->middleware('admin');
 Route::post('/home/live/edit/{LivePost}', 'HomeController@editPost')->name('app::admin.live.edit.save')->middleware('admin');
+Route::get('/home/mail/custom', 'HomeController@showCustomMailForm')->name('app::admin.mail.form')->middleware('admin');
+Route::post('/home/mail/custom', 'HomeController@sendCustomEmail')->name('app::admin.mail.send')->middleware('admin');
