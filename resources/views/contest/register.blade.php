@@ -247,7 +247,7 @@
 
 @push('scripts')
     <script type="text/javascript" src="{{ asset('js/validate.js') }}"></script>
-    <script>
+    <script type="text/javascript">
         $(document).ready(function() {
             $('select').material_select();
         });
