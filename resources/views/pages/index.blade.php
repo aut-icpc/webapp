@@ -43,9 +43,11 @@
                         <hr>
                         <p>On-Site Contest</p>
                         <p style="font-size: 33px;">November 04, 2016</p>
+                        <p style="font-size: 20px;">10:00:00 (UTC)</p>
                         <hr>
-                        <p>On-Lite Contest (Delayed)</p>
+                        <p>On-Line Contest (Delayed)</p>
                         <p style="font-size: 33px;">November 04, 2016</p>
+                        <p style="font-size: 20px;">10:30:00 (UTC)</p>
                     </div>
                 </div>
             </div>
