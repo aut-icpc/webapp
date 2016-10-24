@@ -300,11 +300,11 @@
                 display: 'First Contestant\'s Email Address',
                 rules: 'required|valid_email'
             },
-            {
-                name: 'members[first][phone]',
-                display: 'First Contestant\'s Phone Number',
-                rules: 'required|numeric'
-            },
+//            {
+//                name: 'members[first][phone]',
+//                display: 'First Contestant\'s Phone Number',
+//                rules: 'required|numeric'
+//            },
             {
                 name: 'members[first][agreement]',
                 display: 'First Contestant\'s Agreement',
@@ -341,11 +341,11 @@
                 display: 'Second Contestant\'s Email Address',
                 rules: 'required|valid_email'
             },
-            {
-                name: 'members[second][phone]',
-                display: 'Second Contestant\'s Phone Number',
-                rules: 'required|numeric'
-            },
+//            {
+//                name: 'members[second][phone]',
+//                display: 'Second Contestant\'s Phone Number',
+//                rules: 'required|numeric'
+//            },
             {
                 name: 'members[second][agreement]',
                 display: 'Second Contestant\'s Agreement',
@@ -382,11 +382,11 @@
                 display: 'Third Contestant\'s Email Address',
                 rules: 'required|valid_email'
             },
-            {
-                name: 'members[third][phone]',
-                display: 'Third Contestant\'s Phone Number',
-                rules: 'required|numeric'
-            },
+//            {
+//                name: 'members[third][phone]',
+//                display: 'Third Contestant\'s Phone Number',
+//                rules: 'required|numeric'
+//            },
             {
                 name: 'members[third][agreement]',
                 display: 'Third Contestant\'s Agreement',
