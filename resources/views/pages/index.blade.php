@@ -19,6 +19,7 @@
                 <br> <br>
                 {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 <br>
+                <div class="center" id="time"></div>
                 <a href="{{ route('app::contest.pre-register') }}">
                     <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration
                         <i class="material-icons right">supervisor_account</i>
@@ -143,6 +144,16 @@
     $(document).ready(function(){
         $('ul.tabs').tabs();
         $('.parallax').parallax();
+    });
+</script>
+<script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
+<script type="text/javascript">
+    $('#time').countdown('2016/11/04 13:30:00', function(event) {
+        var $this = $(this).html(event.strftime(''
+                + '<b><span style="font-size: 100px;" >%D</b>Days </span>'
+                + '<b><span style="font-size: 100px;" > - %H</b></span>'
+                + '<b><span style="font-size: 100px;" >:%M<b></span>'
+                + '<b><span style="font-size: 100px;" >:%S</b></span>'));
     });
 </script>
 @endpush
