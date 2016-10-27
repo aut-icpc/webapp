@@ -26,13 +26,7 @@
                             <label for="institute-name">Institution</label>
                         </div>
                         <div class="input-field col s4 m4 l4">
-                            <select name="site" class="icons" id="site">
-                                <option value="" disabled>Select your country</option>
-                                <option value="Iran" data-icon="{{ URL::asset('img/iran.png') }}" class="left circle" selected>Iran</option>
-                                <option value="Sweden" data-icon="{{ URL::asset('img/sweden.png') }}" class="left circle">Sweden</option>
-                                <option value="Poland" data-icon="{{ URL::asset('img/poland.png') }}" class="left circle">Poland</option>
-                                <option value="Other" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle">Other</option>
-                            </select>
+                            <input name="site" type="text" id="site" placeholder="Iran" class="validate">
                             <label for="site">Country</label>
                         </div>
                     </div>
@@ -228,11 +222,11 @@
 //            display: 'Institution Name',
 //            rules: 'required'
 //        },
-//        {
-//            name: 'site',
-//            display: 'Site',
-//            rules: 'required'
-//        },
+        {
+            name: 'site',
+            display: 'Site',
+            rules: 'required'
+        },
         // Contestant #1
         {
             name: 'members[first][first_name]',
