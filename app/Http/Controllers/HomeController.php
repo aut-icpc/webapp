@@ -214,7 +214,8 @@ class HomeController extends Controller
         if ($onSite_bcc) {
             foreach (OnsiteRegistration::where('status.status', '<>', OnsiteRegistration::$REJECTED['status'])->get() as $team){
                 foreach ($team->members as $member){
-                    array_push($bcc, ['email' => $member['email']]);
+                    if ($member['email'] != '')
+                        array_push($bcc, ['email' => $member['email']]);
                 }
             }
         }
@@ -222,7 +223,8 @@ class HomeController extends Controller
         if ($onLine_bcc) {
             foreach (OnlineRegistration::all() as $team){
                 foreach ($team->members as $member){
-                    array_push($bcc, ['email' => $member['email']]);
+                    if ($member['email'] != '')
+                        array_push($bcc, ['email' => $member['email']]);
                 }
             }
         }
