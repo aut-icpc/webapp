@@ -25,6 +25,7 @@ Route::get('/past', 'PagesController@showPastContests')->name('app::past');
 Route::get('2016/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
 Route::get('/2016/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
 Route::get('/2016/registered', 'ContestController@showContestRegisteredTeams')->name('app::contest.registered');
+Route::get('/2016/registered/online', 'ContestController@showOnlineContestRegisteredTeams')->name('app::online_contest.registered');
 Route::post('/2016/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
 
 Route::get('/2016/register/online', 'ContestController@showOnLineRegistrationForm')->name('app::contest.register.online');
@@ -32,14 +33,25 @@ Route::post('/2016/register/online', 'ContestController@saveOnlineContestSubmiss
 
 Route::get('/live', 'LiveController@showFeed')->name('app::live.feed');
 
+
+
 Auth::routes();
+
+
 
 Route::get('/home', 'HomeController@index')->name('app::admin');
 Route::get('/home/registrations', 'HomeController@showRegistrations')->name('app::admin.registrations.show')->middleware('admin');
-Route::get('/home/registrations/live', 'HomeController@showOnlineRegistrations')->name('app::admin.registrations.online.show')->middleware('admin');
+Route::get('/home/registrations/online', 'HomeController@showOnlineRegistrations')->name('app::admin.online_registrations.show')->middleware('admin');
+
 Route::get('home/registrations/{team}', 'HomeController@showEditRegistrationForm')->name('app::admin.registration.edit')->middleware('admin');
 Route::post('home/registrations/{team}', 'HomeController@saveRegistration')->name('app::admin.registration.save')->middleware('admin');
+
+Route::get('home/registrations/online/{team}', 'HomeController@showEditOnlineRegistrationForm')->name('app::admin.online_registration.edit')->middleware('admin');
+Route::post('home/registrations/online/{team}', 'HomeController@saveOnlineRegistration')->name('app::admin.online_registration.save')->middleware('admin');
+
 Route::get('home/registrations/{team}/delete', 'HomeController@removeRegistration')->name('app::admin.registration.delete')->middleware('admin');
+Route::get('home/registrations/online/{team}/delete', 'HomeController@removeOnlineRegistration')->name('app::admin.online_registration.delete')->middleware('admin');
+
 Route::get('/home/live', 'HomeController@showLiveAdmin')->name('app::admin.live')->middleware('admin');
 Route::get('/home/live/new', 'HomeController@newLivePost')->name('app::admin.live.new')->middleware('admin');
 Route::post('/home/live/new/upload', 'HomeController@saveLivePost')->name('app::admin.live.new.save')->middleware('admin');

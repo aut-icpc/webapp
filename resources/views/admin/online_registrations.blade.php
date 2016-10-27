@@ -27,8 +27,7 @@
                         <td>{{$team->members['first']['email']}}</td>
                         <td>
                             <center>
-                                {{-- route('app::admin.registration.edit', $team) --}}
-                                <a class="cyan-text text-darken-2" href="#" target="_blank">
+                                <a class="cyan-text text-darken-2" href="{{ route('app::admin.online_registration.edit', $team) }}" target="_blank">
                                     <i class="material-icons">mode_edit</i>
                                 </a>
                             </center>

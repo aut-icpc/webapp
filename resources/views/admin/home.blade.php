@@ -42,7 +42,7 @@
                     </a>
                 </div>
                 <div class="col s4 m4 l4">
-                    <a href="{{ route('app::admin.registrations.online.show') }}">
+                    <a href="{{ route('app::admin.online_registrations.show') }}">
                         <div class="card cyan white-text waves-effect">
                             <div class="card-content text-center">
                                 <span class="card-title">Online Registrations</span>

@@ -229,4 +229,40 @@ class HomeController extends Controller
         event(new CustomEmailSubmission($to, $cc, $bcc, $title, $message));
         return redirect()->route('app::admin');
     }
+
+
+    public function showEditOnlineRegistrationForm(OnlineRegistration $team) {
+        return view('contest.online_edit', ['team' => $team]);
+    }
+
+    public function saveOnlineRegistration(Request $request, OnlineRegistration $team) {
+        $team->fill($request->all());
+        $team->register_is_ok = true;
+        $status = $request->get('status');
+        switch ($status){
+            case (OnsiteRegistration::$PENDING['status']) :
+                $team->status = OnsiteRegistration::$PENDING;
+                break;
+
+            case (OnsiteRegistration::$PAID['status']) :
+                $team->status = OnsiteRegistration::$PAID;
+                break;
+
+            case (OnsiteRegistration::$APPROVED['status']) :
+                $team->status = OnsiteRegistration::$APPROVED;
+                break;
+
+            case (OnsiteRegistration::$REJECTED['status']) :
+                $team->status = OnsiteRegistration::$REJECTED;
+                break;
+        }
+        $team->save();
+        return redirect()->route('app::admin.online_registrations.show');
+    }
+
+    public function removeOnlineRegistration(OnlineRegistration $team) {
+        $team->delete();
+        return redirect()->route('app::admin.online_registrations.show');
+    }
+
 }

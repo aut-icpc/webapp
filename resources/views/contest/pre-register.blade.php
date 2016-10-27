@@ -53,6 +53,14 @@
                 Internet contest has no participation fees.
 
                 More details will be announced closer to the contest.
+
+                <center>
+                    <a href="{{ route('app::contest.register.online') }}">
+                        <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Register for Online Contest
+                            <i class="material-icons right">supervisor_account</i>
+                        </button>
+                    </a>
+                </center>
             </p>
             <br>
 

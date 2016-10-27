@@ -53,16 +53,30 @@ class ContestController extends Controller
         return view('contest.registered', ['data' => $data]);
     }
 
+    public function showOnlineContestRegisteredTeams()
+    {
+        $data = OnlineRegistration::all()->sortBy('status.status');
+        return view('contest.online_registered', ['data' => $data]);
+    }
+
     public function saveOnlineContestSubmission(Request $request) {
-        $registration = new OnlineRegistration();
-        $registration->fill($request->all());
-        $saved = $registration->save();
-        // TODO : add additional variables like email activation and so...
-        if ($saved) {
-            event(new OnlineRegistered($registration));
-            return view('contest.online_done');
+        $gRecaptchaResponse = $request->get('g-recaptcha-response');
+        $recaptcha = new \ReCaptcha\ReCaptcha(ContestController::$G_SECRET);
+        $resp = $recaptcha->verify($gRecaptchaResponse);
+        if ($resp->isSuccess()){
+            $registration = new OnlineRegistration($request->all());
+            $registration->register_is_ok = false;
+            $saved = $registration->save();
+            // TODO : add additional variables like email activation and so...
+            if ($saved) {
+                event(new OnlineRegistered($registration));
+                return redirect()->route('app::online_contest.registered');
+            }
+            else
+                return redirect()->back();
         }
-        else
-            redirect()->back();
+        else {
+            return redirect()->back();
+        }
     }
 }
