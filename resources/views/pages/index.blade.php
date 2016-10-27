@@ -37,6 +37,7 @@
                         <span class="card-title">Timings</span>
                         <p>Registration Dates</p>
                         <p style="font-size: 33px;">October 17 - 28, 2016</p>
+                        <p style="font-size: 20px;">Registration period for Iranian teams is from October 17 until October 28. Others can registers until October 31st.</p>
                         <hr>
                         <p>Orientation Day (Iranian Teams Only)</p>
                         <p style="font-size: 33px;">November 02, 2016</p>

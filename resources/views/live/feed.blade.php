@@ -63,10 +63,10 @@
 <script type="text/javascript">
     $('#time').countdown('2016/11/04 13:30:00', function(event) {
         var $this = $(this).html(event.strftime(''
-                + '<b><span style="font-size: 80px;" >%D</b></span>'
-                + '<b><span style="font-size: 80px;" >:%H</b></span>'
-                + '<b><span style="font-size: 80px;" >:%M<b></span>'
-                + '<b><span style="font-size: 80px;" >:%S</b></span>'));
+                + '<b><span style="font-size: 100px;" >%D</b>Days </span>'
+                + '<b><span style="font-size: 100px;" > - %H</b></span>'
+                + '<b><span style="font-size: 100px;" >:%M<b></span>'
+                + '<b><span style="font-size: 100px;" >:%S</b></span>'));
     });
 </script>
 @endpush
