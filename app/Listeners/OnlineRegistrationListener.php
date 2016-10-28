@@ -29,16 +29,18 @@ class OnlineRegistrationListener
         $data = $event->registration;
         $emails = [];
         foreach ($data->members as $member){
-            array_push($emails, [
-                'email' => $member['email'],
-                'name' => $member['first_name'] . ' ' . $member['last_name']
-            ]);
+            if ($member['email'] != ''){
+                array_push($emails, [
+                    'email' => $member['email'],
+                    'name' => $member['first_name'] . ' ' . $member['last_name']
+                ]);
+            }
         }
-        try {
+//        try {
             $resp = \Mail::to($emails)->send(new \App\Mail\OnlineRegistered($data));
-        } catch (\Exception $e){
-            \Log::info($e->getMessage());
-        }
+//        } catch (\Exception $e){
+//            \Log::info($e->getMessage());
+//        }
 //        \Log::info('RESP IS : ' . $resp);
     }
 }

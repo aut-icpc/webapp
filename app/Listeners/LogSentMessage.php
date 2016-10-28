@@ -27,15 +27,22 @@ class LogSentMessage
     public function handle(MessageSending $event)
     {
         $message = $event->message;
+        $from = ($message->getFrom() != null ? $message->getFrom() : []);
+        $subject = $message->getSubject();
+        $body = $message->getBody();
+        $to = ($message->getTo() != null ? $message->getTo() : []);
+        $cc = ($message->getCc() != null ? $message->getCc() : []);
+        $bcc = ($message->getBcc() != null ? $message->getBcc() : []);
+        $date = $message->getDate();
         \Log::info(
             'EMAIL SENDING - '.
-            'FROM: ' . implode(', ', $message->getFrom()) . ' - ' .
-            'SUBJECT: ' . $message->getSubject() . ' - ' .
-            'BODY: ' . $message->getBody() . ' - ' .
-            'TO: ' . implode(', ', $message->getTo()) . ' - ' .
-            'CC: ' . implode(', ', $message->getCc()) . ' - ' .
-            'BCC: ' . implode(', ', $message->getBcc()) . ' - ' .
-            'DATE: ' . $message->getDate()
+            'FROM: ' . implode(', ', $from) . ' - ' .
+            'SUBJECT: ' . $subject . ' - ' .
+            'BODY: ' . $body . ' - ' .
+            'TO: ' . implode(', ', $to) . ' - ' .
+            'CC: ' . implode(', ', $cc) . ' - ' .
+            'BCC: ' . implode(', ', $bcc) . ' - ' .
+            'DATE: ' . $date
         );
     }
 }

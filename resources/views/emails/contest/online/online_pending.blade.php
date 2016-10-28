@@ -23,6 +23,14 @@
         Contestant #1: <br>
         Full Name: <b>{{$registration->members['first']['first_name'] . ' ' . $registration->members['first']['last_name']}}</b> <br>
         Email: <b>{{ $registration->members['first']['email'] }}</b> <br> <br>
+
+        Contestant #2: <br>
+        Full Name: <b>{{$registration->members['second']['first_name'] . ' ' . $registration->members['second']['last_name']}}</b> <br>
+        Email: <b>{{ $registration->members['second']['email'] }}</b> <br> <br>
+
+        Contestant #3: <br>
+        Full Name: <b>{{$registration->members['third']['first_name'] . ' ' . $registration->members['third']['last_name']}}</b> <br>
+        Email: <b>{{ $registration->members['third']['email'] }}</b> <br> <br>
     </p>
 @endsection
 
