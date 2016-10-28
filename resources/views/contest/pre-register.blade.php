@@ -43,6 +43,13 @@
                 Participation fees for AUT teams would be 900,000 Rials, and for non-AUT teams 1,200,000 Rials. These
                 fees only apply to Iranian contestants and payment information will be sent to teams via their email.<br>
                 <center>
+                    <b>
+                        Note: Registration period for Iranian teams is over now. <br>
+                        If you are an Iranian team, please fill out the <a href="{{ route('app::contest.register.online') }}">On-Site contest registration form</a>. Otherwise please continue using the follosing link: <br>
+                    </b>
+                <br>
+                </center>
+                <center>
                     <a href="{{ route('app::contest.register') }}">
                         <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Register for On-Site Contest
                             <i class="material-icons right">supervisor_account</i>
