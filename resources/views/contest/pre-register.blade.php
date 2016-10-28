@@ -45,7 +45,7 @@
                 <center>
                     <b>
                         Note: Registration period for Iranian teams is over now. <br>
-                        If you are an Iranian team, please fill out the <a href="{{ route('app::contest.register.online') }}">On-Site contest registration form</a>. Otherwise please continue using the follosing link: <br>
+                        If you are an Iranian team, please fill out the <a href="{{ route('app::contest.register.online') }}">On-Site contest registration form</a>. Otherwise please continue using the following link: <br>
                     </b>
                 <br>
                 </center>
