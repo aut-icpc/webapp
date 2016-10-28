@@ -224,7 +224,7 @@ class HomeController extends Controller
         }
         $onLine_bcc = $request->has('bcc_online');
         if ($onLine_bcc) {
-            foreach (OnlineRegistration::all() as $team){
+            foreach (OnlineRegistration::where('status.status', '<>', OnsiteRegistration::$REJECTED['status'])->get() as $team){
                 foreach ($team->members as $member){
                     if ($member['email'] != '')
                         array_push($bcc, ['email' => $member['email']]);

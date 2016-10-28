@@ -65,6 +65,7 @@ class ContestController extends Controller
         $resp = $recaptcha->verify($gRecaptchaResponse);
         if ($resp->isSuccess()){
             $registration = new OnlineRegistration($request->all());
+            $registration->status = OnsiteRegistration::$PENDING;
             $registration->register_is_ok = false;
             $saved = $registration->save();
             // TODO : add additional variables like email activation and so...
