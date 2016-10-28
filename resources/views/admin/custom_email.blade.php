@@ -41,7 +41,7 @@
                                 </label>
                             </div>
                         </div>
-                        <br>
+                        <div class="divider"></div>
                         <div class="input-field col s12 m12 l12">
                             <div class="switch">
                                 <label>
@@ -51,6 +51,17 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="divider"></div>
+                        <div class="input-field col s12 m12 l12">
+                            <div class="switch">
+                                <label>
+                                    Send to all of outdated online registrations.
+                                    <input type="checkbox" name="bcc_online_old_registers">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
                     </div>
                     <!-- /Checks -->
 

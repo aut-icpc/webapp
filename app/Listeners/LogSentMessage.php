@@ -31,7 +31,10 @@ class LogSentMessage
             'EMAIL SENDING - '.
             'FROM: ' . implode(', ', $message->getFrom()) . ' - ' .
             'SUBJECT: ' . $message->getSubject() . ' - ' .
+            'BODY: ' . $message->getBody() . ' - ' .
             'TO: ' . implode(', ', $message->getTo()) . ' - ' .
+            'CC: ' . implode(', ', $message->getCc()) . ' - ' .
+            'BCC: ' . implode(', ', $message->getBcc()) . ' - ' .
             'DATE: ' . $message->getDate()
         );
     }

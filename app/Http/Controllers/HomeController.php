@@ -231,6 +231,17 @@ class HomeController extends Controller
                 }
             }
         }
+        $outdated = $request->has('bcc_online_old_registers');
+        if ($outdated) {
+            foreach (OnlineRegistration::all() as $team){
+                if (!isset($team->team_name)){
+                    foreach ($team->members as $member){
+                        if ($member['email'] != '')
+                            array_push($bcc, ['email' => $member['email']]);
+                    }
+                }
+            }
+        }
         event(new CustomEmailSubmission($to, $cc, $bcc, $title, $message));
         return redirect()->route('app::admin');
     }
