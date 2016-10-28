@@ -36,11 +36,11 @@ class OnlineRegistrationListener
                 ]);
             }
         }
-//        try {
+        try {
             $resp = \Mail::to($emails)->send(new \App\Mail\OnlineRegistered($data));
-//        } catch (\Exception $e){
-//            \Log::info($e->getMessage());
-//        }
-//        \Log::info('RESP IS : ' . $resp);
+        } catch (\Exception $e){
+            \Log::info($e->getMessage());
+        }
+        \Log::info('RESP IS : ' . $resp);
     }
 }
