@@ -36,20 +36,22 @@
                 <div class="card cyan darken-2 white-text waves-effect">
                     <div class="card-content">
                         <span class="card-title">Timings</span>
-                        <p>Registration Dates</p>
+                        <p style="font-size: 20px;">Registration Dates</p>
                         <p style="font-size: 33px;">October 17 - 28, 2016</p>
-                        <p style="font-size: 20px;">Registration period for Iranian teams is from October 17 until October 28. Others can registers until October 31st.</p>
-                        <hr>
-                        <p>Orientation Day (Iranian Teams Only)</p>
+                        <p style="font-size: 15px;">Registration period for Iranian teams is from October 17 until October 28. Others can registers until October 31st.</p>
+                        <hr> <br>
+                        <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
                         <p style="font-size: 33px;">November 02, 2016</p>
-                        <hr>
-                        <p>On-Site Contest</p>
+                        <hr> <br>
+                        <p style="font-size: 20px;">On-Site Contest</p>
                         <p style="font-size: 33px;">November 04, 2016</p>
-                        <p style="font-size: 20px;">10:00:00 (UTC)</p>
-                        <hr>
-                        <p>On-Line Contest (Delayed)</p>
+                        <p style="font-size: 15px;">10:00:00 (UTC)</p>
+                        <p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>
+                        <hr> <br>
+                        <p style="font-size: 20px;">On-Line Contest (Delayed)</p>
                         <p style="font-size: 33px;">November 04, 2016</p>
-                        <p style="font-size: 20px;">10:30:00 (UTC)</p>
+                        <p style="font-size: 15px;">10:30:00 (UTC)</p>
+                        <p style="font-size: 15px;">14:00:00 (GMT +3:30 - Iran Standard Time)</p>
                     </div>
                 </div>
             </div>
