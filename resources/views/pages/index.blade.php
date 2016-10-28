@@ -38,7 +38,10 @@
                         <span class="card-title">Timings</span>
                         <p style="font-size: 20px;">Registration Dates</p>
                         <p style="font-size: 33px;">October 17 - 28, 2016</p>
-                        <p style="font-size: 15px;">Registration period for Iranian teams is from October 17 until October 28. Others can registers until October 31st.</p>
+                        <p style="font-size: 15px;">
+                            Registration period of On-Site contest for Iranian teams is from October 17 until October 28.<br>
+                            Others can register until November 2nd.
+                        </p>
                         <hr> <br>
                         <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
                         <p style="font-size: 33px;">November 02, 2016</p>
