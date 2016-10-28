@@ -6,7 +6,7 @@
             <br>
             <h4>Registered Teams at Online Contest</h4>
             <p>
-                Here is the list of registered teams for <b>Online contest</b>.
+                Here is the list of registered teams for <b>Online contest</b> ordered by their registered time.
                 <br>
                 <b>If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register.online') }}">Register Here for Online Contest</a>.</b> <br>
                 <b>If you don't see your team Information below, we are probably reviewing your information.</b>
