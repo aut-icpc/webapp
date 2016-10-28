@@ -149,6 +149,9 @@ class HomeController extends Controller
             case (OnsiteRegistration::$REJECTED['status']) :
                 $team->status = OnsiteRegistration::$REJECTED;
                 break;
+            case (OnsiteRegistration::$RESERVED['status']) :
+                $team->status = OnsiteRegistration::$RESERVED;
+                break;
         }
         $team->save();
         return redirect()->route('app::admin.registrations.show');

@@ -23,6 +23,7 @@ class OnsiteRegistration extends Eloquent
     public static $PAID = ['status' => 'Paid', 'style' => 'blue lighten-4'];
     public static $APPROVED = ['status' => 'Approved', 'style' => 'green lighten-4'];
     public static $REJECTED = ['status' => 'Rejected', 'style' => 'red lighten-4'];
+    public static $RESERVED = ['status' => 'Reserved', 'style' => 'lime lighten-4'];
 
     /** Mass Assignable attributes
      * @var array

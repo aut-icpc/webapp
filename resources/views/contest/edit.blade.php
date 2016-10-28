@@ -31,6 +31,7 @@
                                     <option value="{{\App\OnsiteRegistration::$PAID['status']}}" class="blue lighten-4" {{$team->status['status'] == 'Paid' ? 'selected' : ''}}>Paid</option>
                                     <option value="{{\App\OnsiteRegistration::$APPROVED['status']}}" class="green lighten-4" {{$team->status['status'] == 'Approved' ? 'selected' : ''}}>Approved</option>
                                     <option value="{{\App\OnsiteRegistration::$REJECTED['status']}}" class="red lighten-4" {{$team->status['status'] == 'Rejected' ? 'selected' : ''}}>Rejected</option>
+                                    <option value="{{\App\OnsiteRegistration::$RESERVED['status']}}" class="lime lighten-4" {{$team->status['status'] == 'Reserved' ? 'selected' : ''}}>Reserved</option>
                                 </select>
                                 <label>Registration Status</label>
                             </div>
