@@ -15,9 +15,12 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         @stack('styles')
         <script src='https://www.google.com/recaptcha/api.js'></script>
+        @yield('live_scripts')
     </head>
     <body class="cyan lighten-5">
-        @include('includes.preloader')
+        @if(!isset($preloader_off))
+            @include('includes.preloader')
+        @endif
         @include('includes.header')
         <a class="darken-2 scrollToTop btn-floating btn-large waves-effect waves-light cyan">
             <i class="material-icons">expand_less</i>

@@ -58,6 +58,10 @@
         </div>
 @endsection
 
+@section('live_scripts')
+
+@endsection
+
 @push('scripts')
 <script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
 <script type="text/javascript">

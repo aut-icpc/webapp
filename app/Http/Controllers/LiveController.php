@@ -12,6 +12,6 @@ class LiveController extends Controller
      */
     public function showFeed(){
         $newsGroup = LivePost::all();
-        return view('live.feed', ['newsGroup' => $newsGroup]);
+        return view('live.feed', ['newsGroup' => $newsGroup, 'preloader_off' => true]);
     }
 }
