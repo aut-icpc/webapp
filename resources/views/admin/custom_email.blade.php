@@ -41,7 +41,8 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="divider"></div>
+                    </div>
+                    <div class="row">
                         <div class="input-field col s12 m12 l12">
                             <div class="switch">
                                 <label>
@@ -51,7 +52,8 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="divider"></div>
+                    </div>
+                    <div class="row">
                         <div class="input-field col s12 m12 l12">
                             <div class="switch">
                                 <label>
@@ -61,8 +63,8 @@
                                 </label>
                             </div>
                         </div>
-                        <br>
                     </div>
+                    <br>
                     <!-- /Checks -->
 
                     <!-- Title -->
