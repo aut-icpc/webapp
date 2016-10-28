@@ -13,44 +13,52 @@
         </div>
 
         <div class="row">
-            <div class="col s4 m4 l4">
+            <div class="col s12 m12 l4">
                 <a href="{{ route('app::admin.live') }}">
-                    <div class="card cyan white-text waves-effect">
-                        <div class="card-content text-center">
-                            <span class="card-title">Live Blog</span>
+                    <div class="card cyan darken-2 waves-effect waves-teal">
+                        <div class="card-content white-text">
+                            <span class="card-title">Live Blogging</span>
+                            <p>View, Edit and publish posts on live blog.</p>
                         </div>
                     </div>
                 </a>
             </div>
-            @if(Auth::user()->access_level == \App\User::$SUPER_ADMIN)
-                <div class="col s4 m4 l4">
+        </div>
+        @if(Auth::user()->access_level == \App\User::$SUPER_ADMIN)
+            <div class="row">
+                <div class="col s12 m12 l4">
                     <a href="{{ route('app::admin.registrations.show') }}">
-                        <div class="card cyan white-text waves-effect">
-                            <div class="card-content text-center">
-                                <span class="card-title">OnSite Registrations</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col s4 m4 l4">
-                    <a href="{{ route('app::admin.mail.form') }}">
-                        <div class="card cyan white-text waves-effect">
-                            <div class="card-content text-center">
-                                <span class="card-title">Email</span>
+                        <div class="card cyan darken-2 waves-effect waves-teal">
+                            <div class="card-content white-text">
+                                <span class="card-title">On-Site Registrations</span>
+                                <p>View and edit On-Site Registrations and their team information.</p>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col s4 m4 l4">
                     <a href="{{ route('app::admin.online_registrations.show') }}">
-                        <div class="card cyan white-text waves-effect">
-                            <div class="card-content text-center">
-                                <span class="card-title">Online Registrations</span>
+                        <div class="card cyan darken-2 waves-effect waves-teal">
+                            <div class="card-content white-text">
+                                <span class="card-title">On-Line Registrations</span>
+                                <p>View and edit On-Line Registrations and their team information.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-            @endif
-        </div>
+            </div>
+            <div class="row">
+                <div class="col s4 m4 l4">
+                    <a href="{{ route('app::admin.mail.form') }}">
+                        <div class="card cyan darken-2 waves-effect waves-teal">
+                            <div class="card-content white-text">
+                                <span class="card-title">Email Form</span>
+                                <p>Send Email to contestants (using ceit.ssc94@gmail.com)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        @endif
     </div>
 @endsection
