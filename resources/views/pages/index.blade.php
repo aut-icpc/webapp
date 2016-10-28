@@ -76,7 +76,13 @@
             </div>
             <div class="col s12 m7 center">
                 <a href="{{ route('app::contest.registered') }}">
-                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">View Registered Teams
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">View Registered Teams of On-Site Contest
+                        <i class="material-icons right">toc</i>
+                    </button>
+                </a>
+                <br>
+                <a href="{{ route('app::online_contest.registered') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" style="margin-top:20px;" type="button" name="action">View Registered Teams of On-Line Contest
                         <i class="material-icons right">toc</i>
                     </button>
                 </a>

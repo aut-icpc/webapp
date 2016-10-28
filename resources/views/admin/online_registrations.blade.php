@@ -24,7 +24,7 @@
                                     Institution: {{ $team->institute }}<br>
                                     Country: {{ $team->site }}
                                 </p>
-                                <a href="{{ route('app::admin.registration.edit', $team) }}" class="secondary-content">
+                                <a href="{{ route('app::admin.online_registration.edit', $team) }}" class="secondary-content">
                                     <i class="material-icons">mode_edit</i>
                                 </a>
                             </li>
