@@ -16,9 +16,8 @@
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
                 16th <b>Amirkabir</b> International Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
-                <br> <br>
-                {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 <br>
+                {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 <div class="center" id="time"></div>
                 <a href="{{ route('app::contest.pre-register') }}">
                     <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration
