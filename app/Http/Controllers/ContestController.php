@@ -49,13 +49,13 @@ class ContestController extends Controller
     }
 
     public function showContestRegisteredTeams() {
-        $data = OnsiteRegistration::all()->sortBy('status.status');
+        $data = OnsiteRegistration::all()->sortBy('created_at');
         return view('contest.registered', ['data' => $data]);
     }
 
     public function showOnlineContestRegisteredTeams()
     {
-        $data = OnlineRegistration::all()->sortBy('status.status');
+        $data = OnlineRegistration::all()->sortBy('created_at');
         return view('contest.online_registered', ['data' => $data]);
     }
 
