@@ -28,7 +28,7 @@
                                 <select name="status">
                                     <option value="" disabled>Registration Status</option>
                                     <option value="{{\App\OnsiteRegistration::$PENDING['status']}}" class="grey lighten-4" {{$team->status['status'] == 'Pending' ? 'selected' : ''}}>Pending</option>
-                                    <option value="{{\App\OnsiteRegistration::$PAID['status']}}" class="blue lighten-4" {{$team->status['status'] == 'Paid' ? 'selected' : ''}}>Paid</option>
+                                    <option value="{{\App\OnsiteRegistration::$PAID['status']}}" class="blue lighten-4" {{$team->status['status'] == 'Finalized' ? 'selected' : ''}}>Finalized</option>
                                     <option value="{{\App\OnsiteRegistration::$APPROVED['status']}}" class="green lighten-4" {{$team->status['status'] == 'Approved' ? 'selected' : ''}}>Approved</option>
                                     <option value="{{\App\OnsiteRegistration::$REJECTED['status']}}" class="red lighten-4" {{$team->status['status'] == 'Rejected' ? 'selected' : ''}}>Rejected</option>
                                 </select>
@@ -74,14 +74,8 @@
                                 <label for="institute-name">Institution</label>
                             </div>
                             <div class="input-field col s4 m4 l4">
-                                <select name="site" class="icons">
-                                    <option value="" disabled>Select your site</option>
-                                    <option value="Iran" data-icon="{{ URL::asset('img/iran.png') }}" class="left circle" {{$team->site == 'Iran' ? 'selected' : ''}}>Iran</option>
-                                    <option value="Sweden" data-icon="{{ URL::asset('img/sweden.png') }}" class="left circle" {{$team->site == 'Sweden' ? 'selected' : ''}}>Sweden</option>
-                                    <option value="Poland" data-icon="{{ URL::asset('img/poland.png') }}" class="left circle" {{$team->site == 'Poland' ? 'selected' : ''}}>Poland</option>
-                                    <option value="Other" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle" {{$team->site == 'Other' ? 'selected' : ''}}>Other</option>
-                                </select>
-                                <label>Country</label>
+                                <input type="text" name="site" id="site" class="validate" value="{{$team->site}}">
+                                <label for="site">Country</label>
                             </div>
                         </div>
                         <!-- /Team Info -->

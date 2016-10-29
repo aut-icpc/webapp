@@ -1,11 +1,13 @@
 @extends('layouts.email')
 
+@include('admin.mail.includes.editor')
+
 @section('title')
     {{ $title or '' }}
 @endsection
 
 @section('message-top')
-    {{ $body or '' }}
+    {!! $body or ''  !!}
 @endsection
 
 @section('call-to-action')

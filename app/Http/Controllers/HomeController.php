@@ -13,9 +13,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * HomeController constructor.
      */
     public function __construct()
     {
@@ -47,6 +45,10 @@ class HomeController extends Controller
         return view('admin.live', ['posts' => $posts]);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function saveLivePost(Request $request) {
         $post = new LivePost();
         $post->fill($request->all());
@@ -64,6 +66,10 @@ class HomeController extends Controller
         return redirect()->route('app::admin.live');
     }
 
+    /**
+     * @param Request $request
+     * @param LivePost $post
+     */
     public function storeMedia(Request $request, LivePost $post) {
         $now = $now = new Carbon();
         if ($request->hasFile('picture')){
@@ -74,10 +80,17 @@ class HomeController extends Controller
         }
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function newLivePost () {
         return view('live.new');
     }
 
+    /**
+     * @param LivePost $LivePost
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showPostEditForm(LivePost $LivePost) {
         return view('live.edit', ['post' => $LivePost]);
     }
@@ -108,6 +121,9 @@ class HomeController extends Controller
         return view('admin.registrations', ['data' => $data]);
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showOnlineRegistrations()
     {
         $data = OnlineRegistration::all()->sortBy('created_at');
@@ -157,7 +173,6 @@ class HomeController extends Controller
         return redirect()->route('app::admin.registrations.show');
     }
 
-
     /**
      * @param OnsiteRegistration $team
      * @return \Illuminate\Http\RedirectResponse
@@ -177,80 +192,18 @@ class HomeController extends Controller
     }
 
     /**
+     * @param OnlineRegistration $team
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function showCustomMailForm()
-    {
-        return view('admin.custom_email', ['to' => '', 'cc' => '', 'bcc' => '']);
-    }
-
-    /**
-     * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function sendCustomEmail(Request $request){
-        $raw_to = $request->get('to','');
-        $raw_to = explode(';', $raw_to);
-        $to = [['email' => 'ceit.ssc@aut.ac.ir']];
-        foreach ($raw_to as $email){
-            if ($email != '')
-                array_push($to, ['email' => $email]);
-        }
-        $raw_cc = $request->get('cc','');
-        $raw_cc = explode(';', $raw_cc);
-        $cc = [['email' => 'ceit.ssc@aut.ac.ir']];
-        foreach ($raw_cc as $email){
-            if ($email != '')
-                array_push($cc, ['email' => $email]);
-        }
-        $raw_bcc = $request->get('bcc','');
-        $raw_bcc = explode(';', $raw_bcc);
-        $bcc = [['email' => 'haghighati.amir@gmail.com']];
-        foreach ($raw_bcc as $email){
-            if ($email != '')
-                array_push($bcc, ['email' => $email]);
-        }
-        $title = $request->get('title', '');
-        $message = $request->get('body', '');
-
-        $onSite_bcc = $request->has('bcc_onsite');
-        if ($onSite_bcc) {
-            foreach (OnsiteRegistration::where('status.status', '<>', OnsiteRegistration::$REJECTED['status'])->get() as $team){
-                foreach ($team->members as $member){
-                    if ($member['email'] != '')
-                        array_push($bcc, ['email' => $member['email']]);
-                }
-            }
-        }
-        $onLine_bcc = $request->has('bcc_online');
-        if ($onLine_bcc) {
-            foreach (OnlineRegistration::where('status.status', '<>', OnsiteRegistration::$REJECTED['status'])->get() as $team){
-                foreach ($team->members as $member){
-                    if ($member['email'] != '')
-                        array_push($bcc, ['email' => $member['email']]);
-                }
-            }
-        }
-        $outdated = $request->has('bcc_online_old_registers');
-        if ($outdated) {
-            foreach (OnlineRegistration::all() as $team){
-                if (!isset($team->team_name)){
-                    foreach ($team->members as $member){
-                        if ($member['email'] != '')
-                            array_push($bcc, ['email' => $member['email']]);
-                    }
-                }
-            }
-        }
-        event(new CustomEmailSubmission($to, $cc, $bcc, $title, $message));
-        return redirect()->route('app::admin');
-    }
-
-
     public function showEditOnlineRegistrationForm(OnlineRegistration $team) {
         return view('contest.online_edit', ['team' => $team]);
     }
 
+    /**
+     * @param Request $request
+     * @param OnlineRegistration $team
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function saveOnlineRegistration(Request $request, OnlineRegistration $team) {
         $team->fill($request->all());
         $team->register_is_ok = true;
@@ -276,6 +229,10 @@ class HomeController extends Controller
         return redirect()->route('app::admin.online_registrations.show');
     }
 
+    /**
+     * @param OnlineRegistration $team
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function removeOnlineRegistration(OnlineRegistration $team) {
         $team->delete();
         return redirect()->route('app::admin.online_registrations.show');

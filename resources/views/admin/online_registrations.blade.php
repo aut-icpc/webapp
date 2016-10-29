@@ -36,7 +36,7 @@
                 <thead>
                 <tr>
                     <th data-field="number">#</th>
-                    <th data-field="name">Name</th>
+                    <th data-field="name">Team Name</th>
                     <th data-field="institute">Institution</th>
                     <th data-field="country">Email</th>
                     <th data-field="status">Action</th>
@@ -46,7 +46,7 @@
                 @foreach($data as $team)
                     <tr class="{{$team->status['style']}}">
                         <td>{{$loop->iteration}}</td>
-                        <td>{{$team->members['first']['first_name'] . ' ' . $team->members['first']['last_name']}}</td>
+                        <td>{{$team->team_name or ''}}</td>
                         <td>{{$team->institute_name}}</td>
                         <td>{{$team->members['first']['email']}}</td>
                         <td>

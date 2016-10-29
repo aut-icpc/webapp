@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <form name="onsite_register" class="col s12 m12 l12" action="{{ route('app::admin.mail.send') }}" method="POST">
+    <form name="onsite_register" class="col s12 m12 l12" action="{{ route('app::admin.mail.custom.send') }}" method="POST">
         <div id="non-skrollr">
             <div class="row">
                 <h3><br>Send Custom Email to contestants<br></h3>
@@ -29,43 +29,6 @@
                     <!-- /Header -->
 
                     <div class="divider"></div>
-
-                    <!-- Checks -->
-                    <div class="row container">
-                        <div class="input-field col s12 m12 l12">
-                            <div class="switch">
-                                <label>
-                                    Also send to all of the OnSite contest members (exception: rejected teams)
-                                    <input type="checkbox" name="bcc_onsite">
-                                    <span class="lever"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m12 l12">
-                            <div class="switch">
-                                <label>
-                                    Also send to all of the Onlite contest members (exception: rejected teams)
-                                    <input type="checkbox" name="bcc_online">
-                                    <span class="lever"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m12 l12">
-                            <div class="switch">
-                                <label>
-                                    Send to all of outdated online registrations.
-                                    <input type="checkbox" name="bcc_online_old_registers">
-                                    <span class="lever"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- /Checks -->
 
                     <!-- Title -->
                     <div class="row">

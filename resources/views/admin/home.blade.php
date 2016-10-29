@@ -49,10 +49,20 @@
             </div>
             <div class="row">
                 <div class="col s4 m4 l4">
-                    <a href="{{ route('app::admin.mail.form') }}">
+                    <a href="{{ route('app::admin.mail.group.form') }}">
                         <div class="card cyan darken-2 waves-effect waves-light">
                             <div class="card-content white-text">
-                                <span class="card-title">Email Form</span>
+                                <span class="card-title">Group Email Form</span>
+                                <p>Send Email to all or some specific group of contestants (using ceit.ssc94@gmail.com)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s4 m4 l4">
+                    <a href="{{ route('app::admin.mail.custom.form') }}">
+                        <div class="card cyan darken-2 waves-effect waves-light">
+                            <div class="card-content white-text">
+                                <span class="card-title">Custom Email Form</span>
                                 <p>Send Email to contestants (using ceit.ssc94@gmail.com)</p>
                             </div>
                         </div>

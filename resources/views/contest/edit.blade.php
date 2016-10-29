@@ -28,7 +28,7 @@
                                 <select name="status">
                                     <option value="" disabled>Registration Status</option>
                                     <option value="{{\App\OnsiteRegistration::$PENDING['status']}}" class="grey lighten-4" {{$team->status['status'] == 'Pending' ? 'selected' : ''}}>Pending</option>
-                                    <option value="{{\App\OnsiteRegistration::$PAID['status']}}" class="blue lighten-4" {{$team->status['status'] == 'Paid' ? 'selected' : ''}}>Paid</option>
+                                    <option value="{{\App\OnsiteRegistration::$PAID['status']}}" class="blue lighten-4" {{$team->status['status'] == 'Finalized' ? 'selected' : ''}}>Paid</option>
                                     <option value="{{\App\OnsiteRegistration::$APPROVED['status']}}" class="green lighten-4" {{$team->status['status'] == 'Approved' ? 'selected' : ''}}>Approved</option>
                                     <option value="{{\App\OnsiteRegistration::$REJECTED['status']}}" class="red lighten-4" {{$team->status['status'] == 'Rejected' ? 'selected' : ''}}>Rejected</option>
                                     <option value="{{\App\OnsiteRegistration::$RESERVED['status']}}" class="lime lighten-4" {{$team->status['status'] == 'Reserved' ? 'selected' : ''}}>Reserved</option>

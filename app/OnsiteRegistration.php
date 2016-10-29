@@ -20,7 +20,7 @@ class OnsiteRegistration extends Eloquent
 {
 
     public static $PENDING = ['status' => 'Pending', 'style' => 'grey lighten-4'];
-    public static $PAID = ['status' => 'Paid', 'style' => 'blue lighten-4'];
+    public static $PAID = ['status' => 'Finalized', 'style' => 'blue lighten-4'];
     public static $APPROVED = ['status' => 'Approved', 'style' => 'green lighten-4'];
     public static $REJECTED = ['status' => 'Rejected', 'style' => 'red lighten-4'];
     public static $RESERVED = ['status' => 'Reserved', 'style' => 'lime lighten-4'];

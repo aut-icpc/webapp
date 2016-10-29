@@ -16,6 +16,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\CustomEmailSubmission' => [
             'App\Listeners\CustomEmailSubmissionListener',
         ],
+        'App\Events\GroupEmailSubmission' => [
+            'App\Listeners\GroupEmailSubmissionListener',
+        ],
         'App\Events\OnSiteRegistered' => [
             'App\Listeners\OnSiteRegistrationListener',
         ],
