@@ -36,6 +36,7 @@ class User extends Eloquent implements
      * @var int
      */
     public static $SIMPLE_USER = 1;
+    public static $ADMIN = 2;
     public static $SUPER_ADMIN = 10;
 
     /**
