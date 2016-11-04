@@ -59,26 +59,29 @@
 @endsection
 
 @section('live_scripts')
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
-    <script>
-        var OneSignal = window.OneSignal || [];
-        OneSignal.push(["init", {
-            appId: "b3717647-ba76-40a9-8801-7b0949467d42",
-            autoRegister: false, /* Set to true to automatically prompt visitors */
-            subdomainName: 'icpc-aut',
-            notifyButton: {
-                enable: true /* Set to false to hide */
-            },
-            persistNotification: false // Automatically dismiss the notification after ~20 seconds in Chrome Deskop v47+
-        }]);
-        OneSignal.isPushNotificationsEnabled(function(isEnabled) { console.log('Debug Log: Push notifications are enabled:', isEnabled); });
-        OneSignal.log.setLevel('trace');
-        OneSignal.push(["addListenerForNotificationOpened", function(data) {
-            console.log("Received NotificationOpened:");
-            debugger;
-            console.log(data);
-        }]);
+    <script type="text/javascript">
+        setTimeout(function () { location.reload(true); }, 60000);
     </script>
+    {{--<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>--}}
+    {{--<script>--}}
+        {{--var OneSignal = window.OneSignal || [];--}}
+        {{--OneSignal.push(["init", {--}}
+            {{--appId: "b3717647-ba76-40a9-8801-7b0949467d42",--}}
+            {{--autoRegister: false, /* Set to true to automatically prompt visitors */--}}
+            {{--subdomainName: 'icpc-aut',--}}
+            {{--notifyButton: {--}}
+                {{--enable: true /* Set to false to hide */--}}
+            {{--},--}}
+            {{--persistNotification: false // Automatically dismiss the notification after ~20 seconds in Chrome Deskop v47+--}}
+        {{--}]);--}}
+        {{--OneSignal.isPushNotificationsEnabled(function(isEnabled) { console.log('Debug Log: Push notifications are enabled:', isEnabled); });--}}
+        {{--OneSignal.log.setLevel('trace');--}}
+        {{--OneSignal.push(["addListenerForNotificationOpened", function(data) {--}}
+            {{--console.log("Received NotificationOpened:");--}}
+            {{--debugger;--}}
+            {{--console.log(data);--}}
+        {{--}]);--}}
+    {{--</script>--}}
 @endsection
 
 @push('scripts')

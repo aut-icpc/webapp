@@ -62,9 +62,19 @@
 <script>
     $(document).ready(function() {
         $('input#input_text, textarea#textarea1').characterCounter();
-    });
-    $(document).ready(function(){
         $('.collapsible').collapsible();
+    });
+    OneSignal.on('notificationDisplay', function (event) {
+        console.warn('OneSignal notification displayed:', event);
+        /*
+         {
+         "id": "ce31de29-e1b0-4961-99ee-080644677cd7",
+         "heading": "OneSignal Test Message",
+         "content": "This is an example notification.",
+         "url": "https://onesignal.com?_osp=do_not_open",
+         "icon": "https://onesignal.com/images/notification_logo.png"
+         }
+         */
     });
 </script>
 @endpush

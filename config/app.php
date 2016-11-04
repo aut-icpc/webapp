@@ -192,8 +192,12 @@ return [
         /*
          * Image Compressor Service Provider
          */
-        Intervention\Image\ImageServiceProvider::class
-//        greedchikara\Onesignal\OnesignalServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+
+        /*
+         * OneSignal Push Notification Service Provider
+         */
+        NotificationChannels\OneSignal\OneSignalServiceProvider::class,
 
     ],
 
@@ -241,7 +245,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Image' => Intervention\Image\Facades\Image::class
+        'Image' => Intervention\Image\Facades\Image::class,
+
     ],
 
 ];
