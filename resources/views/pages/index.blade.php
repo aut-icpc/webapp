@@ -19,11 +19,11 @@
                 <br>
                 {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 <div class="center" id="time"></div>
-                {{--<a href="{{ route('app::contest.pre-register') }}">--}}
-                    {{--<button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Contest Registration--}}
-                        {{--<i class="material-icons right">supervisor_account</i>--}}
-                    {{--</button>--}}
-                {{--</a>--}}
+                <a href="{{ route('app::live.feed') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Live Blog
+                        <i class="material-icons right">surround_sound</i>
+                    </button>
+                </a>
                 <br>
                 <br>
                 <br>
