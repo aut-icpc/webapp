@@ -43,12 +43,14 @@
                                 Published By: {{ $post->author->name }}
                             </p>
                             <p>
+                                @if (Auth::user()->access_level == \App\User::$SUPER_ADMIN || $post->author->_id == Auth::user()->_id)
                                 <a href="{{ route('app::admin.live.edit', ['LivePost' => $post]) }}">
                                     <i class="material-icons cyan-text text-darken-2">mode_edit</i>
                                 </a>
                                 <a href="{{ route('app::admin.live.delete', ['LivePost' => $post]) }}" onclick="return confirm('Are you sure?');">
                                     <i class="material-icons cyan-text text-darken-2">delete</i>
                                 </a>
+                                @endif
                             </p>
                         </div>
                     </li>

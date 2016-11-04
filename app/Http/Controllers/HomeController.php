@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (\Auth::user()->access_level == User::$SUPER_ADMIN)
+        if (\Auth::user()->access_level >= User::$ADMIN)
             return view('admin.home');
         else {
             \Auth::logout();
