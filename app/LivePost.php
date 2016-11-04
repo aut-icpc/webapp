@@ -11,23 +11,32 @@ use Moloquent\Eloquent\Model as Eloquent;
  * @package App
  * @property string title
  * @property string picture
- * @property mixed message
+ * @property string original_picture
+ * @property mixed body
  * @property Carbon published_at
  * @property User author
- * @property boolean RTL
  */
 class LivePost extends Eloquent
 {
 
+    public static $IMAGE_NAME_PREFIX = "AUT-ACM-ICPC";
+    public static $IMAGE_ORIGINAL_SUFFIX = "_ORIGINAL";
+    public static $IMAGE_COMPRESSED_SUFFIX = "_COMPRESSED";
+
     /**
      * @var array
      */
-    public $fillable = ['title', 'body', 'picture', 'RTL'];
+    public $fillable = ['title', 'body'];
 
     /**
      * @return \Moloquent\Relations\EmbedsOne
      */
     public function author() {
         return $this->embedsOne('App\User');
+    }
+
+    public function getImgAddress()
+    {
+        return asset($this->picture);
     }
 }

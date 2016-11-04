@@ -10,7 +10,9 @@
         "barryvdh/laravel-ide-helper": "v2.2.1",
         "moloquent/moloquent": "dev-master",
         "google/recaptcha": "1.1.2",
-        "guzzlehttp/guzzle": "~4.0"
+        "guzzlehttp/guzzle": "~4.0",
+        "greedchikara/onesignal": "dev-master",
+        "intervention/image": "2.3.8"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

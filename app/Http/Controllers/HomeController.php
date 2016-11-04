@@ -9,6 +9,7 @@ use App\OnsiteRegistration;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class HomeController extends Controller
 {
@@ -42,7 +43,7 @@ class HomeController extends Controller
         $now = new Carbon();
         $posts = LivePost::where('published_at','<',$now->getTimestamp())
             ->orderBy('published_at', 'desc')->get();
-        return view('admin.live', ['posts' => $posts]);
+        return view('admin.live', ['posts' => $posts, 'preloader_off' => true]);
     }
 
     /**
@@ -56,11 +57,6 @@ class HomeController extends Controller
         $user = \Auth::user();
         $post->author()->associate($user);
         $post->published_at = $now->getTimestamp();
-
-        if ($request->has('RTL'))
-            $post->RTL = true;
-        else
-            $post->RTL = false;
         $this->storeMedia($request, $post);
         $post->save();
         return redirect()->route('app::admin.live');
@@ -71,13 +67,37 @@ class HomeController extends Controller
      * @param LivePost $post
      */
     public function storeMedia(Request $request, LivePost $post) {
-        $now = $now = new Carbon();
+        $now = (new Carbon())->getTimestamp();
         if ($request->hasFile('picture')){
-            $fileName = 'AUT-ACM-ICPC' . $now->getTimestamp() . '.' . $request->picture->getClientOriginalExtension();
+            $fileName = LivePost::$IMAGE_NAME_PREFIX . $now . LivePost::$IMAGE_ORIGINAL_SUFFIX . '.' . $request->picture->getClientOriginalExtension();
+            $manipulatedFile = LivePost::$IMAGE_NAME_PREFIX . $now . LivePost::$IMAGE_COMPRESSED_SUFFIX . '.jpg' ;
             $request->picture->move('storage/live', $fileName);
-            $post->picture = 'storage/live/' . $fileName;
+            $post->original_picture = 'storage/live/' . $fileName;
+            $compressed_address = $this->compressMedia($post->original_picture, $manipulatedFile);
+            $post->picture = $compressed_address;
             $post->save();
         }
+    }
+
+    /**
+     * Compress the fresh uploaded media
+     * @param $path
+     * @param $fileName
+     * @return string
+     */
+    private function compressMedia($path, $fileName){
+        // Open the original image file
+        $img = Image::make($path);
+
+        // Resize the file to the desired compression
+        $width = $img->width() / 5;
+        $height = $img->height() / 5;
+        $img->resize($width, $height);
+
+        // Finally we save the image as a new file
+        $directory = 'storage/live/';
+        $img->save(public_path($directory) . $fileName);
+        return $directory . $fileName;
     }
 
     /**
@@ -103,11 +123,15 @@ class HomeController extends Controller
      */
     public function editPost (Request $request, LivePost $LivePost) {
         $LivePost->fill($request->all());
-        if ($request->has('RTL'))
-            $LivePost->RTL = true;
-        else
-            $LivePost->RTL = false;
-
+        $now = (new Carbon())->getTimestamp();
+        if ($request->hasFile('picture')){
+            $fileName = LivePost::$IMAGE_NAME_PREFIX . $now . LivePost::$IMAGE_ORIGINAL_SUFFIX . '.' . $request->picture->getClientOriginalExtension();
+            $manipulatedFile = LivePost::$IMAGE_NAME_PREFIX . $now . LivePost::$IMAGE_COMPRESSED_SUFFIX . '.jpg' ;
+            $request->picture->move('storage/live', $fileName);
+            $LivePost->original_picture = 'storage/live/' . $fileName;
+            $compressed_address = $this->compressMedia($LivePost->original_picture, $manipulatedFile);
+            $LivePost->picture = $compressed_address;
+        }
         $LivePost->save();
         return redirect()->route('app::admin.live');
     }

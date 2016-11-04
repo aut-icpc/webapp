@@ -188,8 +188,12 @@ return [
          */
         Moloquent\MongodbServiceProvider::class,
         Moloquent\Auth\PasswordResetServiceProvider::class,
-//        Jenssegers\Mongodb\MongodbServiceProvider::class,
-//        Jenssegers\Mongodb\Auth\PasswordResetServiceProvider::class,
+
+        /*
+         * Image Compressor Service Provider
+         */
+        Intervention\Image\ImageServiceProvider::class
+//        greedchikara\Onesignal\OnesignalServiceProvider::class,
 
     ],
 
@@ -237,7 +241,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Image' => Intervention\Image\Facades\Image::class
     ],
 
 ];

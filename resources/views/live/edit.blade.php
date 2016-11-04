@@ -14,37 +14,34 @@
 
                         <!-- Post Title -->
                         <h5><i class="material-icons">message</i> New Post</h5>
-                        <div class="input-field col s10 m10 l10">
+                        <div class="input-field col s12 m12 l12">
                             <input type="text" name="title" id="title" class="validate" value="{{$post->title or ''}}">
                             <label for="title">Post Title</label>
                         </div>
                         <!-- /Post Title -->
 
-                        <!-- RTL -->
-                        <div class="input-field col s2 m2 l2">
-                            <div class="switch">
-                                <label>
-                                    LTR
-                                    <input type="checkbox" name="RTL" {{$post->RTL ? 'checked' : ''}}>
-                                    <span class="lever"></span>
-                                    RTL
-                                </label>
-                            </div>
-                        </div>
-                        <!-- /RTL -->
+                        {{--<!-- RTL -->--}}
+                        {{--<div class="input-field col s2 m2 l2">--}}
+                            {{--<div class="switch">--}}
+                                {{--<label>--}}
+                                    {{--LTR--}}
+                                    {{--<input type="checkbox" name="RTL" {{$post->RTL ? 'checked' : ''}}>--}}
+                                    {{--<span class="lever"></span>--}}
+                                    {{--RTL--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /RTL -->--}}
 
                         <!-- Post Body -->
                         <div class="input-field col s12 m12 l12">
-                            <textarea dir="{{$post->RTL ? 'RTL' : 'LTR'}}" name="body" id="textarea1" class="materialize-textarea" length="1000">{{ $post->body or '' }}</textarea>
+                            <textarea name="body" id="textarea1" class="materialize-textarea" length="1000">{!! $post->body or ''  !!}</textarea>
                             <label for="textarea1">Post Message</label>
                         </div>
                         <!-- /Post Body -->
 
                         <!-- Picture -->
                         <div class="file-field input-field col s4 m4 l4">
-                            @if (isset($post->image))
-                                <img class="materialboxed" data-caption="{{ $post->title }}" width="250" src="{{ $post->getPictureAsset() }}">
-                            @endif
                             <div class="btn">
                                 <span>Picture</span>
                                 <input name="picture" type="file" id="image">
@@ -53,11 +50,16 @@
                                 <input class="file-path validate" type="text">
                             </div>
                         </div>
+                        @if (isset($post->picture))
+                            <div class="col s8 m8 l8">
+                                <a href="{{ $post->getImgAddress() }}" target="_blank"><img class="materialboxed" data-caption="{{ $post->title }}" width="250" src="{{ $post->getImgAddress() }}"></a>
+                            </div>
+                        @endif
                         <!-- /Picture -->
 
                         <!-- Submit -->
                         <div class="input-field col s12 m12 l12 center">
-                            <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Go Live!
+                            <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Update Post
                                 <i class="material-icons right">done_all</i>
                             </button>
                         </div>

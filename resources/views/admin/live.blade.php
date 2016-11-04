@@ -11,27 +11,45 @@
             </div>
         </div>
         <div class="row section">
-            <ul class="collection">
+            <div class="col s1 m1 l1"></div>
+            <ul class="collapsible" data-collapsible="accordion">
                 @foreach($posts as $post)
                     <li class="collection-item avatar">
-                        @if(isset($post->picture))
-                            <img src="{{ $post->picture }}" alt="" class="circle">
-                        @else
-                            <i class="material-icons circle">textsms</i>
-                        @endif
-
-                        <span class="title">{{ $post->title }}</span>
-                        <p>
-                            Published At: {{ \Carbon\Carbon::createFromTimestamp($post->published_at)->format("r") }}<br>
-                            Published By: {{ $post->author->name }}
-                        </p>
-                        <div class="col s1 m1 l1 secondary-content">
-                            <a href="{{ route('app::admin.live.edit', ['LivePost' => $post]) }}">
-                                <i class="material-icons cyan-text text-darken-2">mode_edit</i>
-                            </a>
-                            <a href="{{ route('app::admin.live.delete', ['LivePost' => $post]) }}" onclick="return confirm('Dude, Really?');">
-                                <i class="material-icons cyan-text text-darken-2">delete</i>
-                            </a>
+                        <div class="collapsible-header">
+                            @if(isset($post->picture))
+                                <i class="material-icons">perm_media</i>
+                            @else
+                                <i class="material-icons">textsms</i>
+                            @endif
+                            {{ $post->title }}
+                        </div>
+                        <div class="collapsible-body">
+                            @if(isset($post->picture))
+                                <div class="row">
+                                    <div class="col s8 m8 l8">
+                                        {!! $post->body !!}
+                                    </div>
+                                    <div class="col s4 m4 l4">
+                                        <p>
+                                            <img class="materialboxed" width="200px" data-caption="{{ $post->title }}" src="{{ $post->getImgAddress() }}">
+                                        </p>
+                                    </div>
+                                </div>
+                            @else
+                                {!! $post->body !!}
+                            @endif
+                            <p>
+                                Published At: {{ \Carbon\Carbon::createFromTimestamp($post->published_at)->format("j M Y - H:i:s (T)")  }}<br>
+                                Published By: {{ $post->author->name }}
+                            </p>
+                            <p>
+                                <a href="{{ route('app::admin.live.edit', ['LivePost' => $post]) }}">
+                                    <i class="material-icons cyan-text text-darken-2">mode_edit</i>
+                                </a>
+                                <a href="{{ route('app::admin.live.delete', ['LivePost' => $post]) }}" onclick="return confirm('Are you sure?');">
+                                    <i class="material-icons cyan-text text-darken-2">delete</i>
+                                </a>
+                            </p>
                         </div>
                     </li>
                 @endforeach
@@ -44,6 +62,9 @@
 <script>
     $(document).ready(function() {
         $('input#input_text, textarea#textarea1').characterCounter();
+    });
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
     });
 </script>
 @endpush

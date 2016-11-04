@@ -14,29 +14,28 @@
 
                         <!-- Post Title -->
                         <h5><i class="material-icons">message</i> New Post</h5>
-                        <div class="input-field col s10 m10 l10">
+                        <div class="input-field col s12 m12 l12">
                             <input type="text" name="title" id="title" class="validate">
                             <label for="title">Post Title</label>
                         </div>
                         <!-- /Post Title -->
 
-                        <!-- RTL -->
-                        <div class="input-field col s2 m2 l2">
-                            <div class="switch">
-                                <label>
-                                    LTR
-                                    <input type="checkbox" name="RTL">
-                                    <span class="lever"></span>
-                                    RTL
-                                </label>
-                            </div>
-                        </div>
-                        <!-- /RTL -->
+                        {{--<!-- RTL -->--}}
+                        {{--<div class="input-field col s2 m2 l2">--}}
+                            {{--<div class="switch">--}}
+                                {{--<label>--}}
+                                    {{--LTR--}}
+                                    {{--<input type="checkbox" name="RTL">--}}
+                                    {{--<span class="lever"></span>--}}
+                                    {{--RTL--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<!-- /RTL -->--}}
 
                         <!-- Post Body -->
                         <div class="input-field col s12 m12 l12">
                             <textarea name="body" id="textarea1" class="materialize-textarea" length="1000"></textarea>
-                            <label for="textarea1">Post Message</label>
                         </div>
                         <!-- /Post Body -->
 

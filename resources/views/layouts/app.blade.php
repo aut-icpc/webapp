@@ -13,6 +13,11 @@
         <link type="text/css" rel="stylesheet" href="{{ URL::asset('css/materialize.min.css') }}" media="screen,projection" />
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Editor -->
+        <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+        <script>tinymce.init({ selector:'textarea' });</script>
+
         @stack('styles')
         <script src='https://www.google.com/recaptcha/api.js'></script>
         @yield('live_scripts')
@@ -42,12 +47,9 @@
         <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
         <script src="{{ URL::asset('js/jquery.nicescroll.min.js') }}"></script>
         <script src="{{ URL::asset('js/jquery.nicescroll.plus.js') }}"></script>
-        {{-- <script src="{{ URL::asset('js/velocity.min.js') }}"></script> --}}
-        {{-- <script src="{{ URL::asset('js/skrollr.min.js') }}"></script> --}
-        <script src="{{ URL::asset('js/jquery.scrolline.js') }}"></script>
-        {{-- <script type="text/javascript" src="{{ URL::asset('js/modernizr.js') }}"></script> --}}
         <script type="text/javascript" src="{{ URL::asset('js/materialize.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
+
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
