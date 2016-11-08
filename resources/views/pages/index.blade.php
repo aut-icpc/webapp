@@ -25,72 +25,94 @@
                     </button>
                 </a>
                 <br>
-                <br>
-                <br>
             </div>
         </div>
 
         <div class="row" id="details">
-            <div class="col s12 m5">
-                <div class="card cyan darken-2 white-text waves-effect">
+            <div class="col s12 m12 l12">
+                <div class="card cyan darken-2 white-text">
                     <div class="card-content">
-                        <span class="card-title">Timings</span>
-                        <p style="font-size: 20px;">Registration Dates</p>
-                        <p style="font-size: 33px;">October 17 - 28, 2016</p>
+                        <span class="card-title">Re-Contest Notice</span>
                         <p style="font-size: 15px;">
-                            Registration period of On-Site contest for Iranian teams is from October 17 until October 28.<br>
-                            Others can register until November 2nd.
+                            Last friday (November 4th) during the contest, we had faced with a major technical issue with the judging server
+                            (<a href="https://github.com/daavar/domjudge/wiki/Black-Friday/" target="_blank">details are available here</a>), we tried our best but eventually
+                            we could not provide our contestants a good and fair judging environment. But AUT-ICPC is not backing off!
+                            We have fixed all the issues and we are now calling for re-participation in 16th Amirkabir ICPC
+                            (re-contest) which will be held November 17th, 2016 at the computer engineering and IT department
+                            of Amirkabir university of technology.<br>
                         </p>
                         <hr> <br>
-                        <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
-                        <p style="font-size: 33px;">November 02, 2016</p>
-                        <hr> <br>
-                        <p style="font-size: 20px;">On-Site Contest</p>
-                        <p style="font-size: 33px;">November 04, 2016</p>
-                        <p style="font-size: 15px;">10:00:00 (UTC)</p>
-                        <p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>
-                        <hr> <br>
-                        <p style="font-size: 20px;">On-Line Contest (Delayed)</p>
-                        <p style="font-size: 33px;">November 04, 2016</p>
-                        <p style="font-size: 15px;">10:30:00 (UTC)</p>
-                        <p style="font-size: 15px;">14:00:00 (GMT +3:30 - Iran Standard Time)</p>
+                        <p style="font-size: 20px;">Re-Participation</p>
+                        <p style="font-size: 15px;">
+                            If you have already registered in the contest and NOT HAVE canceled your registration for re-contest yet,
+                            you will be participating in the re-contest. and details will be sent to you via email. <br>
+                            However if you do not want to participate or want to cancel your registration, please tell us via
+                            an email to <a href="mailto:ceit.ssc@aut.ac.ir">ceit.ssc@aut.ac.ir</a>.
+                        </p>
+
                     </div>
                 </div>
             </div>
-            <div class="col s12 m7">
-                <div class="card cyan darken-2 white-text waves-effect">
-                    <div class="card-content">
-                        <span class="card-title">Important Notes</span>
-                        <ol>
-                            <li>
-                                The contest will be held both online and on-site. However the online contest will be held
-                                at least two hours after the on-site contest. There is no limit in the online contest but
-                                for registring in the on-site contest, teams must be present at one of the specified sites.
-                            </li>
-                            <li>
-                                Participant teams in on-site contest must have exactly three members in order to be able
-                                to participate in a programming contest, but the online contest has no limits.
-                            </li>
-                            <li>
-                                All Iranian team members in on-site contest, are required to be present on November 02, at the Orientation Day.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m7 center">
-                <a href="{{ route('app::contest.registered') }}">
-                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">View Registered Teams of On-Site Contest
-                        <i class="material-icons right">toc</i>
-                    </button>
-                </a>
-                <br>
-                <a href="{{ route('app::online_contest.registered') }}">
-                    <button class="darken-2 waves-effect waves-light btn-large cyan" style="margin-top:20px;" type="button" name="action">View Registered Teams of On-Line Contest
-                        <i class="material-icons right">toc</i>
-                    </button>
-                </a>
-            </div>
+            {{--<div class="col s12 m5">--}}
+                {{--<div class="card cyan darken-2 white-text waves-effect">--}}
+                    {{--<div class="card-content">--}}
+                        {{--<span class="card-title">Timings</span>--}}
+                        {{--<p style="font-size: 20px;">Registration Dates</p>--}}
+                        {{--<p style="font-size: 33px;">October 17 - 28, 2016</p>--}}
+                        {{--<p style="font-size: 15px;">--}}
+                            {{--Registration period of On-Site contest for Iranian teams is from October 17 until October 28.<br>--}}
+                            {{--Others can register until November 2nd.--}}
+                        {{--</p>--}}
+                        {{--<hr> <br>--}}
+                        {{--<p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>--}}
+                        {{--<p style="font-size: 33px;">November 02, 2016</p>--}}
+                        {{--<hr> <br>--}}
+                        {{--<p style="font-size: 20px;">On-Site Contest</p>--}}
+                        {{--<p style="font-size: 33px;">November 04, 2016</p>--}}
+                        {{--<p style="font-size: 15px;">10:00:00 (UTC)</p>--}}
+                        {{--<p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>--}}
+                        {{--<hr> <br>--}}
+                        {{--<p style="font-size: 20px;">On-Line Contest (Delayed)</p>--}}
+                        {{--<p style="font-size: 33px;">November 04, 2016</p>--}}
+                        {{--<p style="font-size: 15px;">10:30:00 (UTC)</p>--}}
+                        {{--<p style="font-size: 15px;">14:00:00 (GMT +3:30 - Iran Standard Time)</p>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col s12 m7">--}}
+                {{--<div class="card cyan darken-2 white-text waves-effect">--}}
+                    {{--<div class="card-content">--}}
+                        {{--<span class="card-title">Important Notes</span>--}}
+                        {{--<ol>--}}
+                            {{--<li>--}}
+                                {{--The contest will be held both online and on-site. However the online contest will be held--}}
+                                {{--at least two hours after the on-site contest. There is no limit in the online contest but--}}
+                                {{--for registring in the on-site contest, teams must be present at one of the specified sites.--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--Participant teams in on-site contest must have exactly three members in order to be able--}}
+                                {{--to participate in a programming contest, but the online contest has no limits.--}}
+                            {{--</li>--}}
+                            {{--<li>--}}
+                                {{--All Iranian team members in on-site contest, are required to be present on November 02, at the Orientation Day.--}}
+                            {{--</li>--}}
+                        {{--</ol>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col s12 m7 center">--}}
+                {{--<a href="{{ route('app::contest.registered') }}">--}}
+                    {{--<button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">View Registered Teams of On-Site Contest--}}
+                        {{--<i class="material-icons right">toc</i>--}}
+                    {{--</button>--}}
+                {{--</a>--}}
+                {{--<br>--}}
+                {{--<a href="{{ route('app::online_contest.registered') }}">--}}
+                    {{--<button class="darken-2 waves-effect waves-light btn-large cyan" style="margin-top:20px;" type="button" name="action">View Registered Teams of On-Line Contest--}}
+                        {{--<i class="material-icons right">toc</i>--}}
+                    {{--</button>--}}
+                {{--</a>--}}
+            {{--</div>--}}
         </div>
     </div>
 @endsection
@@ -158,7 +180,7 @@
 </script>
 <script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
 <script type="text/javascript">
-    $('#time').countdown('2016/11/04 13:30:00', function(event) {
+    $('#time').countdown('2016/11/17 9:00:00', function(event) {
         var $this = $(this).html(event.strftime(''
                 + '<b><span style="font-size: 100px;" >%D</b>Days </span>'
                 + '<b><span style="font-size: 100px;" > - %H</b></span>'
