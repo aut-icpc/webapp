@@ -18,9 +18,11 @@
                 16th <b>Amirkabir</b> International Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br>
                 {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
-                <div class="center" id="time"></div>
-                <a href="{{ route('app::contest.pre-register') }}">
-                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Register for Contest
+                {{--<div class="center" id="time"></div>--}}
+                <br>
+                <br>
+                <a href="{{ route('app::past') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Results and Scoreboard
                         <i class="material-icons right">supervisor_account</i>
                     </button>
                 </a>
@@ -32,22 +34,20 @@
             <div class="col s12 m12 l12">
                 <div class="card cyan darken-2 white-text">
                     <div class="card-content">
-                        <span class="card-title">Re-Contest Notice</span>
+                        <span class="card-title">More Details</span>
                         <p style="font-size: 15px;">
-                            Last friday (November 4th) during the contest, we had faced with a major technical issue with the judging server
+                            On November 4th, during the  16th AUT-ICPC, we had faced with a major technical issue with the judging server
                             (<a href="https://github.com/daavar/domjudge/wiki/Black-Friday/" target="_blank">details are available here</a>), we tried our best but eventually
                             we could not provide our contestants a good and fair judging environment. But AUT-ICPC is not backing off!
                             We have fixed all the issues and we are now calling for re-participation in 16th Amirkabir ICPC
-                            (re-contest) which will be held November 17th, 2016 at the computer engineering and IT department
+                            (re-contest) which was been held November 17th, 2016 at the computer engineering and IT department
                             of Amirkabir university of technology.<br>
                         </p>
                         <hr> <br>
-                        <p style="font-size: 20px;">Re-Participation</p>
+                        <p style="font-size: 20px;">Results and Scoreboard</p>
                         <p style="font-size: 15px;">
-                            If you have already registered in the contest and NOT HAVE canceled your registration for re-contest yet,
-                            you will be participating in the re-contest. and details will be sent to you via email. <br>
-                            However if you do not want to participate or want to cancel your registration, please tell us via
-                            an email to <a href="mailto:ceit.ssc@aut.ac.ir">ceit.ssc@aut.ac.ir</a>.
+                            You can find all the details of the past contests at our
+                            <a href="{{ route('app::past') }}">'past contests' section: Click to redirect</a>.
                         </p>
 
                     </div>
@@ -179,13 +179,13 @@
     });
 </script>
 <script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
-<script type="text/javascript">
-    $('#time').countdown('2016/11/17 13:30:00', function(event) {
-        var $this = $(this).html(event.strftime(''
-                + '<b><span style="font-size: 100px;" >%D</b>Days </span>'
-                + '<b><span style="font-size: 100px;" > - %H</b></span>'
-                + '<b><span style="font-size: 100px;" >:%M<b></span>'
-                + '<b><span style="font-size: 100px;" >:%S</b></span>'));
-    });
-</script>
+{{--<script type="text/javascript">--}}
+    {{--$('#time').countdown('2016/11/17 13:30:00', function(event) {--}}
+        {{--var $this = $(this).html(event.strftime(''--}}
+                {{--+ '<b><span style="font-size: 100px;" >%D</b>Days </span>'--}}
+                {{--+ '<b><span style="font-size: 100px;" > - %H</b></span>'--}}
+                {{--+ '<b><span style="font-size: 100px;" >:%M<b></span>'--}}
+                {{--+ '<b><span style="font-size: 100px;" >:%S</b></span>'));--}}
+    {{--});--}}
+{{--</script>--}}
 @endpush
