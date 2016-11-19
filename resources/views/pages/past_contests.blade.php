@@ -30,7 +30,8 @@
                 <br>
                 2016:
                     <li>
-                        Day 1 (Nov 4th) - Dismissed: <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a>, <a href="http://icpc.aut.ac.ir/files/onsite_2016_day1_ranking.html">Final Ranklist (Onsite) - Contest dismissed due to technical failures.</a>
+                        Day 1 (Nov 4th) - Dismissed: <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a>
+                {{--, <a href="http://icpc.aut.ac.ir/files/onsite_2016_day1_ranking.html">Final Ranklist (Onsite) - Contest dismissed due to technical failures.</a>--}}
                     </li>
                     <li>
                         Day 2 (Nov 17th): <a href="http://icpc.aut.ac.ir/files/aut2016.pdf">Problems</a>,  <a href="http://icpc.aut.ac.ir/files/onsite_ranking2016.html">Final Ranklist (Onsite)</a>, <a href="https://www.hackerrank.com/contests/aut-icpc2016-online-version/leaderboard">Final Ranklist (Online)</a>
