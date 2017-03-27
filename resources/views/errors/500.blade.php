@@ -16,7 +16,7 @@
                 <h3>Whoooooooops...!</h3>
                 <h4>Something went wrong!</h4>
                 <p>
-                    404 - Your Requested URI doesn't exist!
+                    500 - Our servers has crashed for a moment!
                 </p>
                 <br>
                 <a href="{{ route('app::index') }}">

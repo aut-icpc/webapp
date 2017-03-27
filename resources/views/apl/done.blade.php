@@ -13,10 +13,9 @@
         <div class="container-fluid section">
             <div class="mast">
                 <img class="responsive-img" style="width: 60%;" src="{{ asset('img/aut_icpc.png') }}">
-                <h3>Whoooooooops...!</h3>
-                <h4>Something went wrong!</h4>
+                <h3>Thanks for registration!</h3>
                 <p>
-                    404 - Your Requested URI doesn't exist!
+                    Additional information will be delivered to you from both emails and text messages.
                 </p>
                 <br>
                 <a href="{{ route('app::index') }}">

@@ -24,6 +24,12 @@ Route::get('/past', 'PagesController@showPastContests')->name('app::past');
 
 Route::get('2016/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
 Route::get('/2016/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
+
+Route::get('/apl', 'ContestController@APLIndex')->name('app::apl.index');
+Route::get('/apl/register', 'ContestController@showAPLRegistrationForm')->name('app::apl.register');
+Route::post('/apl/register', 'ContestController@saveAPLRegistration')->name('app::apl.register.submit');
+Route::get('/apl/registered', 'ContestController@showAPLRegisteredPersons')->name('app::apl.registered');
+
 Route::get('/2016/registered', 'ContestController@showContestRegisteredTeams')->name('app::contest.registered');
 Route::get('/2016/registered/online', 'ContestController@showOnlineContestRegisteredTeams')->name('app::online_contest.registered');
 Route::post('/2016/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
@@ -42,6 +48,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('app::admin');
 Route::get('/home/registrations', 'HomeController@showRegistrations')->name('app::admin.registrations.show')->middleware('admin');
 Route::get('/home/registrations/online', 'HomeController@showOnlineRegistrations')->name('app::admin.online_registrations.show')->middleware('admin');
+Route::get('/home/registrations/apl', 'HomeController@showAPLRegistrations')->name('app::admin.APL_registrations.show')->middleware('admin');
 
 Route::get('home/registrations/{team}', 'HomeController@showEditRegistrationForm')->name('app::admin.registration.edit')->middleware('admin');
 Route::post('home/registrations/{team}', 'HomeController@saveRegistration')->name('app::admin.registration.save')->middleware('admin');

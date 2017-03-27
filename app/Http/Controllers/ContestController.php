@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\APLRegistration;
+use App\Events\APLRegistered;
 use App\Events\OnlineRegistered;
 use App\Events\OnSiteRegistered;
 use App\OnlineRegistration;
@@ -79,5 +81,40 @@ class ContestController extends Controller
         else {
             return redirect()->back();
         }
+    }
+
+    public function showAPLRegistrationForm(){
+        return view('apl.register');
+    }
+
+    public function APLIndex(){
+        return redirect()->route('app::apl.register');
+    }
+
+    public function saveAPLRegistration(Request $request){
+        $gRecaptchaResponse = $request->get('g-recaptcha-response');
+        $recaptcha = new \ReCaptcha\ReCaptcha(ContestController::$G_SECRET);
+        $resp = $recaptcha->verify($gRecaptchaResponse);
+        if ($resp->isSuccess()){
+            $registration = new APLRegistration($request->all());
+            $registration->status = OnsiteRegistration::$PENDING;
+            $registration->register_is_ok = false;
+            $saved = $registration->save();
+            // TODO : add additional variables like email activation and so...
+            if ($saved) {
+                event(new APLRegistered($registration));
+                return redirect()->route('app::apl.registered');
+            }
+            else
+                return redirect()->back();
+        }
+        else {
+            return redirect()->back();
+        }
+    }
+
+    public function showAPLRegisteredPersons(){
+        $data = APLRegistration::all()->sortBy('created_at');
+        return view('apl.done', ['data' => $data]);
     }
 }

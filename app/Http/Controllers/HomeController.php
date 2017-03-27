@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\APLRegistration;
 use App\Events\CustomEmailSubmission;
 use App\LivePost;
 use App\OnlineRegistration;
@@ -260,6 +261,13 @@ class HomeController extends Controller
     public function removeOnlineRegistration(OnlineRegistration $team) {
         $team->delete();
         return redirect()->route('app::admin.online_registrations.show');
+    }
+
+
+    public function showAPLRegistrations()
+    {
+        $data = APLRegistration::all()->sortBy('created_at');
+        return view('admin.APL_registrations', ['data' => $data]);
     }
 
 }
