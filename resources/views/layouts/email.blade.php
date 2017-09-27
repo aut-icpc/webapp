@@ -248,7 +248,7 @@
             <div class="content">
 
                 <!-- START CENTERED WHITE CONTAINER -->
-                <span class="preheader">You have successfully registered in 16th AUT ACM-ICPC!</span>
+                <span class="preheader">You have successfully registered in 17th AUT ACM-ICPC!</span>
                 <table class="main">
 
                     <!-- START MAIN CONTENT AREA -->

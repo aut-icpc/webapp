@@ -4,7 +4,7 @@
     <div id="non-skrollr">
         <div class="row">
             <h3><br>Add a new Live Post!<br></h3>
-            <h5>16th Amirkabir Collegiate Programming Contest - 04 Nov 2016</h5>
+            <h5>17th Amirkabir Collegiate Programming Contest - 03 Nov 2017</h5>
             <div class="divider"></div>
             <br>
             <div class="container-fluid">

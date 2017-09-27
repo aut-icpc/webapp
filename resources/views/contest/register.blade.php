@@ -6,7 +6,7 @@
     <div id="non-skrollr">
         <div class="row">
             <h3><br>On-Site Contest Registration<br></h3>
-            <h5>16th Amirkabir Collegiate Programming Contest - 04 Nov 2016</h5>
+            <h5>17th Amirkabir Collegiate Programming Contest - 03 Nov 2017</h5>
             <p>
                 Please fill all of the following fields carefully and then press the 'Submit' button to make your team registered.<br>
                 If you are willing to just register in online contest, follow <a style="color: #00b0ff;" href="{{ route('app::contest.register.online') }}">this link</a>.

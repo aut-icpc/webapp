@@ -30,9 +30,28 @@
                 <br>
                 2016:
                     <li>
-                        Day 1 (Nov 4th) - Dismissed: <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a>
-                {{--, <a href="http://icpc.aut.ac.ir/files/onsite_2016_day1_ranking.html">Final Ranklist (Onsite) - Contest dismissed due to technical failures.</a>--}}
+                Day 1 (Nov 4th) - Dismissed: <o id='moredetail' >                {{--, <a href="http://icpc.aut.ac.ir/files/onsite_2016_day1_ranking.html">Final Ranklist (Onsite) - Contest dismissed due to technical failures.</a>--}}
                     </li>
+            <div>
+                <div class="card-content"  id="detail">
+                    <p style="font-size: 15px;">
+                        <bold> More Details :</bold>
+                        <br><br>
+                        On November 4th, during the  16th AUT-ICPC, we had faced with a major technical issue with the judging server
+                        (<a href="https://github.com/daavar/domjudge/wiki/Black-Friday/" target="_blank">details are available here</a>), we tried our best but eventually
+                        we could not provide our contestants a good and fair judging environment. But AUT-ICPC is not backing off!
+                        We have fixed all the issues and we are now calling for re-participation in 16th Amirkabir ICPC
+                        (re-contest) which was been held November 17th, 2016 at the computer engineering and IT department
+                        of Amirkabir university of technology.<br>
+                    </p>
+                    <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a>
+
+                    <hr> <br>
+
+                    </p>
+
+                </div>
+            </div>
                     <li>
                         Day 2 (Nov 17th): <a href="http://icpc.aut.ac.ir/files/aut2016.pdf">Problems</a>,  <a href="http://icpc.aut.ac.ir/files/onsite_ranking2016.html">Final Ranklist (Onsite)</a>, <a href="https://www.hackerrank.com/contests/aut-icpc2016-online-version/leaderboard">Final Ranklist (Online)</a>
                     </li>
@@ -43,6 +62,7 @@
             <p>
                 2014: <a href="http://ceit.aut.ac.ir/acm/files/past/14/apl/day1">day1</a>, <a href="http://ceit.aut.ac.ir/acm/files/past/14/apl/day2">day2</a>, <a href="http://ceit.aut.ac.ir/acm/files/past/14/apl/day3">day3</a><br>
                 2015: <a href="http://ceit.aut.ac.ir/acm/files/past/15/apl/day1">day1</a>, <a href="http://ceit.aut.ac.ir/acm/files/past/15/apl/day2">day2</a>, <a href="http://ceit.aut.ac.ir/acm/files/past/15/apl/day3">day3</a><br>
+                2017 : <a href="http://icpc.aut.ac.ir/files/APL2017_resualt.jpg">Final Ranklist</a>
             </p>
             <div class="divider"></div>
 
@@ -65,9 +85,7 @@
 
 @push('scripts')
 <script>
-    $(document).ready(function(){
-        debugger;
-        $('#page-wrap').css('height', 'auto');
-    });
+
+
 </script>
 @endpush

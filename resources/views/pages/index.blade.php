@@ -15,8 +15,9 @@
                 <img class="responsive-img" style="width: 60%;" src="{{ asset('img/aut_icpc.png') }}">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                16th <b>Amirkabir</b> International Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
-                <br>
+                17th <b>Amirkabir</b> International Collegiate Programming Contest held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
+                <br><br><br>
+                <b>03 Nov 2017</b>
                 {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
                 {{--<div class="center" id="time"></div>--}}
                 <br>
@@ -33,24 +34,7 @@
         <div class="row" id="details">
             <div class="col s12 m12 l12">
                 <div class="card cyan darken-2 white-text">
-                    <div class="card-content">
-                        <span class="card-title">More Details</span>
-                        <p style="font-size: 15px;">
-                            On November 4th, during the  16th AUT-ICPC, we had faced with a major technical issue with the judging server
-                            (<a href="https://github.com/daavar/domjudge/wiki/Black-Friday/" target="_blank">details are available here</a>), we tried our best but eventually
-                            we could not provide our contestants a good and fair judging environment. But AUT-ICPC is not backing off!
-                            We have fixed all the issues and we are now calling for re-participation in 16th Amirkabir ICPC
-                            (re-contest) which was been held November 17th, 2016 at the computer engineering and IT department
-                            of Amirkabir university of technology.<br>
-                        </p>
-                        <hr> <br>
-                        <p style="font-size: 20px;">Results and Scoreboard</p>
-                        <p style="font-size: 15px;">
-                            You can find all the details of the past contests at our
-                            <a href="{{ route('app::past') }}">'past contests' section: Click to redirect</a>.
-                        </p>
 
-                    </div>
                 </div>
             </div>
             {{--<div class="col s12 m5">--}}
@@ -135,26 +119,20 @@
                 </a>
             </div>
             <div class="col s4 m4 l4">
-                <a href="http://tcs.uj.edu.pl/" target="_blank">
-                    <img class="responsive-img" style="width: 150px;" src="{{ asset('img/tcs.png') }}">
+                <br>
+
+                <a href="https://www.tum.de/en/" target="_blank">
+                    <img class="responsive-img" style="width: 150px;" src="{{ asset('img/T--LMU-TUM_Munich--tum-logo.jpg ') }}">
                 </a>
             </div>
-            {{--<div class="col s4 m4 l4">--}}
-                {{--<a href="http://aut.ac.ir" target="_blank">--}}
-                    {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/aut.png') }}">--}}
-                {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="col s4 m4 l4">--}}
-                {{--<a href="http://tcs.uj.edu.pl/" target="_blank">--}}
-                    {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/tcs.png') }}">--}}
-                {{--</a>--}}
-            {{--</div>--}}
+
+
         </div>
         <div class="row container center cyan-text text-darken-2">
-            <h4>Event Sponsor: </h4><br>
+            {{--<h4>Event Sponsor: </h4><br>--}}
             <div class="col s3 m3 l3">
             </div>
-            <div class="col s6 m6 l6">
+           {{--}} <div class="col s6 m6 l6">
                 <a href="http://chmail.ir/" target="_blank">
                     <img class="responsive-img" style="width: 200px;" src="{{ asset('img/sponsor.png') }}">
                 </a>
