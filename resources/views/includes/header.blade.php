@@ -28,6 +28,10 @@
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li>
+                            <a href="{{ route('app::past') }}">Past Results</a>
+                        </li>
+
+                        <li>
                             <a href="{{ route('app::local.history') }}">History</a>
                         </li>
                         <li>
@@ -44,6 +48,9 @@
                         @endif
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <a href="{{ route('app::past') }}">Past Results</a>
+                        </li>
                         <li>
                             <a href="{{ route('app::local.history') }}">History</a>
                         </li>

@@ -22,7 +22,7 @@
                 {{--<div class="center" id="time"></div>--}}
                 <br>
                 <br>
-                <a href="{{ route('app::past') }}">
+              {{--}}  <a href="{{ route('app::past') }}">
                     <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Results and Scoreboard
                         <i class="material-icons right">supervisor_account</i>
                     </button>
