@@ -18,11 +18,11 @@
                 17th <b>Amirkabir</b> International Collegiate Programming Contest will be held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br><br><br>
                 <b>November 3rd 2017</b>
-                {{--<h6>Registration links will be available during  <b>October 15th - October 28th</b></h6>--}}
-                {{--<div class="center" id="time"></div>--}}
+                <h6>Registration links will be available during  <b>October 11th - October 28th</b></h6>
+                <div class="center" id="time"></div>
                 <br>
                 <br>
-              {{--}}  <a href="{{ route('app::past') }}">
+              {{--  <a href="{{ route('app::past') }}">
                     <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Results and Scoreboard
                         <i class="material-icons right">supervisor_account</i>
                     </button>
@@ -36,67 +36,69 @@
                 <div class="card cyan darken-2 white-text">
 
                 </div>
+            </div>--}}
+            <div class="col s12 m5">
+                <div class="card cyan darken-2 white-text waves-effect">
+                    <div class="card-content">
+                        <span class="card-title">Timings</span>
+                        <p style="font-size: 20px;">Registration Dates</p>
+                        <p style="font-size: 33px;">October 11 - 28, 2017</p>
+                        <p style="font-size: 15px;">
+                            Registration period of On-Site contest for Iranian teams is from October 11 until October 28.<br>
+                            Others can register until November 2nd.
+                        </p>
+                        {{--
+                        <hr><br>
+                        <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
+                        <p style="font-size: 33px;">November 02, 2016</p>
+                        <hr> <br>
+                        <p style="font-size: 20px;">On-Site Contest</p>
+                        <p style="font-size: 33px;">November 04, 2016</p>
+                        <p style="font-size: 15px;">10:00:00 (UTC)</p>
+                        <p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>
+                        <hr> <br>
+                        <p style="font-size: 20px;">On-Line Contest (Delayed)</p>
+                        <p style="font-size: 33px;">November 04, 2016</p>
+                        <p style="font-size: 15px;">10:30:00 (UTC)</p>
+                        <p style="font-size: 15px;">14:00:00 (GMT +3:30 - Iran Standard Time)</p>
+                        --}}
+                    </div>
+                </div>
             </div>
-            {{--<div class="col s12 m5">--}}
-                {{--<div class="card cyan darken-2 white-text waves-effect">--}}
-                    {{--<div class="card-content">--}}
-                        {{--<span class="card-title">Timings</span>--}}
-                        {{--<p style="font-size: 20px;">Registration Dates</p>--}}
-                        {{--<p style="font-size: 33px;">October 17 - 28, 2016</p>--}}
-                        {{--<p style="font-size: 15px;">--}}
-                            {{--Registration period of On-Site contest for Iranian teams is from October 17 until October 28.<br>--}}
-                            {{--Others can register until November 2nd.--}}
-                        {{--</p>--}}
-                        {{--<hr> <br>--}}
-                        {{--<p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>--}}
-                        {{--<p style="font-size: 33px;">November 02, 2016</p>--}}
-                        {{--<hr> <br>--}}
-                        {{--<p style="font-size: 20px;">On-Site Contest</p>--}}
-                        {{--<p style="font-size: 33px;">November 04, 2016</p>--}}
-                        {{--<p style="font-size: 15px;">10:00:00 (UTC)</p>--}}
-                        {{--<p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>--}}
-                        {{--<hr> <br>--}}
-                        {{--<p style="font-size: 20px;">On-Line Contest (Delayed)</p>--}}
-                        {{--<p style="font-size: 33px;">November 04, 2016</p>--}}
-                        {{--<p style="font-size: 15px;">10:30:00 (UTC)</p>--}}
-                        {{--<p style="font-size: 15px;">14:00:00 (GMT +3:30 - Iran Standard Time)</p>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="col s12 m7">--}}
-                {{--<div class="card cyan darken-2 white-text waves-effect">--}}
-                    {{--<div class="card-content">--}}
-                        {{--<span class="card-title">Important Notes</span>--}}
-                        {{--<ol>--}}
-                            {{--<li>--}}
-                                {{--The contest will be held both online and on-site. However the online contest will be held--}}
-                                {{--at least two hours after the on-site contest. There is no limit in the online contest but--}}
-                                {{--for registring in the on-site contest, teams must be present at one of the specified sites.--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                                {{--Participant teams in on-site contest must have exactly three members in order to be able--}}
-                                {{--to participate in a programming contest, but the online contest has no limits.--}}
-                            {{--</li>--}}
-                            {{--<li>--}}
-                                {{--All Iranian team members in on-site contest, are required to be present on November 02, at the Orientation Day.--}}
-                            {{--</li>--}}
-                        {{--</ol>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="col s12 m7 center">--}}
-                {{--<a href="{{ route('app::contest.registered') }}">--}}
-                    {{--<button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">View Registered Teams of On-Site Contest--}}
-                        {{--<i class="material-icons right">toc</i>--}}
-                    {{--</button>--}}
-                {{--</a>--}}
-                {{--<br>--}}
-                {{--<a href="{{ route('app::online_contest.registered') }}">--}}
-                    {{--<button class="darken-2 waves-effect waves-light btn-large cyan" style="margin-top:20px;" type="button" name="action">View Registered Teams of On-Line Contest--}}
-                        {{--<i class="material-icons right">toc</i>--}}
-                    {{--</button>--}}
-                {{--</a>--}}
-            {{--</div>--}}
+            <div class="col s12 m7">
+                <div class="card cyan darken-2 white-text waves-effect">
+                    <div class="card-content">
+                        <span class="card-title">Important Notes</span>-
+                        <ol>
+                            <li>
+                                The contest will be held both online and on-site. However the online contest will be held
+                                at least two hours after the on-site contest. There is no limit in the online contest but
+                                for registring in the on-site contest, teams must be present at one of the specified sites.
+                            </li>
+                            <li>
+                                Participant teams in on-site contest must have exactly three members in order to be able
+                                to participate in a programming contest, but the online contest has no limits.
+                            </li>
+                            <li>
+                                All Iranian team members in on-site contest, are required to be present on November 02, at the Orientation Day.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m7 center">
+                <a href="{{ route('app::contest.registered') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">View Registered Teams of On-Site Contest
+                        <i class="material-icons right">toc</i>
+                    </button>
+                </a>
+                <br>
+                <a href="{{ route('app::online_contest.registered') }}">
+                    <button class="darken-2 waves-effect waves-light btn-large cyan" style="margin-top:20px;" type="button" name="action">View Registered Teams of On-Line Contest
+                        <i class="material-icons right">toc</i>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 @endsection
