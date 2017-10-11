@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+//chanegd to 2017
 Route::get('/', 'PagesController@index')->name('app::index');
 Route::get('/about', 'PagesController@about')->name('app::general.about');
 Route::get('/rules', 'PagesController@rules')->name('app::general.rules');
