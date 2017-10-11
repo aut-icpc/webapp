@@ -18,7 +18,7 @@
                 17th <b>Amirkabir</b> International Collegiate Programming Contest will be held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br><br><br>
                 <b>November 3rd 2017</b>
-                <h6>Registration links will be available during  <b>October 11th - October 28th</b></h6>--}}
+                <h6>Registration links will be available during  <b>October 11th - October 28th</b></h6>
                 <div class="center" id="time"></div>
                 <br>
                 <br>
