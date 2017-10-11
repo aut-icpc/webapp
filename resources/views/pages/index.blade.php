@@ -39,13 +39,13 @@
             </div>--}}
             <div class="col s12 m5">
                 <div class="card cyan darken-2 white-text waves-effect">
-                    <div class="card-content">--}}
-                        <span class="card-title">Timings</span>--}}
-                        <p style="font-size: 20px;">Registration Dates</p>--}}
-                        <p style="font-size: 33px;">October 11 - 28, 2017</p>--}}
-                        <p style="font-size: 15px;">--}}
-                            {Registration period of On-Site contest for Iranian teams is from October 11 until October 28.<br>
-                            {Others can register until November 2nd.
+                    <div class="card-content">
+                        <span class="card-title">Timings</span>
+                        <p style="font-size: 20px;">Registration Dates</p>
+                        <p style="font-size: 33px;">October 11 - 28, 2017</p>
+                        <p style="font-size: 15px;">
+                            Registration period of On-Site contest for Iranian teams is from October 11 until October 28.<br>
+                            Others can register until November 2nd.
                         </p>
                         {{--
                         <hr><br>
