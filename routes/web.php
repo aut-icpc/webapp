@@ -1,5 +1,9 @@
 <?php
 
+use DateTime;
+
+$now = new DateTime();
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,7 +14,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-//chanegd to 2017
+
 Route::get('/', 'PagesController@index')->name('app::index');
 Route::get('/about', 'PagesController@about')->name('app::general.about');
 Route::get('/rules', 'PagesController@rules')->name('app::general.rules');
@@ -22,20 +26,20 @@ Route::get('/local/rules', 'PagesController@showLocalRules')->name('app::local.r
 Route::get('/past', 'PagesController@showPastContests')->name('app::past');
 
 
-Route::get('2017/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
-Route::get('/2017/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
+Route::get('/'.$now->format('Y').'/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
+Route::get('/'.$now->format('Y').'/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
 
 Route::get('/apl', 'ContestController@APLIndex')->name('app::apl.index');
 Route::get('/apl/register', 'ContestController@showAPLRegistrationForm')->name('app::apl.register');
 Route::post('/apl/register', 'ContestController@saveAPLRegistration')->name('app::apl.register.submit');
 Route::get('/apl/registered', 'ContestController@showAPLRegisteredPersons')->name('app::apl.registered');
 
-Route::get('/2017/registered', 'ContestController@showContestRegisteredTeams')->name('app::contest.registered');
-Route::get('/2017/registered/online', 'ContestController@showOnlineContestRegisteredTeams')->name('app::online_contest.registered');
-Route::post('/2017/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
+Route::get('/'.$now->format('Y').'/registered', 'ContestController@showContestRegisteredTeams')->name('app::contest.registered');
+Route::get('/'.$now->format('Y').'/registered/online', 'ContestController@showOnlineContestRegisteredTeams')->name('app::online_contest.registered');
+Route::post('/'.$now->format('Y').'/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
 
-Route::get('/2017/register/online', 'ContestController@showOnLineRegistrationForm')->name('app::contest.register.online');
-Route::post('/2017/register/online', 'ContestController@saveOnlineContestSubmission')->name('app::contest.register.online_post');
+Route::get('/'.$now->format('Y').'/register/online', 'ContestController@showOnLineRegistrationForm')->name('app::contest.register.online');
+Route::post('/'.$now->format('Y').'/register/online', 'ContestController@saveOnlineContestSubmission')->name('app::contest.register.online_post');
 
 Route::get('/live', 'LiveController@showFeed')->name('app::live.feed');
 
