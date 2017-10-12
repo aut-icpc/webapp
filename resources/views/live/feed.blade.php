@@ -5,7 +5,7 @@
             <div class="mast">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                Follow news of AUT ACM ICPC On-Site contest live from <b>Tehran</b>, <b>Stockholm</b> and <b>Kraków</b> at the same time!
+                Follow news of AUT ACM ICPC On-Site contest live from <b>Tehran</b>, <b>Stockholm</b> and <b>Munich</b> at the same time!
                 <div class="divider"></div>
                 <br>
             </div>
@@ -22,7 +22,7 @@
                     <div class="card-content">
                         <ccenter><span class="card-title activator grey-text text-darken-4 center">Just wait a little!</span></ccenter>
                         <p class="center">
-                            The On-Site contest starts at 10:00 AM (UTC Time) November 04, 2016. <br>
+                            The On-Site contest starts at 10:00 AM (UTC Time) November 03, 2017. <br>
                             So be patient and check back soon! <br>
                             By the way you can see the behind the scenes stuff with
                             #AUTICPC on social media.
@@ -87,7 +87,7 @@
 @push('scripts')
 <script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
 <script type="text/javascript">
-    $('#time').countdown('2016/11/17 13:30:00', function(event) {
+    $('#time').countdown('2017/11/03 13:30:00', function(event) {
         var $this = $(this).html(event.strftime(''
                 + '<b><span style="font-size: 100px;" >%D</b>Days </span>'
                 + '<b><span style="font-size: 100px;" > - %H</b></span>'
