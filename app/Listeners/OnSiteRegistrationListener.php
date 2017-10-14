@@ -2,6 +2,7 @@
 
 namespace App\Listeners;
 
+use Illuminate\Support\Facades\Log;
 use App\Events\OnSiteRegistered;
 use App\Mail\RegistrationPending;
 use Illuminate\Queue\InteractsWithQueue;
