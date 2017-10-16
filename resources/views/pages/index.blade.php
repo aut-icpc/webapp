@@ -53,7 +53,7 @@
                         <p style="font-size: 33px;">November 01, 2016</p>
                         <hr> <br>
                         <p style="font-size: 20px;">On-Site Contest</p>
-                        <p style="font-size: 33px;">November 03, 2016</p>
+                        <p style="font-size: 33px;">November 03, 2017</p>
                         <p style="font-size: 15px;">10:00:00 (UTC)</p>
                         <p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>
                         <hr> <br>
