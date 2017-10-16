@@ -11,6 +11,17 @@
                 Please fill all of the following fields carefully and then press the 'Submit' button to make your team registered.<br>
                 If you are willing to just register in online contest, follow <a style="color: #00b0ff;" href="{{ route('app::contest.register.online') }}">this link</a>.
             </p>
+            <p>
+                Registration fee for Iranian teams are as follows: <br>
+                <ul>
+                    <li>
+                        120,000 Tomans for non-AUT teams.
+                    </li>
+                    <li>
+                        90,000 Tomans for teams from Amirkabir University of Technology.
+                    </li>
+                </ul>
+            </p>
             <div class="divider"></div>
             <br>
             <div class="container-fluid">
