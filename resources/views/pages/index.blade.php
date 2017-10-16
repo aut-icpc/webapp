@@ -42,26 +42,23 @@
                     <div class="card-content">
                         <span class="card-title">Timings</span>
                         <p style="font-size: 20px;">Registration Dates</p>
-                        <p style="font-size: 33px;">October 11 - 28, 2017</p>
+                        <p style="font-size: 33px;">October 16 - 28, 2017</p>
                         <p style="font-size: 15px;">
                             Registration period of On-Site contest for Iranian teams is from October 11 until October 28.<br>
                             Others can register until November 2nd.
                         </p>
-                        {{--
+                     
                         <hr><br>
                         <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
-                        <p style="font-size: 33px;">November 02, 2016</p>
+                        <p style="font-size: 33px;">November 01, 2016</p>
                         <hr> <br>
                         <p style="font-size: 20px;">On-Site Contest</p>
                         <p style="font-size: 33px;">November 04, 2016</p>
                         <p style="font-size: 15px;">10:00:00 (UTC)</p>
                         <p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>
                         <hr> <br>
-                        <p style="font-size: 20px;">On-Line Contest (Delayed)</p>
-                        <p style="font-size: 33px;">November 04, 2016</p>
-                        <p style="font-size: 15px;">10:30:00 (UTC)</p>
-                        <p style="font-size: 15px;">14:00:00 (GMT +3:30 - Iran Standard Time)</p>
-                        --}}
+                       
+                        
                     </div>
                 </div>
             </div>
