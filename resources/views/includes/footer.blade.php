@@ -91,7 +91,7 @@
                     </li>
                      <li>
                         <a class="grey-text text-lighten-3" href="https://t.me/ceitssc" target="_blank">
-                            <i class="fa fa-telegram" aria-hidden="true"></i> GitHub
+                            <i class="fa fa-telegram" aria-hidden="true"></i> Telegram
                         </a>
                     </li>
                 </ul>
