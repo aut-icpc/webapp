@@ -1,5 +1,6 @@
 @push('scripts')
 <script src="https://use.fontawesome.com/54aea6ebbf.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 @endpush
 
 <footer class="page-footer cyan darken-2">
@@ -86,6 +87,11 @@
                     <li>
                         <a class="grey-text text-lighten-3" href="https://github.com/AUT-ICPC" target="_blank">
                             <i class="fa fa-github" aria-hidden="true"></i> GitHub
+                        </a>
+                    </li>
+                     <li>
+                        <a class="grey-text text-lighten-3" href="https://t.me/ceitssc" target="_blank">
+                            <i class="fa fa-telegram" aria-hidden="true"></i> GitHub
                         </a>
                     </li>
                 </ul>
