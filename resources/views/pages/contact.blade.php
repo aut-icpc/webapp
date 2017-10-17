@@ -11,8 +11,9 @@
                         <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
                             <h5>Student Scientific Association of Computer Engineering and IT Department:</h5>
                             <p>
-                                Email: <a style="color: #ffeb3b;" href="mailto:ceit.ssc@aut.ac.ir">ceit.ssc@aut.ac.ir</a> <br>
-                                Website: <a style="color: #ffeb3b;" href="http://ceit-ssc.ir">http://ceit-ssc.ir</a>
+                                Email: <a style="color: #ffeb3b;" href="mailto:ceit.ssc94@gmail.com">ceit.ssc94@gmail.com</a> <br>
+                                Telegram : <a style="color: #ffeb3b;" href="https://t.me/ceitssc">https://t.me/ceitssc</a> <br>
+                               
                             </p>
                         </li>
                         <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
