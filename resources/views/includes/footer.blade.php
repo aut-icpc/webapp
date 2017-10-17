@@ -90,7 +90,7 @@
                         </a>
                     </li>
                      <li>
-                        <a class="grey-text text-lighten-3" href="https://t.me/ceitssc" target="_blank">
+                        <a class="grey-text text-lighten-3" href="https://t.me/AUTICPC" target="_blank">
                             <i class="fa fa-telegram" aria-hidden="true"></i> Telegram
                         </a>
                     </li>
