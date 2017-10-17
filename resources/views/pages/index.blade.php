@@ -50,7 +50,7 @@
                      
                         <hr><br>
                         <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
-                        <p style="font-size: 33px;">November 01, 2016</p>
+                        <p style="font-size: 33px;">November 01, 2017</p>
                         <hr> <br>
                         <p style="font-size: 20px;">On-Site Contest</p>
                         <p style="font-size: 33px;">November 03, 2017</p>
