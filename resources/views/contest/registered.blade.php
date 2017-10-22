@@ -9,7 +9,15 @@
                 Here is the list of registered teams ordered by their registration time.
                 <br>
                 <b>If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.</b> <br>
-                <b>If you don't see your team Information below, we are probably reviewing your information.</b>
+                <b>If you don't see your team Information below, we are probably reviewing your information.</b><br>
+                
+                 if your team name was not in registerd team list 24 hours after regitration ,  please inform us by :
+
+ <br>
+                                Email: <a style="color: #ffeb3b;" href="mailto:ceit.ssc94@gmail.com">ceit.ssc94@gmail.com</a> <br>
+                                Telegram : <a style="color: #ffeb3b;" href="https://t.me/ceitssc">https://t.me/ceitssc</a> <br>
+                               
+                            
             </p>
             @if(count($data) == 0)
                 <div class="card waves-effect col s12 m12 l12">
