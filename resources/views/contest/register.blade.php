@@ -20,6 +20,17 @@
                     <li>
                         90,000 Tomans for teams from Amirkabir University of Technology.
                     </li>
+                    
+                    <li>
+                    
+                     if your team name was not in registerd team list 24 hours after regitration ,  please inform us by :
+
+ <p>
+                                Email: <a style="color: #ffeb3b;" href="mailto:ceit.ssc94@gmail.com">ceit.ssc94@gmail.com</a> <br>
+                                Telegram : <a style="color: #ffeb3b;" href="https://t.me/ceitssc">https://t.me/ceitssc</a> <br>
+                               
+                            </p>
+                    </li>
                 </ul>
             </p>
             <div class="divider"></div>
