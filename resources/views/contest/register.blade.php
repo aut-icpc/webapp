@@ -24,11 +24,11 @@
                     <li>
                     
                      if your team name was not in registerd team list 24 hours after regitration ,  please inform us by :
- <p>
+
                                 Email: <a style="color: #00b0ff;" href="mailto:ceit.ssc94@gmail.com">ceit.ssc94@gmail.com</a> <br>
                                 Telegram : <a style="color: #00b0ff;" href="https://t.me/ceitssc">https://t.me/ceitssc</a> <br>
                                
-                            </p>
+                           
                     </li>
                 </ul>
             </p>
