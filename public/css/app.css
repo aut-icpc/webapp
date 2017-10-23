@@ -62,9 +62,8 @@ nav {
 
 .scrollToTop {
     position: fixed;
-    top: 100px;
-    right: 40px;
-    display: none;
+    bottom: 20px;
+    right: 20px;
 }
 
 .preloader {
@@ -316,4 +315,28 @@ nav {
 
 .scrollToTop i {
     font-size: 50px;
+}
+
+
+.mt-0{
+    margin-top: 0px !important;
+}
+
+.footer{
+    margin: 0px !important;
+}
+.full-width-card{
+    width:100%;
+}
+.card-margin-right{
+    margin-right:5px;
+}
+.card-margin-left{
+    margin-left:5px;
+}
+.display-flex{
+    display: flex;
+}
+.text-left{
+    text-align: left;
 }
