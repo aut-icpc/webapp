@@ -52,6 +52,7 @@
                                 <option value="Iran" data-icon="{{ URL::asset('img/iran.png') }}" class="left circle" selected>Iran</option>
                                 <option value="Germany" data-icon="{{ URL::asset('img/germany.png') }}" class="left circle">Germany</option>
                                 <option value="Sweden" data-icon="{{ URL::asset('img/sweden.png') }}" class="left circle">Sweden</option>
+                                <option value="Poland" data-icon="{{ URL::asset('img/poland.png') }}" class="left circle">Poland</option>
                                 <option value="Other" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle">Other</option>
                             </select>
                             <label>Country</label>
