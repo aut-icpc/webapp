@@ -6,7 +6,7 @@
             <br>
             <h4>Registered Teams</h4>
             <p>
-                AUT ACM ICPC 2016 Registered Teams.
+                AUT ACM ICPC 2017 Registered Teams.
             </p>
             <div class="row section">
                 <center>
