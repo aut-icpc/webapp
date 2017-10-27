@@ -77,6 +77,7 @@
                             <select name="site" class="icons">
                                 <option value="" disabled>Select your site</option>
                                 <option value="Iran" data-icon="{{ URL::asset('img/iran.png') }}" class="left circle" {{$team->site == 'Iran' ? 'selected' : ''}}>Iran</option>
+                                <option value="Poland" data-icon="{{ URL::asset('img/germany.png') }}" class="left circle" {{$team->site == 'Germany' ? 'selected' : ''}}>Germany</option>
                                 <option value="Sweden" data-icon="{{ URL::asset('img/sweden.png') }}" class="left circle" {{$team->site == 'Sweden' ? 'selected' : ''}}>Sweden</option>
                                 <option value="Poland" data-icon="{{ URL::asset('img/poland.png') }}" class="left circle" {{$team->site == 'Poland' ? 'selected' : ''}}>Poland</option>
                                 <option value="Other" data-icon="{{ URL::asset('img/dots.svg') }}" class="left circle" {{$team->site == 'Other' ? 'selected' : ''}}>Other</option>
