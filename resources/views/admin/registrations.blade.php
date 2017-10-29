@@ -47,6 +47,7 @@
             <input  type="text" class="validate" PLACEHOLDER="Search By Country">
         </div>
     </div>
+    <input type="button" class="btn waves-effect waves-light btn-large cyan" value="Search">
             <table class="highlight bordered centered">
                 <thead>
                 <tr>
