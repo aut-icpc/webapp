@@ -35,8 +35,7 @@
 <div class="row">
         Filter by :
         <br>
-        <select name="ddd" id="">
-            <option value="fff"></option></select>
+      <form name="filter">
     <div class="input-field col s4 m14 14">
         <input type="text" class="validate" placeholder=" Search By Uniersity">
     </div>
@@ -47,7 +46,7 @@
             <input  type="text" class="validate" placeholder="Search By Country">
         </div>
     </div>
-    <input id="filter-search" type="button" class="btn waves-effect waves-light btn-large cyan" value="Search">
+    <input id="filter-search" type="button" class="btn waves-effect waves-light btn-large cyan" value="Search"></form>
             <table class="highlight bordered centered">
                 <thead>
                 <tr>
