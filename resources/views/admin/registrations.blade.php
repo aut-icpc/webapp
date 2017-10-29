@@ -32,7 +32,21 @@
                     @endforeach
                 </ul>
             </div>
-
+<div class="row">
+        Filter by :
+        <br>
+        <select name="ddd" id="">
+            <option value="fff"></option></select>
+    <div class="input-field col s4 m14 14">
+        <input type="text" class="validate" placeholder=" Search By Uniersity">
+    </div>
+        <div class="input-field col s4 m14 14">
+            <input type="text" class="validate" placeholder="Search By Status">
+        </div>
+        <div class="input-field col s4 m14 14">
+            <input  type="text" class="validate" PLACEHOLDER="Search By Country">
+        </div>
+    </div>
             <table class="highlight bordered centered">
                 <thead>
                 <tr>
