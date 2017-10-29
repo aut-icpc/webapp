@@ -10,7 +10,7 @@ use App\OnlineRegistration;
 use App\OnsiteRegistration;
 use App\TeamRegistration;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Log;
 use App\Http\Requests;
 
 class ContestController extends Controller
@@ -52,6 +52,7 @@ class ContestController extends Controller
 
     public function showContestRegisteredTeams() {
         $data = OnsiteRegistration::all()->sortBy('created_at');
+        LOG::info($data) ; 
         return view('contest.registered', ['data' => $data]);
     }
 
