@@ -44,10 +44,10 @@
             <input type="text" class="validate" placeholder="Search By Status">
         </div>
         <div class="input-field col s4 m14 14">
-            <input  type="text" class="validate" PLACEHOLDER="Search By Country">
+            <input  type="text" class="validate" placeholder="Search By Country">
         </div>
     </div>
-    <input type="button" class="btn waves-effect waves-light btn-large cyan" value="Search">
+    <input id="filter-search" type="button" class="btn waves-effect waves-light btn-large cyan" value="Search">
             <table class="highlight bordered centered">
                 <thead>
                 <tr>
@@ -86,7 +86,16 @@
         </div>
     </div>
 @endsection
+@push('scripts')
+<script>
 
+            $(document).ready(function(){
+                $('#filter-search').click(function () {
+                    alert("not completed") ;
+                })
+            })
+        </script>
+@endpush
 {{--@push('styles')--}}
 {{--<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">--}}
 {{--@endpush--}}
