@@ -156,7 +156,7 @@ class HomeController extends Controller
         return response()->json([
             'onsite' => $onsite,
             'online' => $online
-        ])
+        ]);
     }
 
     /**
