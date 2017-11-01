@@ -146,6 +146,19 @@ class HomeController extends Controller
         return view('admin.registrations', ['data' => $data]);
     }
 
+    /** List all the registrations
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function exportRegistrations () {
+        $onsite = OnsiteRegistration::all()->sortBy('created_at');
+        $online = OnlineRegistration::all()->sortBy('created_at');
+        return response()->json([
+            'onsite' => $onsite,
+            'online' => $online
+        ])
+    }
+
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */

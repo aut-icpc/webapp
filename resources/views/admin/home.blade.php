@@ -27,6 +27,16 @@
         @if(Auth::user()->access_level == \App\User::$SUPER_ADMIN)
             <div class="row">
                 <div class="col s3 m3 l3">
+                    <a href="{{ route('app::admin.registrations.export') }}">
+                        <div class="card cyan darken-2 waves-effect waves-light">
+                            <div class="card-content white-text">
+                                <span class="card-title">Registrations to JSON</span>
+                                <p>Export all team information into JSON.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s3 m3 l3">
                     <a href="{{ route('app::admin.registrations.show') }}">
                         <div class="card cyan darken-2 waves-effect waves-light">
                             <div class="card-content white-text">

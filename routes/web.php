@@ -51,6 +51,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('app::admin');
 Route::get('/home/registrations', 'HomeController@showRegistrations')->name('app::admin.registrations.show')->middleware('admin');
+Route::get('/home/registrations', 'HomeController@exportRegistrations')->name('app::admin.registrations.export')->middleware('admin');
 Route::get('/home/registrations/online', 'HomeController@showOnlineRegistrations')->name('app::admin.online_registrations.show')->middleware('admin');
 Route::get('/home/registrations/apl', 'HomeController@showAPLRegistrations')->name('app::admin.APL_registrations.show')->middleware('admin');
 
