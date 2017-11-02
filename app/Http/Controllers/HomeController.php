@@ -151,8 +151,8 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function exportRegistrations () {
-        $onsite = OnsiteRegistration::where('status.status', '=', 'Finalized')->sortBy('created_at');
-        $online = OnlineRegistration::where('status.status', '=', 'Finalized')->sortBy('created_at');
+        $onsite = OnsiteRegistration::where('status.status', '=', 'Finalized')->get()->sortBy('created_at');
+        $online = OnlineRegistration::where('status.status', '=', 'Finalized')->get()->sortBy('created_at');
         return response()->json([
             'onsite' => $onsite,
             'online' => $online
