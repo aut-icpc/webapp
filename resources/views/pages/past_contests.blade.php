@@ -30,7 +30,7 @@
                 <br>
                 2016:  (Day 1  - Nov 4th) - (Dismissed):
                 <a href="http://ceit.aut.ac.ir/~sepehr/icpc/index.html">Final Ranklist (Onsite)</a>, 
-                <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a> {{-- ,   <a href="">More Details </a> --}} ,  - Contest dismissed due to technical failures.
+                <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a> {{-- ,   <a href="">More Details </a> --}} ,  Contest dismissed due to technical failures.
                {{-- <div>
                     <div class="card-content"  id="detail">
                         <p style="font-size: 15px;">
