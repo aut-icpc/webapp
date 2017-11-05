@@ -29,8 +29,8 @@
                 2015: <a href="http://icpc.aut.ac.ir/files/problemset2015.pdf">Problems</a>,  <a href="http://icpc.aut.ac.ir/files/2015ranklist.html">Final Ranklist</a>
                 <br>
                 2016:  (Day 1  - Nov 4th) - (Dismissed):
-                <a href="http://ceit.aut.ac.ir/~sepehr/icpc/index.html">Final Ranklist (Onsite) - Contest dismissed due to technical failures.</a>,
-                <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a>
+                <a href="http://ceit.aut.ac.ir/~sepehr/icpc/index.html">Final Ranklist (Onsite) - Contest dismissed due to technical failures.</a>, 
+                <a href="http://icpc.aut.ac.ir/files/problemset_2016_day1.pdf">Problems</a>  ,   <a href="">More Details </a> 
                 <div>
                     <div class="card-content"  id="detail">
                         <p style="font-size: 15px;">
