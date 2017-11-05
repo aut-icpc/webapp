@@ -16,9 +16,9 @@
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
                 17th <b>Amirkabir</b> International Collegiate Programming Contest had been held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
-                <br><br><br>
+                <br>
                 <b>November 3rd 2017</b>
-                <h6>Registration links will be available during  <b>October 16th - October 28th</b></h6>
+               {{-- <h6>Registration links will be available during  <b>October 16th - October 28th</b></h6>--}}
                 <div class="center" id="time"></div>
                 <br>
                 {{--  <a href="{{ route('app::past') }}">
