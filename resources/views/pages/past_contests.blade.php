@@ -34,7 +34,11 @@
                 <div>
                     <div class="card-content"  id="detail">
                         <p style="font-size: 15px;">
-                            <strong> More Details :</strong>
+                            <div class="input-field col s4 m4 l4">
+                            <button class="btn waves-effect waves-light btn-large cyan" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
                             <br><br>
                             On November 4th, during the  16th AUT-ICPC, we had faced with a major technical issue with the judging server
                             (<a href="https://github.com/daavar/domjudge/wiki/Black-Friday/" target="_blank">details are available here</a>), we tried our best but eventually
