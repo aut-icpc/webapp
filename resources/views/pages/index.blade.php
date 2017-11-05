@@ -15,7 +15,7 @@
                 <img class="responsive-img" style="width: 60%;" src="{{ asset('img/aut_icpc.png') }}">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                17th <b>Amirkabir</b> International Collegiate Programming Contest will be held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
+                17th <b>Amirkabir</b> International Collegiate Programming Contest had been held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br><br><br>
                 <b>November 3rd 2017</b>
                 <h6>Registration links will be available during  <b>October 16th - October 28th</b></h6>
@@ -36,7 +36,7 @@
 
                   </div>
               </div>--}}
-                <div class="col s12 m7">
+               {{-- <div class="col s12 m7">
                     <div class="card cyan darken-2 white-text waves-effect full-width-card">
                         <div class="card-content">
                             <span class="card-title">Timings</span>
@@ -94,7 +94,7 @@
                                 <i class="material-icons right">toc</i>
                             </button>
                         </a>
-                    </div>
+                    </div>--}}
 
                 </div>
             </div>
