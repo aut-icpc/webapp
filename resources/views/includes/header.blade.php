@@ -60,9 +60,10 @@
                         <li>
                             <a href="{{ route('app::general.about') }}">About</a>
                         </li>
+                        {{--
                         <li>
                             <a href="{{ route('app::contest.register') }}">Register</a>
-                        </li>
+                        </li>--}}
                         <li>
                             <a href="{{ route('app::live.feed') }}">Live Blog!</a>
                         </li>
