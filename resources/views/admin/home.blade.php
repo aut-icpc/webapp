@@ -24,6 +24,18 @@
                 </a>
             </div>
         </div>
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <a href="">
+                    <div class="card cyan darken-2 waves-effect waves-light">
+                        <div class="card-content white-text">
+                            <span class="card-title">Finalized on-site teams to tsv</span>
+                            <p>Export all fil=nalized on-site teams to tsv for judge</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
         @if(Auth::user()->access_level == \App\User::$SUPER_ADMIN)
             <div class="row">
                 <div class="col s3 m3 l3">
