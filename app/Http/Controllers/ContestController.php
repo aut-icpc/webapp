@@ -52,8 +52,8 @@ class ContestController extends Controller
 
     public function showContestRegisteredTeams() {
         $data = OnsiteRegistration::all()->sortBy('created_at');
-        LOG::info(OnsiteRegistration::all()) ; 
-       LOG::info(OnlineRegistration::all()) ; 
+        LOG::info(OnsiteRegistration::all()->toArray()) ; 
+       //LOG::info(OnlineRegistration::all()) ; 
         return view('contest.registered', ['data' => $data]);
     }
 
