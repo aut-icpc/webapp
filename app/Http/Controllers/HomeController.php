@@ -158,6 +158,40 @@ class HomeController extends Controller
             'online' => $online
         ]);
     }
+    public function teamsTSV(){
+        $result = '' ; 
+        $Name = "teams.tsv";
+        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $myName),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($fileText)];
+        
+        
+        $result  = "teams"   ;  
+        $result = $result . "\t" ;
+        $result = $result . "1" ;
+        $result = $result . "\n" ;
+        for($i=1 ; $i<=sizeof($a) ; $i++){
+            $result = $result . $i ;
+            $result = $result . "\t" ;
+            $result = $result . ($i -1 )+100 ; 
+            $result = $result . "\t" ;
+            $result = $result . sizeof($a[$i-1]['members']);
+            $result = $result . "\t" ;
+            $result = $result . $a[$i-1]['team_name'] ; 
+            $result = $result . "\t" ;
+            $result = $result . $a[$i-1]['institute_name'] ;
+            $result = $result . "\t" ;
+            if($a[$i-1]['site'] == 'Iran')
+                $three_letter= "IRN" ; 
+            elseif($a[$i-1]['site'] == 'Germany')
+                $three_letter= "DEU" ;
+            else
+                $three_letter= "SWE"  ;
+            $result = $result . $three_letter;  
+            $result = $result . "\n" ;
+      
+        }
+        return Response::make($result, 200, $headers);
+        
+    }
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
