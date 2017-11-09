@@ -158,7 +158,45 @@ class HomeController extends Controller
             'online' => $online
         ]);
     }
+     function randomGen($min, $max, $quantity) {
+        $numbers = range($min, $max);
+        shuffle($numbers);
+        return array_slice($numbers, 0, $quantity);
+    }
+    public function accountsTSV(){
+        
+        $a = OnsiteRegistration::all()->toArray() ; 
+        $passes = randomGen(10000,99999,sizeof($a))  ;
+        $result = '' ; 
+        $Name = "accounts.tsv";
+        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $myName),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($fileText)];
+        
+        
+        $result  = "accounts"   ;  
+        $result = $result . "\t" ;
+        $result = $result . "1" ;
+        $result = $result . "\n" ;
+        for($i=1 ; $i<=sizeof($a) ; $i++){
+            $result =  $result .  "team" ;
+            $result =  $result . "\t" ; 
+            $result =  $result . $a[$i-1]['team_name'] ; 
+            $result =  $result . "\t" ;
+            if($i < 10)
+                $result =  $result . "00".$i; 
+            elseif($i <100)
+                $result =  $result . "0".$i  ; 
+            else 
+                $result =  $result . $i ; 
+            $result =  $result . "\t" ;
+            $result =  $result . "P".$passes[$i-1] ; 
+            $result =  $result . "\n" ;
+      
+      
+        }
+        return Response::make($result, 200, $headers) ; 
+    }
     public function teamsTSV(){
+        $a = OnsiteRegistration::all()->toArray() ; 
         $result = '' ; 
         $Name = "teams.tsv";
         $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $myName),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($fileText)];
