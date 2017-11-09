@@ -169,7 +169,7 @@ class HomeController extends Controller
         $passes = randomGen(10000,99999,sizeof($a))  ;
         $result = '' ; 
         $Name = "accounts.tsv";
-        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $myName),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($fileText)];
+       
         
         
         $result  = "accounts"   ;  
@@ -193,13 +193,14 @@ class HomeController extends Controller
       
       
         }
+        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $Name),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($result)];
         return Response::make($result, 200, $headers) ; 
     }
     public function teamsTSV(){
         $a = OnsiteRegistration::all()->toArray() ; 
         $result = '' ; 
         $Name = "teams.tsv";
-        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $myName),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($fileText)];
+        
         
         
         $result  = "teams"   ;  
@@ -227,6 +228,7 @@ class HomeController extends Controller
             $result = $result . "\n" ;
       
         }
+        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $Name),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($result)];
         return Response::make($result, 200, $headers);
         
     }
