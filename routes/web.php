@@ -54,6 +54,8 @@ Route::get('/home/registrations', 'HomeController@showRegistrations')->name('app
 Route::get('/home/registrations/export', 'HomeController@exportRegistrations')->name('app::admin.registrations.export')->middleware('admin');
 Route::get('/home/registrations/online', 'HomeController@showOnlineRegistrations')->name('app::admin.online_registrations.show')->middleware('admin');
 Route::get('/home/registrations/apl', 'HomeController@showAPLRegistrations')->name('app::admin.APL_registrations.show')->middleware('admin');
+Route::get('/home/registrations/accounts/tsv', 'HomeController@accountsTSV')->name('app::admin.registrations.export.account.tsv')->middleware('admin');
+Route::get('/home/registrations/teams/tsv', 'HomeController@teamsTSV')->name('app::admin.registrations.export.teams.tsv')->middleware('admin');
 
 Route::get('home/registrations/{team}', 'HomeController@showEditRegistrationForm')->name('app::admin.registration.edit')->middleware('admin');
 Route::post('home/registrations/{team}', 'HomeController@saveRegistration')->name('app::admin.registration.save')->middleware('admin');
