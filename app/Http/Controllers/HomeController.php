@@ -164,7 +164,7 @@ class HomeController extends Controller
         $a = OnsiteRegistration::all()->toArray() ; 
         $numbers = range(10000, 99999);
         shuffle($numbers);
-        $passes =  array_slice($numbers, 0, $quantity);
+        $passes =  array_slice($numbers, 0,sizeof($a));
      
         $result = '' ; 
         $Name = "accounts.tsv";
