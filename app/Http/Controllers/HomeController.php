@@ -162,7 +162,7 @@ class HomeController extends Controller
     public function accountsTSV(){
         
         $a = OnsiteRegistration::all()->toArray() ; 
-        $numbers = range($min, $max);
+        $numbers = range(10000, 99999);
         shuffle($numbers);
         $passes =  array_slice($numbers, 0, $quantity);
      
