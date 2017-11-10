@@ -158,15 +158,14 @@ class HomeController extends Controller
             'online' => $online
         ]);
     }
-     function randomGen($min, $max, $quantity) {
-        $numbers = range($min, $max);
-        shuffle($numbers);
-        return array_slice($numbers, 0, $quantity);
-    }
+
     public function accountsTSV(){
         
         $a = OnsiteRegistration::all()->toArray() ; 
-        $passes = randomGen(10000,99999,sizeof($a))  ;
+        $numbers = range($min, $max);
+        shuffle($numbers);
+        $passes =  array_slice($numbers, 0, $quantity);
+     
         $result = '' ; 
         $Name = "accounts.tsv";
        
@@ -193,8 +192,7 @@ class HomeController extends Controller
       
       
         }
-        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $Name),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($result)];
-        return Response::make($result, 200, $headers) ; 
+        return $result ; 
     }
     public function teamsTSV(){
         $a = OnsiteRegistration::all()->toArray() ; 
@@ -228,8 +226,8 @@ class HomeController extends Controller
             $result = $result . "\n" ;
       
         }
-        $headers = ['Content-type'=>'text/plain', 'test'=>'YoYo', 'Content-Disposition'=>sprintf('attachment; filename="%s"', $Name),'X-BooYAH'=>'WorkyWorky','Content-Length'=>sizeof($result)];
-        return Response::make($result, 200, $headers);
+       
+        return $result ;
         
     }
 
