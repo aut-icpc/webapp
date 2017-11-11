@@ -227,7 +227,7 @@ class HomeController extends Controller
             $result = $result . "\n" ;
       
         }
-       
+       dd($result) ;
         return $result ;
         
     }
