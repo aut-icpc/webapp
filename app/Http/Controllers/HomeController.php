@@ -215,12 +215,16 @@ class HomeController extends Controller
         $result = '' ; 
         $Name = "teams.tsv";
         
-        
+         $wc= fopen( $file, "w") ;
         
         $result  = "teams"   ;  
         $result = $result . "\t" ;
         $result = $result . "1" ;
         $result = $result . "\n" ;
+         ob_start() ; 
+        print_r($result) ;
+        $dd = ob_get_clean(); 
+        fwrite($wc ,$dd) ;
         for($i=1 ; $i<=sizeof($a) ; $i++){
             $result = $result . $i ;
            
@@ -241,13 +245,14 @@ class HomeController extends Controller
                 $three_letter= "SWE"  ;
             $result = $result . $three_letter;  
             $result = $result . "\n" ;
-      
-        }
-       $wc= fopen( $file, "w") ;
-        ob_start() ; 
+             ob_start() ; 
         print_r($result) ;
         $dd = ob_get_clean(); 
         fwrite($wc ,$dd) ;
+      
+        }
+      
+       
         fclose($wc) ; 
       return response()->download($file, 'teams.tsv', $headers); 
         
