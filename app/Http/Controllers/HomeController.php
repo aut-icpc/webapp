@@ -229,6 +229,7 @@ class HomeController extends Controller
             $result = $result . $i ;
             $result = $result . "\t" ;
             $result = $result . ($i -1 )+100 ; 
+            dd($result) ;
             $result = $result . "\t" ;
             $result = $result . sizeof($a[$i-1]['members']);
             $result = $result . "\t" ;
