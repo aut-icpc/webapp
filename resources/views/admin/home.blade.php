@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m12 l4">
+            <div class="col s3 m3 l3">
                 <a href="{{ route('app::admin.registrations.export.account.tsv') }}">
                     <div class="card cyan darken-2 waves-effect waves-light">
                         <div class="card-content white-text">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m12 l4">
+            <div class="col s3 m3 l3">
                 <a href="{{ route('app::admin.registrations.export.teams.tsv') }}">
                     <div class="card cyan darken-2 waves-effect waves-light">
                         <div class="card-content white-text">
