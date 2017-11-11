@@ -160,6 +160,11 @@ class HomeController extends Controller
     }
 
     public function accountsTSV(){
+         $file= public_path(). "/accounts.tsv";
+        $headers = array(
+              '"Content-Type:text/plain"',
+            );
+        echo "aaaaa";
         
         $a = OnsiteRegistration::all()->toArray() ; 
         $numbers = range(10000, 99999);
@@ -192,8 +197,7 @@ class HomeController extends Controller
       
       
         }
-        dd($result) ; 
-        return $result ; 
+       return Response::download($file, 'accounts.tsv', $headers); 
     }
     public function teamsTSV(){
         $a = OnsiteRegistration::all()->toArray() ; 
