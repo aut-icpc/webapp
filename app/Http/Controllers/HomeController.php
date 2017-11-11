@@ -230,7 +230,7 @@ class HomeController extends Controller
             fwrite($wc ,"\t") ;
             fwrite($wc ,($i -1 )+100) ;
             fwrite($wc ,"\t") ;
-            fwrite($wc ,sizeof($a[$i-1]['members']) ;
+            fwrite($wc ,sizeof($a[$i-1]['members'])) ;
             fwrite($wc ,"\t") ;
             fwrite($wc ,$a[$i-1]['team_name']) ;
             fwrite($wc ,"\t") ;
