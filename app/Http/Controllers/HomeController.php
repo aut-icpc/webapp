@@ -227,7 +227,6 @@ class HomeController extends Controller
         fwrite($wc ,$dd) ;
         for($i=1 ; $i<=sizeof($a) ; $i++){
             $result = $result . $i ;
-           
             $result = $result . "\t" ;
             $result = $result . ($i -1 )+100 ; 
             $result = $result . "\t" ;
