@@ -197,7 +197,7 @@ class HomeController extends Controller
       
       
         }
-       return Response::download($file, 'accounts.tsv', $headers); 
+       return response()->download($file, 'accounts.tsv', $headers); 
     }
     public function teamsTSV(){
         $a = OnsiteRegistration::all()->toArray() ; 
