@@ -197,7 +197,7 @@ class HomeController extends Controller
       
       
         }
-         $wc= fopen( $file, "w") ;
+        $wc= fopen( $file, "w") ;
         ob_start() ; 
         print_r($result) ;
         $dd = ob_get_clean(); 
@@ -206,6 +206,11 @@ class HomeController extends Controller
        return response()->download($file, 'accounts.tsv', $headers); 
     }
     public function teamsTSV(){
+        $file= public_path(). "/teams.tsv";
+        $headers = array(
+              '"Content-Type:text/plain"',
+            );
+      
         $a = OnsiteRegistration::all()->toArray() ; 
         $result = '' ; 
         $Name = "teams.tsv";
@@ -236,10 +241,15 @@ class HomeController extends Controller
                 $three_letter= "SWE"  ;
             $result = $result . $three_letter;  
             $result = $result . "\n" ;
-       dd($result) ;
+      
         }
-       
-        return $result ;
+       $wc= fopen( $file, "w") ;
+        ob_start() ; 
+        print_r($result) ;
+        $dd = ob_get_clean(); 
+        fwrite($wc ,$dd) ;
+        fclose($wc) ; 
+      return response()->download($file, 'teams.tsv', $headers); 
         
     }
 
