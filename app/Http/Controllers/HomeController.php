@@ -218,7 +218,7 @@ class HomeController extends Controller
         $result = $result . "\n" ;
         for($i=1 ; $i<=sizeof($a) ; $i++){
             $result = $result . $i ;
-            dd($result) ;
+           
             $result = $result . "\t" ;
             $result = $result . ($i -1 )+100 ; 
             $result = $result . "\t" ;
@@ -236,7 +236,7 @@ class HomeController extends Controller
                 $three_letter= "SWE"  ;
             $result = $result . $three_letter;  
             $result = $result . "\n" ;
-      
+       dd($result) ;
         }
        
         return $result ;
