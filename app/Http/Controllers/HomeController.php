@@ -226,30 +226,27 @@ class HomeController extends Controller
         $dd = ob_get_clean(); 
         fwrite($wc ,$dd) ;
         for($i=1 ; $i<=sizeof($a) ; $i++){
-            $result = $result . $i ;
-            $result = $result . "\t" ;
-            $result = $result . ($i -1 )+100 ; 
-            dd($result) ;
-            $result = $result . "\t" ;
-            $result = $result . sizeof($a[$i-1]['members']);
-            $result = $result . "\t" ;
-            $result = $result . $a[$i-1]['team_name'] ; 
-            $result = $result . "\t" ;
-            $result = $result . $a[$i-1]['institute_name'] ;
-            $result = $result . "\t" ;
+            fwrite($wc ,$i) ;
+   fwrite($wc ,"\t") ;
+            fwrite($wc ,($i -1 )+100) ;
+             fwrite($wc ,"\t") ;
+             fwrite($wc ,sizeof($a[$i-1]['members']) ;
+                    fwrite($wc ,"\t") ;
+       fwrite($wc ,$a[$i-1]['team_name']) ;
+          fwrite($wc ,"\t") ;
+            fwrite($wc ,$a[$i-1]['institute_name']) ;
+            fwrite($wc ,"\t") ;
+           
             if($a[$i-1]['site'] == 'Iran')
                 $three_letter= "IRN" ; 
             elseif($a[$i-1]['site'] == 'Germany')
                 $three_letter= "DEU" ;
             else
                 $three_letter= "SWE"  ;
-            $result = $result . $three_letter;  
-            $result = $result . "\n" ;
-             ob_start() ; 
-        print_r($result) ;
-        $dd = ob_get_clean(); 
-        fwrite($wc ,$dd) ;
-      
+                     fwrite($wc ,$three_letter) ;
+    f   write($wc ,"\n") ;
+           
+    
         }
       
        
