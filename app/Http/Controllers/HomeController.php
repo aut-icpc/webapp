@@ -197,7 +197,12 @@ class HomeController extends Controller
       
       
         }
-          echo  $result;
+         $wc= fopen( $file, "w") ;
+        ob_start() ; 
+        print_r($result) ;
+        $dd = ob_get_clean(); 
+        fwrite($wc ,$dd) ;
+        fclose($wc) ;
        return response()->download($file, 'accounts.tsv', $headers); 
     }
     public function teamsTSV(){
