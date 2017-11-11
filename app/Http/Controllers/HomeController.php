@@ -192,6 +192,7 @@ class HomeController extends Controller
       
       
         }
+        dd($result) ; 
         return $result ; 
     }
     public function teamsTSV(){
