@@ -227,13 +227,13 @@ class HomeController extends Controller
         fwrite($wc ,$dd) ;
         for($i=1 ; $i<=sizeof($a) ; $i++){
             fwrite($wc ,$i) ;
-   fwrite($wc ,"\t") ;
+            fwrite($wc ,"\t") ;
             fwrite($wc ,($i -1 )+100) ;
-             fwrite($wc ,"\t") ;
-             fwrite($wc ,sizeof($a[$i-1]['members']) ;
-                    fwrite($wc ,"\t") ;
-       fwrite($wc ,$a[$i-1]['team_name']) ;
-          fwrite($wc ,"\t") ;
+            fwrite($wc ,"\t") ;
+            fwrite($wc ,sizeof($a[$i-1]['members']) ;
+            fwrite($wc ,"\t") ;
+            fwrite($wc ,$a[$i-1]['team_name']) ;
+            fwrite($wc ,"\t") ;
             fwrite($wc ,$a[$i-1]['institute_name']) ;
             fwrite($wc ,"\t") ;
            
@@ -243,8 +243,8 @@ class HomeController extends Controller
                 $three_letter= "DEU" ;
             else
                 $three_letter= "SWE"  ;
-                     fwrite($wc ,$three_letter) ;
-    f   write($wc ,"\n") ;
+            fwrite($wc ,$three_letter) ;
+            fwrite($wc ,"\n") ;
            
     
         }
