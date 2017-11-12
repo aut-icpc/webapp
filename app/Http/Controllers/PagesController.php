@@ -22,6 +22,12 @@ class PagesController extends Controller
     public function about() {
         return view('pages.about');
     }
+  /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showGalleryTeams() {
+        return view('pages.gallery.teams');
+    }
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
