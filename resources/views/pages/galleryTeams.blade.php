@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+<br>
   <div class=" col s4 m14 14">
    <a href="http://img.techpowerup.org/171112/dsc-3983.jpg"><img src="http://img.techpowerup.org/171112/dsc-3983.jpg"  height="200" width="300"></a>
     <a href="http://img.techpowerup.org/171112/dsc-3987.jpg"><img src="http://img.techpowerup.org/171112/dsc-3987.jpg"  height="200" width="300"></a>
