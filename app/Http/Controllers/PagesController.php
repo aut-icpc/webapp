@@ -26,7 +26,7 @@ class PagesController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showGalleryTeams() {
-        return view('pages.gallery.teams');
+        return view('pages.galleryTeams');
     }
 
     /**
