@@ -93,7 +93,7 @@
             </div>
 
             <div id="portfoliolist">
-                @for($i= 1 ; $i < 196 ; $i++)
+                @for($i= 1 ; $i < 193 ; $i++)
 			
                 <div class="portfolio all logo animate-box" data-cat="logo">
                     <div class="portfolio-wrapper">
