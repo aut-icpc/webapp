@@ -37,7 +37,6 @@
     <!-- FOR IE9 below -->
 <!--[if lt IE 9]>
         <script src="{{URL :: asset("gallery/js/respond.min.js")}}"></script>
-
 	<!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -78,11 +77,11 @@
 
 <div id="fh5co-page" style="background-color: #e0f7fa !important;">
 
-        <div class="container" >
+    <div class="container" >
 
-            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 
-        </div>
+    </div>
 
     <div id="fh5co-portfolio-section" style="background-color: #e0f7fa !important;">
         <div class="container">
@@ -94,69 +93,15 @@
             </div>
 
             <div id="portfoliolist">
-
+                @for($i= 1 ; $i < 71 ; $i++)
                 <div class="portfolio all logo animate-box" data-cat="logo">
                     <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4049.jpg" >
+                        <img style = " width: 350px; height: 250px" src="{{URL::asset('Teams/').'/'.'('.$i.').jpg'}}" >
 
                     </div>
                 </div>
+                @endfor
 
-                <div class="portfolio all card web animate-box" data-cat="card">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4039.jpg" >
-
-                    </div>
-                </div>
-
-                <div class="portfolio all web animate-box" data-cat="web">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171120/dsc-0003.jpg" >
-
-                    </div>
-                </div>
-                <br>
-                <div class="portfolio all card animate-box" data-cat="card">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4054.jpg" >
-
-                    </div>
-                </div>
-
-                <div class="portfolio all app animate-box" data-cat="app">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4034.jpg" >
-
-                    </div>
-                </div>
-
-                <div class="portfolio all card animate-box" data-cat="card">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4024.jpg" >
-
-                    </div>
-                </div>
-
-                <div class="portfolio all card animate-box" data-cat="card">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4019.jpg" >
-
-                    </div>
-                </div>
-
-                <div class="portfolio all logo animate-box" data-cat="logo">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4014.jpg" >
-
-                    </div>
-                </div>
-
-                <div class="portfolio all icon animate-box" data-cat="icon">
-                    <div class="portfolio-wrapper">
-                        <img style = " width: 350px; height: 250px" src="http://img.techpowerup.org/171112/dsc-4004.jpg" >
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -180,11 +125,8 @@
 
 <script type="text/javascript">
     $(function () {
-
         var filterList = {
-
             init: function () {
-
                 // MixItUp plugin
                 // http://mixitup.io
                 $('#portfoliolist').mixItUp({
@@ -196,19 +138,12 @@
                         filter: '.all'
                     }
                 });
-
             }
-
         };
-
         // Run the show!
         filterList.init();
-
-
-
     });
 </script>
 
 </body>
 </html>
-
