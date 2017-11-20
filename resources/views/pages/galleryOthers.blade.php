@@ -93,11 +93,11 @@
             </div>
 
             <div id="portfoliolist">
-                @for($i= 1 ; $i < 69 ; $i++)
+                @for($i= 1 ; $i < 196 ; $i++)
 			
                 <div class="portfolio all logo animate-box" data-cat="logo">
                     <div class="portfolio-wrapper">
-                        <a href="{{URL::asset('/Others/').'/('.$i.').jpg'}}"> <img style = " width: 350px; height: 250px" src="{{URL::asset('/Others/').'/('.$i.').jpg'}}" ></a>
+                        <a href="{{URL::asset('/Others/').'/ ('.$i.').jpg'}}"> <img style = " width: 350px; height: 250px" src="{{URL::asset('/Others/').'/ ('.$i.').jpg'}}" ></a>
 
                     </div>
                 </div>
