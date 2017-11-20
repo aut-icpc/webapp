@@ -97,7 +97,7 @@
 			@if($i != 46)
                 <div class="portfolio all logo animate-box" data-cat="logo">
                     <div class="portfolio-wrapper">
-                        <a href="{{URL::asset('/Teams/').'/'.$i.'.jpg'}}" <img style = " width: 350px; height: 250px" src="{{URL::asset('/Teams/').'/'.$i.'.jpg'}}" >
+                        <a href="{{URL::asset('/Teams/').'/'.$i.'.jpg'}}"> <img style = " width: 350px; height: 250px" src="{{URL::asset('/Teams/').'/'.$i.'.jpg'}}" ></a>
 
                     </div>
                 </div>
