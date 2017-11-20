@@ -26,7 +26,7 @@ Route::get('/local/rules', 'PagesController@showLocalRules')->name('app::local.r
 Route::get('/past', 'PagesController@showPastContests')->name('app::past');
 Route::get('/'.$now->format('Y').'/gallery/teams', 'PagesController@showGalleryTeams')->name('app::gallery.teams'.$now->format('Y'));
 Route::get('/'.$now->format('Y').'/gallery/others', 'PagesController@showGalleryOthers')->name('app::gallery.others'.$now->format('Y'));
-Route::get('/gallery', 'PagesController@showGallery')->name('app::gallery');
+Route::get('/photos', 'PagesController@showGallery')->name('app::gallery');
 
 Route::get('/'.$now->format('Y').'/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
 Route::get('/'.$now->format('Y').'/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
