@@ -25,6 +25,18 @@ class PagesController extends Controller
   /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
+    public function showGallery() {
+        return view('pages.gallery');
+    }
+      /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showGalleryOthers() {
+        return view('pages.galleryOthers');
+    }
+      /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showGalleryTeams() {
         return view('pages.galleryTeams');
     }
