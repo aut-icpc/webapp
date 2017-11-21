@@ -8,7 +8,7 @@
     <label >Pre - 2014 </label>
     <a href="" style="font-size: 20px; color: gray";  >No pictures available!</a>
     <br>
-     <img id="14" src="{{ asset('img/album14.jpg') }}" style="height: 100px ; width: 100px">
+     <img id="14" src="{{ asset('img/album14.jpg') }}" style="height: 200px ; width: 200px">
     <label for="14">2014</label>
     <a href="" style="font-size: 20px; color: gray";  >Coming soon!! </a>
     <br>
@@ -23,9 +23,9 @@
     <img id="17" src="{{ asset('img/album17.png') }}" style="height: 100px ; width: 100px">
 <label for="17">2017</label>
 
-    <a href="{{route('app::gallery.teams2017')}}"  light-blue darken-4 >Teams    </a>
+    <a href="{{route('app::gallery.teams2017')}}"  style="font-size: 20px; color:#01579b"; >Teams    </a>
 ,
-    <a href="{{route('app::gallery.others2017')}}"  light-blue darken-4>    Others</a>
+    <a href="{{route('app::gallery.others2017')}}"  style="font-size: 20px; color: #01579b";>    Others</a>
 
 
 
