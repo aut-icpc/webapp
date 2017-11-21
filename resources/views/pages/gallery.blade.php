@@ -6,19 +6,19 @@
 <div class="center" style="padding-top: 15%">
 
     <label >Pre - 2014 </label>
-    <a href="" class="grey lighten-1" >No pictures available!</a>
+    <a href="" style="font-size: 20px; color: gray";  >No pictures available!</a>
     <br>
-     <img id="14" src="{{ asset('img/album14.png') }}" style="height: 100px ; width: 100px">
+     <img id="14" src="{{ asset('img/album14.jpg') }}" style="height: 100px ; width: 100px">
     <label for="14">2014</label>
-    <a href="" class="grey lighten-1" >Coming soon!! </a>
+    <a href="" style="font-size: 20px; color: gray";  >Coming soon!! </a>
     <br>
     <img id="15" src="{{ asset('img/album15.png') }}" style="height: 100px ; width: 100px">
     <label for="15">2015</label>
-    <a href="" class="grey lighten-1" >Coming soon!! </a>
+    <a href="" style="font-size: 20px; color: gray";  >Coming soon!! </a>
     <br>
     <img id="16" src="{{ asset('img/album16.png') }}" style="height: 100px ; width: 100px">
     <label for="16">2016</label>
-    <a href="" class="grey lighten-1" >Coming soon!!</a>
+    <a href="" style="font-size: 20px; color: gray";  >Coming soon!!</a>
     <br>
     <img id="17" src="{{ asset('img/album17.png') }}" style="height: 100px ; width: 100px">
 <label for="17">2017</label>
