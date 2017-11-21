@@ -7,10 +7,7 @@
 
     <label >Pre - 2014 </label>
     <a href="" style="font-size: 20px; color: gray";  >No pictures available!</a>
-    <br>
-     <img id="14" src="{{ asset('img/album14.jpg') }}" style="height: 200px ; width: 200px">
-    <label for="14">2014</label>
-    <a href="" style="font-size: 20px; color: gray";  >Coming soon!! </a>
+    
     <br>
     <img id="15" src="{{ asset('img/album15.png') }}" style="height: 100px ; width: 100px">
     <label for="15">2015</label>
