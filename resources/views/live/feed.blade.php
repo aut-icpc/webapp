@@ -5,7 +5,7 @@
             <div class="mast">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                Follow news of AUT ACM ICPC On-Site contest live from <b>Tehran</b>, <b>Stockholm</b> and <b>Munich</b> at the same time!
+                Follow news of AUT ACM ICPC On-Site contest live from <b>Tehran</b>
                 <div class="divider"></div>
                 <br>
             </div>
@@ -14,42 +14,42 @@
             <div class="center" id="time"></div>
         </div>
 
-        <div class="row">
-            <div class="col s1 m1 l1"></div>
-            <div class="col s10 m10 l10">
-            @if(count($newsGroup) == 0)
-                <div class="card waves-effect col s12 m12 l12">
-                    <div class="card-content">
-                        <ccenter><span class="card-title activator grey-text text-darken-4 center">Just wait a little!</span></ccenter>
-                        <p class="center">
-                            The On-Site contest starts at 10:00 AM (UTC Time) November 03, 2017. <br>
-                            So be patient and check back soon! <br>
-                            By the way you can see the behind the scenes stuff with
-                            #AUTICPC on social media.
-                        </p>
-                    </div>
-                </div>
-            @else
-                @foreach($newsGroup as $news)
-                        <div class="card waves-effect col s12 m12 l12" style="padding-left: 0px; padding-right: 0px;">
-                            @if(isset($news->picture))
-                                <div class="card-image waves-effect waves-block waves-light materialboxed">
-                                    <img class="materialboxed" data-caption="{{ $news->title }}" src="{{ asset($news->picture) }}">
+        {{--<div class="row">--}}
+         {{-- <div class="col s1 m1 l1"></div>--}}
+            {{--<div class="col s10 m10 l10">--}}
+            {{--@if(count($newsGroup) == 0)--}}
+                {{--<div class="card waves-effect col s12 m12 l12">--}}
+                    {{--<div class="card-content">--}}
+                        {{--<ccenter><span class="card-title activator grey-text text-darken-4 center">Just wait a little!</span></ccenter>--}}
+                        {{--<p class="center">--}}
+                            {{--The On-Site contest starts at 10:00 AM (UTC Time) November 03, 2017. <br>--}}
+                            {{--So be patient and check back soon! <br>--}}
+                            {{--By the way you can see the behind the scenes stuff with--}}
+                            {{--#AUTICPC on social media.--}}
+                       {{--</p>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--@else--}}
+                {{--@foreach($newsGroup as $news)--}}
+                        {{--<div class="card waves-effect col s12 m12 l12" style="padding-left: 0px; padding-right: 0px;">--}}
+                            {{--@if(isset($news->picture))--}}
+                                {{--<div class="card-image waves-effect waves-block waves-light materialboxed">--}}
+                                    {{--<img class="materialboxed" data-caption="{{ $news->title }}" src="{{ asset($news->picture) }}">--}}
                                     {{--<img class="activator" src="{{ asset('img/iran.png') }}">--}}
-                                </div>
-                            @endif
-                            <div class="card-content">
-                                <b>{{ \Carbon\Carbon::createFromTimestamp($news->published_at)->format("j M Y - H:i:s (T)") }}</b><br>
-                                <span class="card-title activator grey-text text-darken-4">{{$news->title}}<i class="material-icons right">more_vert</i></span>
-                                {!! $news->body !!}
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">{{ $news->title }}<i class="material-icons right">close</i></span>
-                                {!! $news->body !!}
-                            </div>
-                        </div>
-                @endforeach
-            @endif
+                               {{--</div>--}}
+                            {{--@endif--}}
+                            {{--<div class="card-content">--}}
+                               {{-- <b>{{ \Carbon\Carbon::createFromTimestamp($news->published_at)->format("j M Y - H:i:s (T)") }}</b><br>--}}
+                                {{--<span class="card-title activator grey-text text-darken-4">{{$news->title}}<i class="material-icons right">more_vert</i></span>--}}
+                                {{--{!! $news->body !!}--}}
+                            {{--</div>--}}
+                            {{--<div class="card-reveal">--}}
+                                {{--<span class="card-title grey-text text-darken-4">{{ $news->title }}<i class="material-icons right">close</i></span>--}}
+                                {{--{!! $news->body !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                {{--@endforeach--}}
+            {{--@endif--}}
             </div>
             <div class="col s1 m1 l1"></div>
         </div>
