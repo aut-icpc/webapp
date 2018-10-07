@@ -20,9 +20,9 @@
     <img id="17" src="{{ asset('img/album17.png') }}" style="height: 100px ; width: 100px">
 <label for="17">2017</label>
 
-    <a href="{{route('app::gallery.teams2018')}}"  style="font-size: 20px; color:#01579b"; >Teams    </a>
+    <a href="{{route('app::gallery.teams2017')}}"  style="font-size: 20px; color:#01579b"; >Teams    </a>
 ,
-    <a href="{{route('app::gallery.others2018')}}"  style="font-size: 20px; color: #01579b";>    Others</a>
+    <a href="{{route('app::gallery.others2017')}}"  style="font-size: 20px; color: #01579b";>    Others</a>
 
 
 
