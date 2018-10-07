@@ -106,18 +106,18 @@
                 <div class="parallax"><img src="img/boys.jpg"></div>
             </div>
             <div class="section">
-                <div class="row container center cyan-text text-darken-2">
-                    <h4>Organizers: </h4><br>
+                {{--<div class="row container center cyan-text text-darken-2">--}}
+                    {{--<h4>Organizers: </h4><br>--}}
                     {{--<div class="col s4 m4 l4">--}}
                         {{--<a href="https://www.kth.se" target="_blank">--}}
                             {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/kth.png') }}">--}}
                         {{--</a>--}}
                     {{--</div>--}}
-                    <div class="center col s4 m4 l4">
-                        <a href="http://aut.ac.ir" target="_blank">
-                            <img class="responsive-img" style="width: 150px;" src="{{ asset('img/aut.png') }}">
-                        </a>
-                    </div>
+                    {{--<div class="center col s4 m4 l4">--}}
+                        {{--<a href="http://aut.ac.ir" target="_blank">--}}
+                            {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/aut.png') }}">--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
                     {{--<div class="col s4 m4 l4">--}}
                         {{--<br>--}}
 
@@ -127,7 +127,7 @@
                     {{--</div--}}
 
 
-                </div>
+               {{-- </div>--}}
                 {{--<div class="row container center cyan-text text-darken-2">--}}
                     {{--<h4>Event Sponsor: </h4><br>--}}
                     {{--<div class="col s3 m3 l3">--}}
