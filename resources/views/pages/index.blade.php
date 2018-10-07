@@ -113,7 +113,7 @@
                             {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/kth.png') }}">--}}
                         {{--</a>--}}
                     {{--</div>--}}
-                    <div class="col s4 m4 l4">
+                    <div class="center col s4 m4 l4">
                         <a href="http://aut.ac.ir" target="_blank">
                             <img class="responsive-img" style="width: 150px;" src="{{ asset('img/aut.png') }}">
                         </a>
