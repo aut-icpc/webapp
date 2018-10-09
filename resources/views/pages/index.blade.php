@@ -106,7 +106,7 @@
                 <div class="parallax"><img src="img/boys.jpg"></div>
             </div>
             <div class="section">
-                {{--<div class="row container center cyan-text text-darken-2">--}}
+                <div class="row container center cyan-text text-darken-2">
                     <h4>Organizers: </h4><br>
                     {{--<div class="col s4 m4 l4">--}}
                         {{--<a href="https://www.kth.se" target="_blank">--}}
