@@ -137,9 +137,9 @@
                     <div class="col s3 m3 l3">
                     </div>
                 </div>
-                <div class="row container center cyan-text text-darken-2">
-                <h4>Contest Sponsors: </h4><br>
-                </div>
+                {{--<div class="row container center cyan-text text-darken-2">--}}
+                {{--<h4>Contest Sponsors: </h4><br>--}}
+                {{--</div>--}}
             </div>
             <div class="parallax-container">
                 <div class="parallax"><img src="img/parallax2.jpg"></div>
