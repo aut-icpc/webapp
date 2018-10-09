@@ -27,7 +27,7 @@ Route::get('/past', 'PagesController@showPastContests')->name('app::past');
 Route::get('/'.'2017'.'/gallery/teams', 'PagesController@showGalleryTeams')->name('app::gallery.teams'.'2017');
 Route::get('/'.'2017'.'/gallery/others', 'PagesController@showGalleryOthers')->name('app::gallery.others'.'2017');
 Route::get('/photos', 'PagesController@showGallery')->name('app::gallery');
-
+Route::get('/2017', 'PagesController@previous')->name('app::previous');
 Route::get('/'.$now->format('Y').'/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
 Route::get('/'.$now->format('Y').'/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
 
