@@ -133,7 +133,7 @@
                         <a href="http://asanpardakht.ir" target="_blank">
                            <img class="responsive-img" style="width: 200px;" src="{{ asset('img/sponsor.png') }}">
                         </a>
-                    </div>--}}
+                    </div>
                     <div class="col s3 m3 l3">
                     </div>
                 </div>
