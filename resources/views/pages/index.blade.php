@@ -15,7 +15,7 @@
                 <img class="responsive-img" style="width: 60%;" src="{{ asset('img/aut_icpc.png') }}">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                18th <b>Amirkabir</b> International Collegiate Programming Contest will be hold at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
+                18th <b>Amirkabir</b> International Collegiate Programming Contest will be held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br>
                 <b>November 2nd 2018</b>
                {{-- <h6>Registration links will be available during  <b>October 16th - October 28th</b></h6>--}}
