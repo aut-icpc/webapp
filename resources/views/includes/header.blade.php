@@ -73,6 +73,9 @@
                         <li>
                             <a href="{{ route('app::live.feed') }}">Live Blog!</a>
                         </li>
+                         <li>
+                            <a href="">Previous Contest</a>
+                        </li>
                         @if(Auth::check())
                             <li>
                                 <a href="{{ route('app::admin') }}">Administration</a>
