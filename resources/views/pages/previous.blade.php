@@ -110,21 +110,21 @@
                             {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/kth.png') }}">--}}
                         {{--</a>--}}
                     {{--</div>--}}
-                    <div>
+                    <div class="col s4 m4 l4"
                         <a href="http://aut.ac.ir" target="_blank">
                             <img class="responsive-img" style="width: 150px;" src="{{ asset('img/aut.png') }}">
                         </a>
                     </div>
-                    {{--<div class="col s4 m4 l4">--}}
-                        {{--<br>--}}
+                    <div class="col s4 m4 l4">
+                        <br>
 
-                        {{--<a href="https://www.tum.de/en/" target="_blank">--}}
-                            {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/T--LMU-TUM_Munich--tum-logo.jpg ') }}">--}}
-                        {{--</a>--}}
-                    {{--</div--}}
+                        <a href="https://www.tum.de/en/" target="_blank">
+                            <img class="responsive-img" style="width: 150px;" src="{{ asset('img/T--LMU-TUM_Munich--tum-logo.jpg ') }}">
+                        </a>
+                    </div>
 
 
-               {{-- </div>--}}
+               </div>
                 <div class="row container center cyan-text text-darken-2">
                     <h4>Event Sponsor: </h4><br>
                     <div class="col s3 m3 l3">
