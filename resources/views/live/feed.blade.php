@@ -87,7 +87,7 @@
 @push('scripts')
 <script type="text/javascript" src="{{ asset('js/jquery.countdown.js') }}"></script>
 <script type="text/javascript">
-    $('#time').countdown('2018/11/02 08:00:00', function(event) {
+    $('#time').countdown('2018/11/02 13:30:00', function(event) {
         var $this = $(this).html(event.strftime(''
                 + '<b><span style="font-size: 100px;" >%D</b>Days </span>'
                 + '<b><span style="font-size: 100px;" > - %H</b></span>'
