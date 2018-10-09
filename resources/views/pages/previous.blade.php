@@ -15,9 +15,9 @@
                 <img class="responsive-img" style="width: 60%;" src="{{ asset('img/aut_icpc.png') }}">
                 <h1>ACM ICPC</h1>
                 <h4>Amirkabir University of Technology</h4>
-                18th <b>Amirkabir</b> International Collegiate Programming Contest will be held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
+                17th <b>Amirkabir</b> International Collegiate Programming Contest had been held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br>
-                <b>November 2nd 2018</b>
+                <b>November 3rd 2017</b>
                {{-- <h6>Registration links will be available during  <b>October 16th - October 28th</b></h6>--}}
                 <div class="center" id="time"></div>
                 <br>
@@ -125,21 +125,21 @@
 
 
                {{-- </div>--}}
-                {{--<div class="row container center cyan-text text-darken-2">--}}
-                    {{--<h4>Event Sponsor: </h4><br>--}}
-                    {{--<div class="col s3 m3 l3">--}}
-                    {{--</div>--}}
-                    {{--<div class="col s6 m6 l6">--}}
-                        {{--<a href="http://asanpardakht.ir" target="_blank">--}}
-                            {{--<img class="responsive-img" style="width: 200px;" src="{{ asset('img/sponsor.png') }}">--}}
-                        {{--</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="col s3 m3 l3">--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="row container center cyan-text text-darken-2">--}}
-                {{--<h4>Contest Sponsors: </h4><br>--}}
-                {{--</div>--}}
+                <div class="row container center cyan-text text-darken-2">
+                    <h4>Event Sponsor: </h4><br>
+                    <div class="col s3 m3 l3">
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <a href="http://asanpardakht.ir" target="_blank">
+                           <img class="responsive-img" style="width: 200px;" src="{{ asset('img/sponsor.png') }}">
+                        </a>
+                    </div>--}}
+                    <div class="col s3 m3 l3">
+                    </div>
+                </div>
+                <div class="row container center cyan-text text-darken-2">
+                <h4>Contest Sponsors: </h4><br>
+                </div>
             </div>
             <div class="parallax-container">
                 <div class="parallax"><img src="img/parallax2.jpg"></div>
