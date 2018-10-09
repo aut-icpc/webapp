@@ -107,7 +107,7 @@
             </div>
             <div class="section">
                 {{--<div class="row container center cyan-text text-darken-2">--}}
-                    {{--<h4>Organizers: </h4><br>--}}
+                    <h4>Organizers: </h4><br>
                     {{--<div class="col s4 m4 l4">--}}
                         {{--<a href="https://www.kth.se" target="_blank">--}}
                             {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/kth.png') }}">--}}
