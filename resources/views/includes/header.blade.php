@@ -46,6 +46,9 @@
                         <li>
                             <a href="{{ route('app::live.feed') }}">Live Blog!</a>
                         </li>
+                          <li>
+                            <a href="">Previous Contest</a>
+                        </li>
                         @if(Auth::check())
                             <li>
                                 <a class="dropdown-button" href="#!" data-activates="admin_dropdown">Adminstration<i class="material-icons right">arrow_drop_down</i>
