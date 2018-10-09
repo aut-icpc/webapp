@@ -16,6 +16,12 @@ class PagesController extends Controller
         return view('pages.index');
     }
 
+     /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function previous() {
+        return view('pages.previous');
+    }
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
