@@ -128,7 +128,7 @@
 
 
                {{-- </div>--}}
-                <div class="row container center cyan-text text-darken-2">
+                <div class="row center cyan-text text-darken-2">
                     <h4>Event Sponsor: </h4><br>
                    <div>
                         <a href="https://snapp.ir/" target="_blank">
