@@ -18,10 +18,10 @@
                 18th <b>Amirkabir</b> International Collegiate Programming Contest will be held at <b>Computer Engineering and IT Department</b> of Amirkabir University of Technology
                 <br>
                 <b>November 2nd 2018</b>
-               {{-- <h6>Registration links will be available during  <b>October 16th - October 28th</b></h6>--}}
+                <h6>Registration links will be available during  <b>October 20th - October 28th</b></h6>
                 <div class="center" id="time"></div>
                 <br>
-                {{--  <a href="{{ route('app::past') }}">
+                 <a href="{{ route('app::past') }}">
                       <button class="darken-2 waves-effect waves-light btn-large cyan" type="button" name="action">Results and Scoreboard
                           <i class="material-icons right">supervisor_account</i>
                       </button>
@@ -35,24 +35,24 @@
                   <div class="card cyan darken-2 white-text">
 
                   </div>
-              </div>--}}
-               {{-- <div class="col s12 m7">
+              </div>
+               <div class="col s12 m7">
                     <div class="card cyan darken-2 white-text waves-effect full-width-card">
                         <div class="card-content">
                             <span class="card-title">Timings</span>
                             <p style="font-size: 20px;">Registration Dates</p>
-                            <p style="font-size: 33px;">October 16 - 28, 2017</p>
+                            <p style="font-size: 33px;">October 20 - 28, 2018</p>
                             <p style="font-size: 15px;">
-                                Registration period of On-Site contest for Iranian teams is from October 11 until October 28.<br>
+                                Registration period of On-Site contest for Iranian teams is from October 20 until October 28.<br>
                                 Others can register until November 2nd.
                             </p>
 
                             <hr><br>
                             <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
-                            <p style="font-size: 33px;">November 01, 2017</p>
+                            <p style="font-size: 33px;">November 01, 2018</p>
                             <hr> <br>
                             <p style="font-size: 20px;">On-Site Contest</p>
-                            <p style="font-size: 33px;">November 03, 2017</p>
+                            <p style="font-size: 33px;">November 02, 2018</p>
                             <p style="font-size: 15px;">10:00:00 (UTC)</p>
                             <p style="font-size: 15px;">13:30:00 (GMT +3:30 - Iran Standard Time)</p>
                             <br>
@@ -94,7 +94,7 @@
                                 <i class="material-icons right">toc</i>
                             </button>
                         </a>
-                    </div>--}}
+                    </div>
 
                 </div>
             </div>
