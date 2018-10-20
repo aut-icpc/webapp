@@ -35,7 +35,7 @@
                         <li class="card advantage cyan white-text darken-1 waves-effect waves-light">
                             <h5>ACM-ICPC Related Websites:</h5>
                             <p>
-                                Asia Region, Tehran Site: <a style="color: #ffeb3b;" href="http://sharif.edu/~acmicpc" >http://sharif.edu/~acmicpc<br>
+                                Asia Region, Tehran Site: <a style="color: #ffeb3b;" href="http://sharif.edu/~acmicpc" >http://icpc.sharif.edu<br>
                                 </a>ICPC Asia: <a style="color: #ffeb3b;" href="http://icpcasia.blogspot.com/" >http://icpcasia.blogspot.com</a><br>
                                 ACM International Collegiate Programming Contest Website:
                                 <a style="color: #ffeb3b;" href="http://icpc.baylor.edu/welcome.icpc" >http://icpc.baylor.edu/welcome.icpc</a><br>
