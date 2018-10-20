@@ -83,14 +83,14 @@
                 <div class="col s12 m7 center display-flex">
                     <div class="full-width-card card-margin-right">
                         <a href="{{ route('app::contest.registered') }}">
-                            <button class="darken-2 waves-effect waves-light btn-large cyan full-width-card" type="button" name="action">View Registered Teams of On-Site Contest
+                            <button class="darken-2 waves-effect waves-light btn-large cyan full-width-card" type="button" name="action">On-Site Contest
                                 <i class="material-icons right">toc</i>
                             </button>
                         </a>
                     </div>
                     <div class="full-width-card card-margin-left">
                         <a href="{{ route('app::online_contest.registered') }}">
-                            <button class="darken-2 waves-effect waves-light btn-large cyan full-width-card" type="button" name="action">View Registered Teams of On-Line Contest
+                            <button class="darken-2 waves-effect waves-light btn-large cyan full-width-card" type="button" name="action">On-Line Contest
                                 <i class="material-icons right">toc</i>
                             </button>
                         </a>
