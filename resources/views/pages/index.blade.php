@@ -103,7 +103,7 @@
 
         @section('parallex')
             <div class="parallax-container">
-                <div class="parallax"><img src="img/boys.jpg"></div>
+                <div class="parallax"><img src="img/backgorund.jpg"></div>
             </div>
             <div class="section">
                 <div class="row container center cyan-text text-darken-2">
