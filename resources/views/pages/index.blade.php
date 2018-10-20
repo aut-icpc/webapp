@@ -128,18 +128,18 @@
 
 
                {{-- </div>--}}
-                {{--<div class="row container center cyan-text text-darken-2">--}}
-                    {{--<h4>Event Sponsor: </h4><br>--}}
-                    {{--<div class="col s3 m3 l3">--}}
-                    {{--</div>--}}
-                    {{--<div class="col s6 m6 l6">--}}
-                        {{--<a href="http://asanpardakht.ir" target="_blank">--}}
-                            {{--<img class="responsive-img" style="width: 200px;" src="{{ asset('img/sponsor.png') }}">--}}
-                        {{--</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="col s3 m3 l3">--}}
-                    {{--</div>--}}
-                {{--</div>--}}
+                <div class="row container center cyan-text text-darken-2">
+                    <h4>Event Sponsor: </h4><br>
+                    <div class="col s3 m3 l3">
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <a href="https://snapp.ir/" target="_blank">
+                            <img class="responsive-img" style="width: 200px;" src="https://snapp.ir/assets/images/logo.svg">
+                        </a>
+                    </div>
+                    <div class="col s3 m3 l3">
+                    </div>
+                </div>
                 {{--<div class="row container center cyan-text text-darken-2">--}}
                 {{--<h4>Contest Sponsors: </h4><br>--}}
                 {{--</div>--}}
