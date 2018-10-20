@@ -6,7 +6,7 @@
     <div id="non-skrollr">
         <div class="row">
             <h3><br>On-Site Contest Registration<br></h3>
-            <h5>17th Amirkabir Collegiate Programming Contest - 03 Nov 2017</h5>
+            <h5>18th Amirkabir Collegiate Programming Contest - 02 Nov 2018</h5>
             <p>
                 Please fill all of the following fields carefully and then press the 'Submit' button to make your team registered.<br>
                 If you are willing to just register in online contest, follow <a style="color: #00b0ff;" href="{{ route('app::contest.register.online') }}">this link</a>.
@@ -15,10 +15,10 @@
                 Registration fee for Iranian teams are as follows: <br>
                 <ul>
                     <li>
-                        120,000 Tomans for non-AUT teams.
+                        150,000 Tomans for non-AUT teams.
                     </li>
                     <li>
-                        90,000 Tomans for teams from Amirkabir University of Technology.
+                        100,000 Tomans for teams from Amirkabir University of Technology.
                     </li>
                     <br>
                     <li>
