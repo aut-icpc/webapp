@@ -74,7 +74,7 @@
                                     to participate in a programming contest, but the online contest has no limits.
                                 </li>
                                 <li>
-                                    All Iranian team members in on-site contest, are required to be present on November 01, at the Orientation Day.
+                                    All Iranian team members in on-site contest, are required to be present on October 31, at the Orientation Day.
                                 </li>
                             </ol>
                         </div>
