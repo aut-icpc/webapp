@@ -49,7 +49,7 @@
 
                             <hr><br>
                             <p style="font-size: 20px;">Orientation Day (Iranian Teams Only)</p>
-                            <p style="font-size: 33px;">November 01, 2018</p>
+                            <p style="font-size: 33px;">October 31, 2018</p>
                             <hr> <br>
                             <p style="font-size: 20px;">On-Site Contest</p>
                             <p style="font-size: 33px;">November 02, 2018</p>
@@ -107,7 +107,7 @@
             </div>
             <div class="section">
                 <div class="row container center cyan-text text-darken-2">
-                    <h4>Organizers: </h4><br>
+                    <h4>Organizer: </h4><br>
                     {{--<div class="col s4 m4 l4">--}}
                         {{--<a href="https://www.kth.se" target="_blank">--}}
                             {{--<img class="responsive-img" style="width: 150px;" src="{{ asset('img/kth.png') }}">--}}
