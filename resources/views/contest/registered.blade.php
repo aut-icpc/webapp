@@ -8,7 +8,7 @@
             <p>
                 Here is the list of registered teams ordered by their registration time.
                 <br>
-                <b>If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.</b> <br>
+                {{--<b>If you have not registered yet, you can <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">Register Here</a>.</b> <br>--}}
                 <b>If you don't see your team Information below, we are probably reviewing your information.</b><br>
                 
                  if your team name was not in registerd team list 24 hours after regitration ,  please inform us by :
