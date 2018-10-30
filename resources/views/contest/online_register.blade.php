@@ -7,10 +7,10 @@
             <div class="row">
                 <h3><br>OnLine Contest Registration<br></h3>
                 <h5>18th Amirkabir Online Collegiate Programming Contest - 02 Nov 2018</h5>
-                <p>
-                    Please fill all of the following fields carefully and then press the 'Submit' button to make your team registered.<br>
+               {{-- <p>--}}
+                 {{--   Please fill all of the following fields carefully and then press the 'Submit' button to make your team registered.<br>
                     If you are willing to just register in on-site contest, follow <a style="color: #00b0ff;" href="{{ route('app::contest.register') }}">this link</a>.
-                </p>
+                </p>--}}
                 <div class="divider"></div>
                 <br>
                 <div class="container-fluid">
