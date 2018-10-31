@@ -29,7 +29,7 @@ Route::get('/'.'2017'.'/gallery/others', 'PagesController@showGalleryOthers')->n
 Route::get('/photos', 'PagesController@showGallery')->name('app::gallery');
 Route::get('/2017', 'PagesController@previous')->name('app::previous');
 //Route::get('/'.$now->format('Y').'/contest', 'ContestController@showPreRegistrationPage')->name('app::contest.pre-register');
-//Route::get('/'.$now->format('Y').'/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
+Route::get('/'.$now->format('Y').'/register', 'ContestController@showContestRegistrationForm')->name('app::contest.register');
 
 Route::get('/apl', 'ContestController@APLIndex')->name('app::apl.index');
 Route::get('/apl/register', 'ContestController@showAPLRegistrationForm')->name('app::apl.register');
@@ -38,7 +38,7 @@ Route::get('/apl/registered', 'ContestController@showAPLRegisteredPersons')->nam
 
 Route::get('/'.$now->format('Y').'/registered', 'ContestController@showContestRegisteredTeams')->name('app::contest.registered');
 Route::get('/'.$now->format('Y').'/registered/online', 'ContestController@showOnlineContestRegisteredTeams')->name('app::online_contest.registered');
-//Route::post('/'.$now->format('Y').'/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
+Route::post('/'.$now->format('Y').'/register', 'ContestController@saveOnSiteRegistration')->name('app::contest.register_post');
 
 Route::get('/'.$now->format('Y').'/register/online', 'ContestController@showOnLineRegistrationForm')->name('app::contest.register.online');
 Route::post('/'.$now->format('Y').'/register/online', 'ContestController@saveOnlineContestSubmission')->name('app::contest.register.online_post');
