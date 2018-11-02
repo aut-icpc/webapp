@@ -84,17 +84,13 @@
                   <ul>
                     <li><strong>Contest Environment</strong>
                       <ul>
-                        <li>DOMJudge 4.0.3<span style="color:#F00">*</span></li>
+                        <li>DOMJudge 5.2<span style="color:#F00">*</span></li>
                         </ul>
                     </li>
                   </ul>
                   <p>&nbsp;</p>
                   <p><span style="color:#F00">*</span><strong>DOMJudge Team Guide( <a href="http://www.domjudge.org/docs/team-manual.pdf">English</a> )</strong></p>
                   <p>&nbsp;  </p>
-                -->
-                <br/><br/>
-                <p> Will be announced soon... </p>
-                <br/><br/>
 
                 <div class="hliner"></div>
                 <h5>Problem Selection</h5>
