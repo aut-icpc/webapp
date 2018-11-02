@@ -39,39 +39,45 @@
                         </ul>
                     </li>
                   </ul>
+                -->
                   <ul>
                     <li><strong>Compilers</strong>
                       <ul>
-                        <li> Javac (JDK version 1.7) </li>
-                        <li> g++ (gcc 4.8) </li>
-                        <li> cl.exe (vc.net 2010) </li>
+                        <li> Javac (JDK version 1.8) </li>
+                        <li> g++ 5.4 </li>
+                        <li> gcc 5.4 </li>
+                        <li> python 2.7.12 </li>
+                        <li> python 3.5.2 </li>
                         </ul>
                     </li>
                   </ul>
                   <ul>
                     <li><strong>Development Tools</strong>
                       <ul>
-                        <li> Eclipse 3.3 </li>
-                        <li>JBuilder</li>
-                        <li> Visual Studio 2010</li>
+                        <li> CodeBlocks 16.01 </li>
+                        <li> Eclipse Oxygen 4.7.0 </li>
+                        <li> pycharm 2017.2 </li>
+                        <li> netbeans 8.1 </li>
+                        <li> intellij idea community 2017.3 </li>
                         </ul>
                     </li>
                     </ul>
                    <ul>
                     <li><strong>Reference Materials:</strong>
-                      <ul>
-                        <li> MSDN </li>
-                        <li> JDK documentation </li>
-                        <li> sgi STL documentation <br />
-                          </li>
-                        </ul>
                     </li>
                   </ul>
                   <ul>
                     <li><strong>Editors</strong>
                       <ul>
-                        <li> Notepad++ 6.6.9 </li>
-                        <li> GVim 7.2 </li>
+                        <li> vim 7.14.1689 </li>
+                        <li> visual studio code 1.18.1 </li>
+                        <li> sublime text build 3126 </li>
+                        <li> kdevelop 4.7.3 </li>
+                        <li> kate 15.12.3 </li>
+                        <li> gvim 7.14.1689 </li>
+                        <li> Geany 1.2.7 </li>
+                        <li> gedit 3.18.3 </li>
+                        <li> emacs 24.5.1 </li>
                         </ul>
                     </li>
                   </ul>
